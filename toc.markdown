@@ -91,7 +91,9 @@ TODO
 * Storing colours 
 
 ## Command Line ##
-* Mike to fill in
+* Console API
+* Command Line API
+* Keyboard Shortcuts
 
 ## Remote Debugging ##
 // base on an updated version of the current remote debugging article http://dev.opera.com/articles/view/remote-debugging-with-opera-dragonfly/
