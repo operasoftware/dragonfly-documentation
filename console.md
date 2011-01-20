@@ -69,4 +69,32 @@ The `console.trace()` method prints a stack trace to the console. You can click 
 
 (see CORE-35518)
 
-## Command Line API
+## Command Line API [check to see what we implement]
+
+`$("id")` - A shortcut for document.getElementById().
+`$$("css")` - A shortcut for document.querySelectorAll().
+`$0` - Variable containing the most recently inspected object .
+`$1` - Variable containing the next most recently inspected object .
+dir(object) - Returns an array of property names on an object., shortcut for console.dir()
+clear() - Clears the console.
+keys(object)
+values(object)
+`//help()`
+`//man()`
+`//jquery()`
+
+
+## Keyboard Shortcuts
+
+The Dragonfly console comes with the following shortcuts:
+
+* Ctrl-L: Clear 
+* Ctrl-E: Move to the end of the line 
+* Ctrl-A: Move to the beginning of the line 
+* Ctrl-K: Delete text to end of line 
+* Ctrl-U: Delete text to the beginning of the line 
+* Ctrl-W: Delete a word backwards 
+* Ctrl-Y: Pastes the content of the delete buffer. The buffer is set to whatever was last deleted by Ctrl-{K,U,W}.
+(DFL-1257, C-l, u, w not working on Mac)
+
+### Tab completion
