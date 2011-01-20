@@ -1,27 +1,3 @@
-# Opera Dragonfly Field Guide Outline #
-
-## Introduction ##
-
-## The Opera Dragonfly User Interface ##
-
-* Explain common UI elements with screen shot
-* Window controls (close, detach, select debugging context)
-* Global functions
-
-## DOM & Style Inspectors ##
-TODO. Include:
-
-* Selecting document
-* DOM view
-* Editing
-* Viewing styles attached to element
-* Edit styles
-* Deleting styles
-* Disabling styles
-* Colour picker
-* Layout view
-* Properties view
-
 ## JavaScript Debugger ##
 * Introduce the debugger and show UI map/screenshot 
 
@@ -71,36 +47,3 @@ TODO. Include:
 
 #### Watches (watchpoints?) ####
 * Describe how to watch a variable (and expression?)
-
-## Network Inspector ##
-TODO
-
-## Resource Inspector ##
-TODO
-
-## Storage Inspector ##
-TODO
-
-## Error Log ##
-* Brief introduction to log. 
-* Link to console.log and friends in the command line section.
-
-## Utilities ##
-### Colour picker ###
-* Selecting a colour
-* Options (avg colour, size etc)
-* Storing colours 
-
-## Command Line ##
-* Console API
-* Command Line API
-* Keyboard Shortcuts
-
-## Remote Debugging ##
-// base on an updated version of the current remote debugging article http://dev.opera.com/articles/view/remote-debugging-with-opera-dragonfly/
-
-## Appendix ##
-* Keyboard shortcut map
-* Definition of terms?
-* How to contribute?
-* what else?
