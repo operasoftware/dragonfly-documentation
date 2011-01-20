@@ -97,7 +97,15 @@ TODO
 ### Keyboard Shortcuts
 
 ## Remote Debugging ##
-// base on an updated version of the current remote debugging article http://dev.opera.com/articles/view/remote-debugging-with-opera-dragonfly/
+
+### Setup ###
+#### Stage 1: Network setup ####
+#### Stage 2: Listen for a connection ####
+#### Stage 3: Connect to Opera Dragonfly ####
+
+### Debugging pages on a remote device ###
+
+### Disconnecting ###
 
 ## Appendix ##
 * Keyboard shortcut map
