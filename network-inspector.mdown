@@ -1,0 +1,34 @@
+## Network Inspector ##
+
+### Description of the tabs and their purpose ###
+
+#### Resources
+Short intro
+@@screenshot@@
+* description of elements
+
+#### Make Request
+Short intro
+@@screenshot@@
+* description of elements
+
+#### Network Options
+Short intro
+@@screenshot@@
+* description of elements
+
+
+### How to identify some basic HTTP issues with Make Request
+
+(the dragonfly curl manual). Here take part of the articles written with common issues. and explain how to use the HTTP request dance to see the differences.
+
+#### HTTP Client-Server dance
+
+Explain a few basics of HTTP client-server dialog.
+
+#### Content Negotiation On Language
+#### Content Negotiation On Mime-Type
+#### Identify User-Agent Sniffing
+#### More exploration with HTTP
+
+
