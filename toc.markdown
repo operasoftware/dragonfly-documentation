@@ -73,7 +73,11 @@ TODO. Include:
 * Describe how to watch a variable (and expression?)
 
 ## Network Inspector ##
-TODO
+* Description of the tabs and their purpose
+ * Resources
+ * Make Request
+ * Network Options
+* How to identify some basic HTTP issues with Make Request (the dragonfly curl manual)
 
 ## Resource Inspector ##
 TODO
