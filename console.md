@@ -1,8 +1,8 @@
 #Introducing the Dragonfly Console
 
-Dragonfly 1.0 ships with support for the [Firebug Console API](http://getfirebug.com/wiki/index.php/Console_API) (but see DFL-1522, DFL-1535). What this means is that console-based javascript debugging is now interoperable with Firebug, the WebKit Inspector, and the IE Developer Tools.
+## Console API
 
-##Logging simple and complex values
+Dragonfly 1.0 ships with support for the [Firebug Console API](http://getfirebug.com/wiki/index.php/Console_API) (but see DFL-1522, DFL-1535). What this means is that console-based javascript debugging is now interoperable with Firebug, the WebKit Inspector, and the IE Developer Tools.
 
 ###`console.log()` and `console.debug()`
 
@@ -10,7 +10,7 @@ The most basic method for logging is `console.log()`. e.g., `console.log( 'Hello
 
     console.debug(myVar);
 
-Multiple values can be logged inline by passing them in as additional arugments.
+Multiple values can be logged inline by passing them in as additional arguments.
 
     console.log( 9001, true, { hello: "world" } )
 
@@ -31,10 +31,6 @@ The `console.dir(object)` method is useful when you need to inspect the properti
 ###`console.count([label])`
 
 The `console.count()` method logs the number of times a line of code is executed. You can pass in an optional label to aid in readability, e.g. console.count('loop')
-
-###`console.table()`
-
-doesn't work? :/
 
 ###`console.group(label)`, `console.groupCollapsed(label)`, `console.groupEnd()`
 
@@ -61,12 +57,9 @@ The `console.trace()` method prints a stack trace to the console. You can click 
 
     console.assert(authorized)
 
-If the expression evaluates to false, the output will appear as if it were logged with `console.error()` (maybe...).
+If the expression evaluates to false, the output will appear as if it were logged with `console.error()`.
 
 (should be fixed when CORE-35518 is pushed out)
-
-###console.table()  
-broken? awaiting feedback.
 
 #### Not yet supported
 console.profile, console.profileEnd
