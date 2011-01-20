@@ -1,5 +1,7 @@
 ## Network Inspector ##
 
+The Network Inspector is the HTTP dashboard of dragonfly. From understanding what has been negociated between Opera browser and a server to simulating HTTP requests in order to test the reactions of the server, Network Inspector is C-3PO assistant of dragonfly.
+
 ### Description of the tabs and their purpose ###
 
 #### Resources
