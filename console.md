@@ -69,24 +69,26 @@ The `console.trace()` method prints a stack trace to the console. You can click 
 
 (see CORE-35518)
 
-## Command Line API [check to see what we implement]
+## Command Line API
 
-`$("id")` - A shortcut for document.getElementById().
-`$$("css")` - A shortcut for document.querySelectorAll().
-`$0` - Variable containing the most recently inspected object .
-`$1` - Variable containing the next most recently inspected object .
-dir(object) - Returns an array of property names on an object., shortcut for console.dir()
-clear() - Clears the console.
-keys(object)
-values(object)
-`//help()`
-`//man()`
-`//jquery()`
+The Dragonfly console comes with the following command line shortcuts:
+
+`$("id")` - A shortcut for document.getElementById(), returns a DOM element.
+`$$("css selector")` - A shortcut for document.querySelectorAll(), returns a NodeList.
+`$0` - Variable containing the most recently inspected object.
+`$1` - Variable containing the next most recently inspected object.
+`dir(object)` - A shortcut for `console.dir()`
+`clear()` - Clears the console.
+`keys(object)` - Logs all the keys of an Array-like object, returns an Array.
+`values(object)` - Logs all the (key) values of an Array-like object, returns an Array.
+`//help()` - Lists the available commands for the command line.
+`//man()` - Lists the available commands for the command line.
+`//jquery()` - Injects the latest (minified) version of jQuery into the page.
 
 
 ## Keyboard Shortcuts
 
-The Dragonfly console comes with the following shortcuts:
+The Dragonfly console comes with the following keyboard shortcuts:
 
 * Ctrl-L: Clear 
 * Ctrl-E: Move to the end of the line 
@@ -94,7 +96,7 @@ The Dragonfly console comes with the following shortcuts:
 * Ctrl-K: Delete text to end of line 
 * Ctrl-U: Delete text to the beginning of the line 
 * Ctrl-W: Delete a word backwards 
-* Ctrl-Y: Pastes the content of the delete buffer. The buffer is set to whatever was last deleted by Ctrl-{K,U,W}.
-(DFL-1257, C-l, u, w not working on Mac)
+* Ctrl-Y: Pastes the content of the delete buffer. The buffer is set to whatever was last deleted by Ctrl-K,U, or W.
 
-### Tab completion
+## Tab completion
+TODO:
