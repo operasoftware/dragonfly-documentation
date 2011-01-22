@@ -71,32 +71,30 @@ The `console.trace()` method prints a stack trace to the console. You can click 
 
 ## Command Line API
 
-The Dragonfly console comes with the following command line shortcuts:
+The following command line shortcuts are available in the console:
 
-`$("id")` - A shortcut for document.getElementById(), returns a DOM element.
-`$$("css selector")` - A shortcut for document.querySelectorAll(), returns a NodeList.
-`$0` - Variable containing the most recently inspected object.
-`$1` - Variable containing the next most recently inspected object.
-`dir(object)` - A shortcut for `console.dir()`
-`clear()` - Clears the console.
-`keys(object)` - Logs all the keys of an Array-like object, returns an Array.
-`values(object)` - Logs all the (key) values of an Array-like object, returns an Array.
-`//help()` - Lists the available commands for the command line.
-`//man()` - Lists the available commands for the command line.
-`//jquery()` - Injects the latest (minified) version of jQuery into the page.
+ * `$("id")` - A shortcut for document.getElementById(), returns a DOM element
+ * `$$("css selector")` - A shortcut for document.querySelectorAll(), returns a NodeList
+ * `$0` - Variable containing the most recently inspected object
+ * `$1` - Variable containing the next most recently inspected object
+ * `dir(object)` - A shortcut for `console.dir()`
+ * `clear()` - Clears the console
+ * `keys(object)` - Logs all the keys of an Array-like object, returns an Array
+ * `values(object)` - Logs all the (key) values of an Array-like object, returns an Array
+ * `//help()` - Lists the available commands for the command line
+ * `//man()` - Lists the available commands for the command line
+ * `//jquery()` - Injects the latest (minified) version of jQuery into the page
 
 
 ## Keyboard Shortcuts
 
-The Dragonfly console comes with the following keyboard shortcuts:
+The following keyboard shortcuts are available in the console:
 
-* Ctrl-L: Clear 
-* Ctrl-E: Move to the end of the line 
-* Ctrl-A: Move to the beginning of the line 
-* Ctrl-K: Delete text to end of line 
-* Ctrl-U: Delete text to the beginning of the line 
-* Ctrl-W: Delete a word backwards 
-* Ctrl-Y: Pastes the content of the delete buffer. The buffer is set to whatever was last deleted by Ctrl-K,U, or W.
-
-## Tab completion
-TODO:
+ * <kbd>Ctrl + l</kbd>: Clears the console
+ * <kbd>Ctrl + e</kbd>: Move to the end of the line 
+ * <kbd>Ctrl + a</kbd>: Move to the beginning of the line 
+ * <kbd>Ctrl + k</kbd>: Delete text to end of line 
+ * <kbd>Ctrl + u</kbd>: Delete text to the beginning of the line 
+ * <kbd>Ctrl + w</kbd>: Delete a word backwards 
+ * <kbd>Ctrl + y</kbd>: Pastes the content of the delete buffer. The buffer is set to whatever was last deleted by Ctrl-K,U, or W.
+ * <kbd>Tab</kbd>: Auto-completes an identifier, or prints out a list of possible matches.
