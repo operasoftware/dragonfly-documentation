@@ -1,12 +1,21 @@
-#Introducing the Dragonfly Console
+<style>
+	ins { 
+		font-size: 11px;
+		text-decoration: none;
+	}
+    .comment { background-color: yellow; }
+    .bug { background-color: pink; }
+</style>
+
+#Introducing the Opera Dragonfly Command Line
 
 ## Console API
 
-Dragonfly 1.0 ships with support for the [Firebug Console API](http://getfirebug.com/wiki/index.php/Console_API) (but see DFL-1522, DFL-1535). What this means is that console-based javascript debugging is now interoperable with Firebug, the WebKit Inspector, and the IE Developer Tools.
+Opera Dragonfly 1.0 ships with support for the [Firebug Console API](http://getfirebug.com/wiki/index.php/Console_API) <ins class="bug">(but see DFL-1522, DFL-1535)</ins>. What this means is that console-based JavaScript debugging is now interoperable with Firebug, WebKit Web Inspector, and the IE Developer Tools.
 
 ###`console.log(obj [, obj, ...])` and `console.debug(obj [, obj, ...])`
 
-The most basic method for logging to the Dragonfly console is `console.log()`. `console.debug()` logs to the console with the line number where the code was called from. (But see DFL-1542)
+The most basic method for logging to the Opera Dragonfly console is `console.log()`. `console.debug()` logs to the console with the line number where the code was called from. <ins class="bug">(But see DFL-1542)</ins>
 
     (might this be better a screenshot?)
     console.log(myVar);
@@ -18,7 +27,7 @@ Multiple values can be logged inline by passing them in as additional arguments.
 
 ###`console.warn(obj [, obj, ...])`, `console.error(obj [, obj, ...])`, and `console.info(obj [, obj, ...])`
 
-`console.warn()`, `console.error()`, and `console.info()` offer the same functionality as console.log(), but with added semantics and visual emphasis (if DFL-1535 gets fixed). Similar to `console.debug()`, these methods print a hyperlinked line number ( see DFL-1542) that corresponds to where in the source it was called from.
+The `console.warn()`, `console.error()`, and `console.info()` methods offer the same functionality as console.log(), but with added semantics and visual emphasis <ins class="bug">(if DFL-1535 gets fixed)</ins>. Similar to `console.debug()`, these methods print a hyperlinked line number <ins class="bug">(see DFL-1542)</ins> that corresponds to where in the source it was called from.
 
     [screenshot showing the color differences, some possible examples:]
     console.warn( document.getElementById('foo') == null );
@@ -29,9 +38,9 @@ Multiple values can be logged inline by passing them in as additional arguments.
 
 The `console.dir()` method is useful when you need to inspect the properties of an object or DOM node. It will log all the properties and values of the object passed in as interactive, inspectable items.
 
-`console.dirxml()` is useful to for logging the structural representation of a DOM element, logging the structure of the node similar to what is seen in the Document view. Clicking on the logged element highlights it in the main document.
+The `console.dirxml()` method is useful too for logging the structural representation of a DOM element, logging the structure of the node similar to what is seen in the Document view. Clicking on the logged element highlights it in the main document.
 
-//dirxml() -> CORE-35765
+<ins class="bug">(dirxml() -> CORE-35765)</ins>
 
 ###`console.count([name])`
 
@@ -67,11 +76,13 @@ The `console.trace()` method prints a stack trace to the console. You can click 
 
     console.assert( !true );
 
-(see CORE-35518)
+<ins>(see CORE-35518)</ins>
 
 ## Command Line API
 
 The following command line shortcuts are available in the console:
+
+<ins class="comment">should we include this and the next list in a data table, to improve the formatting?</ins>
 
  * `$("id")` - A shortcut for document.getElementById(), returns a DOM element
  * `$$("css selector")` - A shortcut for document.querySelectorAll(), returns a NodeList
@@ -89,6 +100,8 @@ The following command line shortcuts are available in the console:
 ## Keyboard Shortcuts
 
 The following keyboard shortcuts are available in the console:
+
+<ins class="comment">mention these are compatible with Bash, and that they're the same on Mac and Win/Linux</ins>
 
  * <kbd>Ctrl + l</kbd>: Clears the console
  * <kbd>Ctrl + e</kbd>: Move to the end of the line 
