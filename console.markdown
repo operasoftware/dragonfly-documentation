@@ -82,32 +82,96 @@ The `console.trace()` method prints a stack trace to the console. You can click 
 
 The following command line shortcuts are available in the console:
 
-<ins class="comment">should we include this and the next list in a data table, to improve the formatting?</ins>
-
- * `$("id")` - A shortcut for document.getElementById(), returns a DOM element
- * `$$("css selector")` - A shortcut for document.querySelectorAll(), returns a NodeList
- * `$0` - Variable containing the most recently inspected object
- * `$1` - Variable containing the next most recently inspected object
- * `dir(object)` - A shortcut for `console.dir()`
- * `clear()` - Clears the console
- * `keys(object)` - Logs all the keys of an Array-like object, returns an Array
- * `values(object)` - Logs all the (key) values of an Array-like object, returns an Array
- * `//help()` - Lists the available commands for the command line
- * `//man()` - Lists the available commands for the command line
- * `//jquery()` - Injects the latest (minified) version of jQuery into the page
-
+<table>
+  <tr>
+    <th>Shortcut</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><code>$("id")</code></td>
+    <td>A shortcut for document.getElementById(), returns a DOM element</td>
+  </tr>
+  <tr>
+    <td><code>$$("css selector")</code></td>
+    <td>A shortcut for document.querySelectorAll(), returns a NodeList</td>
+  </tr>
+  <tr>
+    <td><code>$0</code></td>
+    <td>Variable containing the most recently inspected object</td>
+  </tr>
+  <tr>
+    <td><code>$1</code></td>
+    <td>Variable containing the next most recently inspected object</td>
+  </tr>
+  <tr>
+    <td><code>dir(object)</code></td>
+    <td>A shortcut for `console.dir()`</td>
+  </tr>
+  <tr>
+    <td><code>clear()</code></td>
+    <td>Clears the console</td>
+  </tr>
+  <tr>
+    <td><code>keys(object)</code></td>
+    <td>Logs all the keys of an Array-like object, returns an Array</td>
+  </tr>
+  <tr>
+    <td><code>values(object)</code></td>
+    <td>Logs all the (key) values of an Array-like object, returns an Array</td>
+  </tr>
+  <tr>
+    <td><code>//help()</code></td>
+    <td>Lists the available commands for the command line</td>
+  </tr>
+  <tr>
+    <td><code>//man()</code></td>
+    <td>Lists the available commands for the command line</td>
+  </tr>
+  <tr>
+    <td><code>//jquery()</code></td>
+    <td>Injects the latest (minified) version of jQuery into the page</td>
+  </tr>
+</table>
 
 ## Keyboard Shortcuts
 
-The following keyboard shortcuts are available in the console:
+The following cross-platform, Bash-like keyboard shortcuts are available in the:
 
-<ins class="comment">mention these are compatible with Bash, and that they're the same on Mac and Win/Linux</ins>
-
- * <kbd>Ctrl + l</kbd>: Clears the console
- * <kbd>Ctrl + e</kbd>: Move to the end of the line 
- * <kbd>Ctrl + a</kbd>: Move to the beginning of the line 
- * <kbd>Ctrl + k</kbd>: Delete text to end of line 
- * <kbd>Ctrl + u</kbd>: Delete text to the beginning of the line 
- * <kbd>Ctrl + w</kbd>: Delete a word backwards 
- * <kbd>Ctrl + y</kbd>: Pastes the content of the delete buffer. The buffer is set to whatever was last deleted by Ctrl-K,U, or W.
- * <kbd>Tab</kbd>: Auto-completes an identifier, or prints out a list of possible matches.
+<table>
+  <tr>
+    <th>Shortcut</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl + l</kbd></td>
+    <td>Clears the console</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl + e</kbd></td>
+    <td>Move to the end of the line</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl + a</kbd></td>
+    <td>Move to the beginning of the line</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl + k</kbd></td>
+    <td>Delete text to end of line</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl + u</kbd></td>
+    <td>Delete text to the beginning of the line</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl + w</kbd></td>
+    <td>Delete a word backwards</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl + y</kbd></td>
+    <td>Pastes the content of the delete buffer. The buffer is set to whatever was last deleted by Ctrl-K,U, or W.</td>
+  </tr>
+  <tr>
+    <td><kbd>Tab</kbd></td>
+    <td>Auto-completes an identifier, or prints out a list of possible matches.</td>
+  </tr>
+</table>
