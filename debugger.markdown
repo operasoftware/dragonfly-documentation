@@ -15,7 +15,9 @@ Once a script is selected, the syntax highlighted source is shown in the main pa
 
 #### Search
 
-Opera Dragonfly supports a number of advanced methods to search inside the scripts. Clicking the search icon[2] brings up a search toolbar. From here it is possible to enter a search term and navigate between the results. Clicking on the @@Advanced Search option will open a floating window, which contains options such as searching in all files.
+Opera Dragonfly supports a number of advanced methods to search inside scripts. Clicking the search button[2] brings up a search toolbar. From here it is possible to enter a search term, and navigate between the results with either the forward and backwards buttons or the <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd> keys.
+
+Clicking on the @@More button will open a floating window, which allows for searching in all JavaScript files, including inline scripts. Search results show the line of code where the result is contained, along with its line number. Clicking on the line will select it in the source code panel, switching to the correct script if necessary.
 
 //advanced search not done yet. explain fully when it is done
 // Define what can be searched for, including XPath, Regex, CSS Selectors etc. The search toolbar is still work in progress. Revise when it is done
@@ -104,5 +106,5 @@ When execution is paused at a breakpoint, hovering over variables in the the sou
 
 
 #### Watches ####
-// not implemented yet
+// not implemented yet. Will be implemented next
 * Describe how to watch a variable (and expression?)
