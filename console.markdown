@@ -7,7 +7,7 @@
     .bug { background-color: pink; }
 </style>
 
-#Introducing the Opera Dragonfly Command Line
+#Introducing the Opera Dragonfly Console
 
 ## Console API
 
