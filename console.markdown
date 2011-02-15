@@ -9,9 +9,11 @@
 
 #Introducing the Opera Dragonfly Console
 
+// mention how to open the console (button and Esc key) and an intro of what it is.
+
 ## Console API
 
-Opera Dragonfly 1.0 ships with support for the [Firebug Console API](http://getfirebug.com/wiki/index.php/Console_API) <ins class="bug">(but see DFL-1522, DFL-1535)</ins>. What this means is that console-based JavaScript debugging is now interoperable with Firebug, WebKit Web Inspector, and the IE Developer Tools.
+Opera Dragonfly ships with support for the [Firebug Console API](http://getfirebug.com/wiki/index.php/Console_API) <ins class="bug">(but see DFL-1522, DFL-1535)</ins>. What this means is that console-based JavaScript debugging is now interoperable with Firebug, WebKit Web Inspector, and the IE Developer Tools.
 
 ###`console.log(obj [, obj, ...])` and `console.debug(obj [, obj, ...])`
 
@@ -44,7 +46,7 @@ The `console.dirxml()` method is useful too for logging the structural represent
 
 ###`console.count([name])`
 
-The `console.count()` method logs the number of times a line of code is executed. You can pass in an optional name to aid in readability.
+The `console.count()` method logs the number of times a line of code is executed. It is possible to pass in an optional name to aid in readability.
 
     var obj = { a: "a", b: "b" }
     for (var keys in obj) console.count('keys');
@@ -59,7 +61,7 @@ To create a collapsible group for a set of logged values, use the `console.group
 
 ###`console.trace()`
 
-The `console.trace()` method prints a stack trace to the console. You can click on the functions and argument values and inspect those in the Script tab.
+The `console.trace()` method prints a stack trace to the console. It is possible to click on the functions and argument values and inspect those in the Script tab.
 
 ###`console.time(name)`, `console.timeEnd(name)`
 
