@@ -8,9 +8,9 @@ With Opera Dragonfly it is possible to debug separate instances of Opera (or oth
 
 #### Stage 1: Network setup ####
 
-The first step is to make sure both instances are connected to the same network. If you are debugging a mobile device it will be useful to connect to a WiFi network (question: what about tethering?). Make a note of the IP address of the machine running Opera Dragonfly. If you are connecting to a separate instance on the same machine, such as a different version of Opera or a Opera Widget, you can use 127.0.0.1 (localHost).
+The first step is to make sure both instances are connected to the same network. If debugging a mobile device it will be useful to connect to a WiFi network (@@@@question: what about tethering?). Make a note of the IP address of the machine running Opera Dragonfly. If connecting to a separate instance on the same machine, such as a different version of Opera or a Opera Widget, it is possible to use 127.0.0.1 (localHost).
 
-The IP address can be found on Mac and Linux by typing ifconfig in a terminal window and looking for the inet value of the active connection. If there are  multiple connections—such as Ethernet, WiFi, Bluetooth, etc.—there will be multiple inet values, so it is important to specify the correct value. On Windows the output is somewhat simpler. Enter ipconfig in the Windows Command Prompt, and look for the IP Address label.
+The IP address can be found on Mac and Linux by typing ifconfig in a terminal window and looking for the inet value of the active connection. If there are  multiple connections—such as Ethernet, WiFi, Bluetooth, etc. there will be multiple inet values, so it is important to specify the correct value. On Windows the output is somewhat simpler. Enter ipconfig in the Windows Command Prompt, and look for the IP Address label.
 
 [//include figure showing the IP address in terminal and command prompt?]
 
@@ -34,7 +34,7 @@ Note: If the Opera instance doesn’t have a URL field (such as a Opera Widget),
 
 ### Debugging pages on a remote device ###
 
-With the connection established the final step is to select the document to debug. The document selector [what should this be called?] at the upper right of the Opera Dragonfly window will contain a list of the open documents on the remote device. Navigate to the page to be debugged on the remote device, and make sure the correct document is selected in the document selector. It may also be useful to detach Opera Dragonfly to give more real estate.
+With the connection established the final step is to select the document to debug. The document selector [@@@what should this be called?] at the upper right of the Opera Dragonfly window will contain a list of the open documents on the remote device. Navigate to the page to be debugged on the remote device, and make sure the correct document is selected in the document selector. It may also be useful to detach Opera Dragonfly to give more real estate.
 
 [// Show screenshot with document selector active, and the detach button]
 
