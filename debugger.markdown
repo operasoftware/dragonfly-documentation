@@ -1,6 +1,8 @@
 ## JavaScript Debugger ##
 
-Opera Dragonfly 1.0 features a fully featured JavaScript Debugger. This is accessible from the Scripts button in the main toolbar. The JavaScript Debugger enables the state of the web page or application to be inspected by setting break points to control the flow of the program. The debugger supports stepping through code, breaking due to user-defined events, and tracking of program state such as variable and object values. This makes it easier to identify bugs in the application, and understand exactly what is happening at any given stage. Opera Dragonfly also features a Command Line HUD, which is fully integrated with the debugger.
+// TODO: Check terms, add section on Watches and Breakpoints panel. Remove DataTips if they don't make it. Review strings
+
+Opera Dragonfly features a fully featured JavaScript Debugger. This is accessible from the Scripts panel in the main toolbar. The JavaScript Debugger enables the state of the web page or application to be inspected by setting break points to control the flow of the program. The debugger supports stepping through code, breaking due to user-defined events, and tracking of program state such as variable and object values. This makes it easier to identify bugs in the application, and understand exactly what is happening at any given stage. Opera Dragonfly also features a Console HUD, which is fully integrated with the debugger.
 
 ### Source view ###
 
@@ -19,11 +21,8 @@ Opera Dragonfly supports a number of advanced methods to search inside scripts. 
 
 Clicking on the @@More button will open a floating window, which allows for searching in all JavaScript files, including inline scripts. Search results show the line of code where the result is contained, along with its line number. Clicking on the line will select it in the source code panel, switching to the correct script if necessary.
 
-//advanced search not done yet. explain fully when it is done
-// Define what can be searched for, including XPath, Regex, CSS Selectors etc. The search toolbar is still work in progress. Revise when it is done
-
 ##### Search terms
-//As noted above, this is not done yet. Possibly move to the generic DFL section if there is enough overlap with search in other modes (most likely DOM view)
+//Possibly move to the generic DFL section if there is enough overlap with search in other modes (most likely DOM view). Probably wont be advanced terms in dFL 1.0 so most likely can remove for now
 
 ### Program flow ###
 //Add something about how to get to a breakpoint, such as how you may need to reload the document (unless it is something that hasn't happened such as an event listener.
@@ -97,14 +96,16 @@ When at a breakpoint it is possible to inspect the variables, objects and functi
 
 All variables in scope for the execution context are listed along with their current value. Functions and objects can be drilled into by clicking the expander icon next to its name. This will show all the properties and functions contained within it.
 
-As the number of properties can start to get unwieldy, it is possible to hide variables which have the value of null or an empty string by unclicking the relevant button on the Inspection toolbar. It is also possible to hide enumerable properties. It is also possible to filter by a search term using the @@Quick Find field in the toolbar. This will only match properties that are currently visible by its parent being expanded.
+As the number of properties can start to get unwieldy, it is possible to hide variables which have the value of null or an empty string by unclicking the relevant button on the Inspection toolbar. It is also possible to hide enumerable properties. Another option is to filter by a search term using the @@Quick Find field in the toolbar. This will only match properties that are currently visible by its parent being expanded.
 // how should the last sentance be phrased?
 
 #### Data Tips ####
-//not implemented yet. Check back later to be sure and describe better
+//not implemented yet. Check back later to be sure and describe better. Will probably not make it so can comment out.
+
 When execution is paused at a breakpoint, hovering over variables in the the source will show data tips which show the current value at that point in time. If the variable is an object or array, it is possible to drill down into it to see all the enclosed values.
 
 
 #### Watches ####
-// not implemented yet. Will be implemented next
+// Now implemented. Describe soon
+
 * Describe how to watch a variable (and expression?)
