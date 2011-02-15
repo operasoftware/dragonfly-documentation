@@ -1,10 +1,10 @@
 #DOM Inspector
 
-//TODO: check terminology. Fix header levels. Describe color picker. Describe navigating the DOM. Add screenshots. Change strings after string review
+//TODO: check terminology. Fix header levels. Describe color picker. Add screenshots. Change strings after string review
 
-The DOM and Style Inspectors in Opera Dragonfly are accessible from the Documents button in the main toolbar. The DOM Inspector is like View Source on steroids. While View Source shows the original document as it was written, the DOM Inspector shows the DOM tree as Opera sees it internally. This means that any DOM manipulation by scripts which have already been executed will show up in the DOM tree. Any malformed markup, such as misnested elements or missing mandatory close tags will also have been corrected according to Opera’s parsing algorithm. 
+The DOM and Style Inspectors in Opera Dragonfly are accessible from the Documents panel in the main toolbar. The DOM Inspector is like View Source on steroids. While View Source shows the original document as it was written, the DOM Inspector shows the DOM tree as Opera sees it internally. This means that any DOM manipulation by scripts which have already been executed will show up in the DOM tree. Any malformed markup, such as misnested elements or missing mandatory close tags will also have been corrected according to Opera’s parsing algorithm. 
 
-The Style Inspector is shown in the right hand panel. When a DOM node is selected, the styles corresponding to that node are shown.
+The Style Inspector is shown in the right hand panel. When a DOM element is selected, the styles corresponding to that node are shown.
 
 ##View options
 
@@ -16,13 +16,19 @@ A number of view options can be found in the settings, such as enabling and disa
 
 ##Navigating the DOM view
 
-// using keyboard to explore the DOM. Expanding/collapsing etc. Selecting document. Opening resources in resource viewer (? Or in another section?)  Make sure to mention expanding the DOM
+The main document is shown in the DOM source view by default. Often this is the only DOM file, but if a document uses iframes, frames or documents such as SVG files linked via the <code>object</code> element, they can be selected using the document selector. This can be found on the DOM toolbar to the left of the search button.
+
+The DOM is shown collapsed by default. Clicking on the expander button to the left of the element will expand it to reveal its children. This can be achieved with the keyboard by pressing <kbd>Enter</kbd> when the expander has focus. Pressing <kbd>Shift</kbd>+<kbd>Enter</kbd> will expand the element and all of its children. It is often useful to expand the entire DOM at once. This can be achieved by pressing the <q>Expand All</q> button in the DOM toolbar (first button on the left).
+
+The DOM can be navigated using the arrow keys on the keyboard. Pressing the up and down arrows navigates between elements. The left and right arrow keys move between the individual tags, attributes and values of the element in focus. Pressing <kbd>enter</kbd> will select the element, showing its associated styles in the right hand style panel, and highlighting it in the page. 
+
+Any resource that is linked from the DOM can be opened in the Resource Inspector by @@@clicking on the link@@@@ (@@@ this might change. Too easy to open instead of edit right now@@@) or pressing <kbd>Enter</kbd> when the attribute value has focus. Examples of resources include CSS files linked via the <code>href</code> attribute of the <code>link</code> element, JavaScript files linked via the <code>src</code> attribute of the <code>script</code> element, and images linked via the <code>href</code> attribute of the <code>img</code> element, to name but a few.
 
 ##Highlighting and selecting elements
 
 // show a screen shot of the element highlight
 
-By default clicking on an element in the web page will select it in the DOM view, and highlight its dimensions, including the margin, border, padding and content boxes. Guidelines will also be shown to help judge the element’s alignment. Alternatively, an element can also be selected by clicking on it in the DOM view. 
+By default clicking on an element in the web page will select it in the DOM view, and highlight its dimensions, including the margin, border, padding and content boxes. Guidelines will also be shown to help judge the element’s alignment. Alternatively, an element can also be selected by clicking on it in the DOM view. The quickest way to select an element when Opera Dragonfly is not open is to right click on the element in the page and select <q>Inspect Element</q> from the context menu. This will open Opera Dragonfly and pre-select the element.
 
 While element selection is turned on the page’s default actions such as activating links or buttons are cancelled in favour of selecting the element in the DOM view. To restore the default action, element selection can be toggled off with the button highlighted in @@x.
 
@@ -34,17 +40,17 @@ It is sometimes useful to highlight multiple elements, such as when testing if e
 
 ##Search
 
-To search the DOM press the Search button or <kbd>@@insert keyboard shortcut</kbd>. A search toolbar will appear similar to the one in the Opera browser. From here it is possible to enter a search term, and navigate between the results with either the forward and backwards buttons or the <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd> keys. This only searches the currently visible DOM, so it is worth expanding all elements before searching (@@@NOTE: make sure this button is explained previous to this comment).  
+To search the DOM press the Search button or <kbd>@@insert keyboard shortcut</kbd>. A search toolbar will appear similar to the one in the Opera browser. From here it is possible to enter a search term, and navigate between the results with either the forward and backwards buttons or the <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd> keys. This only searches the currently visible DOM, so it is worth expanding all elements before searching.
 
 ##Editing the DOM
 
-There are two different modes in Opera Dragonfly for editing the DOM. All elements are editable, except the <code>script</code> element. Editing individual attributes or values can be achieved by double clicking on the attribute or value, which will cause it to enter editing mode.  Alternatively select <q>Edit attribute</q> or <q>Edit attribute value</q> from the context menu. Pressing <kbd>Enter</kbd> will commit any changes. Pressing <kbd>Esc</kbd> cancels editing.
+There are two different modes in Opera Dragonfly for editing the DOM. All elements are editable, except the <code>script</code> element. Editing individual attributes or values can be achieved by double clicking on the attribute or value, which will cause it to enter editing mode.  Alternatively select <q>Edit attribute</q> or <q>Edit attribute value</q> from the context menu, or pressing <kbd>Control</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) when the attribute or value has focus. Pressing <kbd>Enter</kbd> will commit any changes. Pressing <kbd>Esc</kbd> cancels editing.
 
-To edit the entire element, including its children, double click on the start tag. This will cause Opera Dragonfly to go into block edit mode, which allows for free form editing. Alternatively select <q>Edit markup</q> from the context menu. As <kbd>Enter</kbd> enters a new line, submitting changes is achieved by pressing <kbd>Control</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) or clicking outside of the edit field.
+To edit the entire element, including its children, double click on the start or end tag. This will cause Opera Dragonfly to go into block edit mode, which allows for free form editing. Alternatively select <q>Edit markup</q> from the context menu, or press <kbd>Control</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) when the start or end tag has focus. As <kbd>Enter</kbd> enters a new line, submitting changes is achieved by pressing <kbd>Control</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) or clicking outside of the edit field.
 
 An additional attribute can be added to the element while in edit mode by tabbing to the end of the element. An edit field for a new attribute will be created when tabbing past the last attribute. A quicker alternative is to select <q>Add attribute</q> from the element’s context menu.
 
-An element can be removed from the document by selecting <q>Remove node</q> from the element’s context menu.
+An element can be removed from the document by selecting <q>Remove node</q> from the element’s context menu. @@@@ how to delete using keyboard? @@@@
 
 ##Viewing styles
 
@@ -56,11 +62,9 @@ The styles section contains a list of CSS rules in order of selector specificity
 
 It is easy to forget what a property does, or what its values mean. In Opera Dragonfly the relevant spec is only a click away. Each property includes a link to its spec in its context menu. This will open in a new tab. 
 
-// Add a section talking about the color picker/ explain computed and regular styles. Colour picker. Specs links
-
 ##Editing styles
 
-Editing styles works the same way as editing the DOM. Double clicking on a property enters editing mode. Alternatively, select <q>Edit declaration</q> from the context menu. The property name or property value will be highlighted when entering editing mode, depending on which one was clicked upon. All styles can be edited except computed styles and default values. Default values are highlighted slightly differently to show they can’t be edited. Pressing <kbd>Enter</kbd> will commit the change, while <kbd>Esc</kbd> cancels editing. Invalid edits are ignored and the property returns to its original value.
+Editing styles works the same way as editing the DOM. Double clicking on a property enters editing mode. Alternatively, select <q>Edit declaration</q> from the context menu, or press <kbd>Control</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>). The property name or property value will be highlighted when entering editing mode, depending on which one was clicked upon. All styles can be edited except computed styles and default values. Default values are highlighted slightly differently to show they can’t be edited. Pressing <kbd>Enter</kbd> will commit the change, while <kbd>Esc</kbd> cancels editing. Invalid edits are ignored and the property returns to its original value.
 
 Adding a new property can be achieved by double clicking at the end of an existing property and pressing <kbd>Enter</kbd> or selecting <q>Add declaration</q> from the context menu. It is important to note that as the properties are ordered alphabetically, if the new property is valid it will be move into the correct alphabetical position. An invalid property is ignored.
 
@@ -71,6 +75,19 @@ Instead of deleting a property it is often useful while debugging to temporarily
 A quick way to make an overridden property apply without disabling all the more specific rules is to edit the property and add <code>!important</code>. The use of <code>!important</code> is generally not recommended but it can be useful while debugging. This will of course not work if the more specific rules also use <code>!important</code>.
 
 It is often useful to add new rules while debugging, especially when there are no rules that match the element of interest. These can be added in the @@@ New style @@@ section. Expanding this section and clicking the <q>Create new stylesheet</q> button (@@@@subject to change @@@@) will create an empty <code>style</code> element in the head of the document. Free form text can be entered as if entering the text in a regular style sheet. Each new rule is evaluated and if the properties are valid they are included in the styles section of the elements that match the rule. Although the page updates instantly, if any rules match the currently selected element it will have to be selected again to update the style panel view. @@@can this be fixed? @@@
+
+##Color picker
+
+// screen shot
+
+The color picker can be used to edit a color value by selecting the desired color visually, rather than typing the color value. Every property in the styles section which accepts a color value includes a color swatch. Clicking on this opens the color picker. 
+
+Using the color picker will be familiar to anyone that has used similar tools in an image editor. The two color swatches in the upper right hand corner show the original color (left) and the adjusted color (right). Clicking the original color swatch will revert the updated color to the original. 
+
+The color can be adjusted using either the RGB or HSV color models. Clicking on the radio button next to a color component will clamp the color slider to the selected component. For instance, which clicking on the Hue (H) component the color slider is clamped to the values 0–360 (red to red, via the entire hue spectrum). Moving the slider will adjust only that component. The color field to the left of the slider is clamped to the other two components. Selecting a color in the field will update these two components. It is possible to directly enter the color value in either RGB, HSV or hexadecimal in the appropriate text fields.
+
+If the color value has an alpha channel (RGBA or HSLA), an opacity slider is also available. This adjusts the color between fully opaque and fully transparent. A black and white pattern is displayed behind the original and adjusted color swatches to help visualize how the color will look. 
+
 
 ##Filtering styles
 
@@ -86,13 +103,13 @@ The offset values section lists all the DOM properties useful for understanding 
 
 ##Properties panel
 
-//add a short note about why this panel is useful (checking values and seeing the correct attribute to use in your JS code
+While the style panel is useful when laying out and styling the document, the properties panel is useful when manipulating the DOM using JavaScript. It can be used to inspect the state of each element in the DOM, or check which properties are available.
 
-The properties panel lists all the attributes (@@@ or do we call them properties? DOM calls them attributes, JS (I think) calls them properties @@@) of the currently selected DOM node object, along with their value. If an @@attribute has a long value, it is truncated and can be expanded with the expander button. @@Attributes which are objects  are listed with its type, and can be expanded to show the attributes it contains.  As with CSS properties, it is possible to access the spec for each attribute from the context menu.
+The properties panel lists all the properties (called attributes in the DOM specs) of the currently selected DOM node object, along with their value. If an property has a long value, it is truncated and can be expanded with the expander button. Properties which are objects are listed with its type, and can be expanded to show the properties it contains.  As with CSS properties, it is possible to access the spec for each property from the context menu.
 
-DOM node objects inherit attributes and functions from their parent objects. For example, a <code>p</code> element is represented in the DOM by a <code>HTMLParagraphElement</code>  object, which inherits from <code>HTMLElementPrototype</code>, which in turn inherits from <code>ElementPrototype</code>, <code>NodePrototype</code> and finally the <code>Object</code> object. Each prototype that the currently selected DOM node object inherits from are listed along with their attributes and functions. This can be expanded and inspected just like regular objects.
+DOM node objects inherit properties and functions from their parent objects. For example, a <code>p</code> element is represented in the DOM by a <code>HTMLParagraphElement</code>  object, which inherits from <code>HTMLElementPrototype</code>, which in turn inherits from <code>ElementPrototype</code>, <code>NodePrototype</code> and finally the <code>Object</code> object. Each prototype that the currently selected DOM node object inherits from are listed along with their properties and functions. This can be expanded and inspected just like regular objects.
 
 ###Showing and hiding attributes
 
-If prototypes are not of interest, they can be hidden by unselecting the @@@show the prototypes@@@ button in the toolbar. It is also possible to hide non-enumerable properties (@@@ why? @@@), and default, null and empty strings using the corresponding buttons.
+If prototypes are not of interest, they can be hidden by unselecting the @@@show the prototypes@@@ button in the toolbar. It is also possible to hide non-enumerable properties, and default, null and empty strings using the corresponding buttons.
 
