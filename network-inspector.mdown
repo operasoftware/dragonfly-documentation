@@ -1,0 +1,103 @@
+## Network Inspector ##
+
+The Network Inspector is the HTTP dashboard of Opera Dragonfly. An overview of all HTTP requests (images, scripts, style, etc.) initiated by the primary Web page (primary HTTP request) is provided along a visualization of when and how long resources have been downloaded. You will get a better understanding on the order of downloads when you need to work out issues with script order or usability performances. 
+
+### Network log
+
+The first tab of the Network Inspector is called **Network log**. In the left column, every URI is preceded with an icon giving a visual cue on the resource type (the format of its content).
+
+<table style="width:15em;">
+<caption>Table of filetype and their icons</caption>
+<tr>
+    <th>icon</th>
+    <th>file type</th>
+</tr>
+<tr>
+    <td><img src="img/filetype_html.png" alt="html icon"/></td>
+    <td>html</td>
+</tr>
+<tr>
+    <td><img src="img/filetype_image.png" alt="image icon"/></td>
+    <td>image</td>
+</tr>
+<tr>
+    <td><img src="img/filetype_stylesheet.png" alt="stylesheet icon"/></td>
+    <td>stylesheet</td>
+</tr>
+<tr>
+    <td><img src="img/filetype_javascript.png" alt="javascript icon"/></td>
+    <td>javascript</td>
+</tr>
+<tr>
+    <td><img src="img/filetype_unknown.png" alt="unknown icon"/></td>
+    <td>unknown</td>
+</tr>
+<tr>
+    <td><img src="img/filetype_flash.png" alt="flash icon"/></td>
+    <td>flash</td>
+</tr>
+</table>
+
+* @@What is the double arrow in squares in the first column?@@
+
+The right column is a long panel with vertical lines. Each line marks @@number@@ of milliseconds. For each resource a a bar displays when the browser created the element in the DOM (the left part of the bar), then a colored bar showing when the download started and when it finished.
+
+
+#### A very simple HTML file
+
+When accessing a very simple HTML file (no images, no external stylesheets or scripts), the Network log panel will show two resources.
+
+* The HTML file itself
+* The favicon.ico
+
+Note: [favicons](http://en.wikipedia.org/wiki/Favicon) are small icons that have been introduced by Microsoft and then implemented by other browser vendors.
+
+The network log shows the download of the HTML file, then once finished, the favicon is being downloaded.
+
+![network log with a simple html file](img/network-simple-html.png)
+
+#### HTML file with an image
+
+To have a better understanding of what is happening, an image has been added to the document. We now notice that the HTML document is being downloaded, then parsed and the resource (here the image) is being downloaded, and finally the favicon.
+
+![network log with an HTML file containing an image](img/network-simple-html-img.png)
+
+#### HTML file with multiple resources
+
+A more complex file containing a few images, styles and scripts. The Network log clearly shows when each resources are downloaded and in which order. This is essential for understanding the fluidity of user interactions with the resources of the Web page. 
+
+#### Summary of the UI
+@@ put here a graph of a bar with a legend with numbers@@
+
+![Network Network Log](img/network-network-log.png)
+
+### Make Request
+
+@@screenshot@@
+* description of elements
+
+* ISSUE: The window should resize to fit in the window when the space is available specifically the textarea for the request body.
+* ISSUE: REQUEST BODY is not the right nomenclature. -> REQUEST HEADER
+
+### Network Options
+
+The third panels provide options for fine tuning the browser behavior with regards to HTTP requests.
+
+@@screenshot@@
+* description of elements
+
+
+### How to identify some basic HTTP issues with Make Request
+
+(the dragonfly curl manual). Here take part of the articles written with common issues. and explain how to use the HTTP request dance to see the differences.
+
+#### HTTP Client-Server dance
+
+Explain a few basics of HTTP client-server dialog.
+
+#### Content Negotiation On Language
+#### Content Negotiation On Mime-Type
+#### Identify User-Agent Sniffing
+#### More exploration with HTTP
+
+
