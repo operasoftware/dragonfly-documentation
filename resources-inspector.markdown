@@ -19,9 +19,20 @@ For each resource, a few information are given:
 * The size of the resource in bytes
 * The size of the resource in human readable format
 
+### What are URIs?
+
+#### Identifiers
+
+URIs (Universal Resource Information) are identifiers. In a big enough group (a large stadium for example), if we call the name "Smith", it is likely that we will receive a lot of answers. The name "Smith" identifies a few persons. We might want to have a more precise identifier and call for "John Smith". Again, we will receive the answers of a few persons but less than in the first case. "John Smith" is a more precise identifier. Larger contexts require more precise identifiers.  
+
+There are plenty of identifiers around us such as ISBN, barcode, phone numbers, IP addresses, car plates, etc.
+
+
+
+
+
 ## TODO
 
-* Explanation of columns
 * Ordering and benefits
 * Explanation of what are URIs
 * Explanation of content type
