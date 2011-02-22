@@ -1,6 +1,6 @@
 #DOM Inspector
 
-//TODO: check terminology. Fix header levels. Describe color picker. Add screenshots. Change strings after string review
+//TODO: check terminology. Fix header levels. Add screenshots. Change strings after string review
 
 The DOM and Style Inspectors in Opera Dragonfly are accessible from the Documents panel in the main toolbar. The DOM Inspector is like View Source on steroids. While View Source shows the original document as it was written, the DOM Inspector shows the DOM tree as Opera sees it internally. This means that any DOM manipulation by scripts which have already been executed will show up in the DOM tree. Any malformed markup, such as misnested elements or missing mandatory close tags will also have been corrected according to Opera’s parsing algorithm. 
 
