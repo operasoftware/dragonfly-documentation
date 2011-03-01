@@ -2,7 +2,7 @@
 
 //TODO: check terminology. Fix header levels. Add screenshots. Change strings after string review
 
-The DOM and Style Inspectors in Opera Dragonfly are accessible from the Documents panel in the main toolbar. The DOM Inspector is like View Source on steroids. While View Source shows the original document as it was written, the DOM Inspector shows the DOM tree as Opera sees it internally. This means that any DOM manipulation by scripts which have already been executed will show up in the DOM tree. Any malformed markup, such as misnested elements or missing mandatory close tags will also have been corrected according to Opera’s parsing algorithm. 
+The DOM and Style Inspectors in Opera Dragonfly are accessible from the Documents panel in the application toolbar. The DOM Inspector is like View Source on steroids. While View Source shows the original document as it was written, the DOM Inspector shows the DOM tree as Opera sees it internally. This means that any DOM manipulation by scripts which have already been executed will show up in the DOM tree. Any malformed markup, such as misnested elements or missing mandatory close tags will also have been corrected according to Opera’s parsing algorithm. 
 
 The Style Inspector is shown in the right hand panel. When a DOM element is selected, the styles corresponding to that node are shown.
 
@@ -20,7 +20,7 @@ The main document is shown in the DOM source view by default. Often this is the 
 
 The DOM is shown collapsed by default. Clicking on the expander button to the left of the element will expand it to reveal its children. This can be achieved with the keyboard by pressing <kbd>Enter</kbd> when the expander has focus. Pressing <kbd>Shift</kbd>+<kbd>Enter</kbd> will expand the element and all of its children. It is often useful to expand the entire DOM at once. This can be achieved by pressing the <q>Expand All</q> button in the DOM toolbar (first button on the left).
 
-The DOM can be navigated using the arrow keys on the keyboard. Pressing the up and down arrows navigates between elements. The left and right arrow keys move between the individual tags, attributes and values of the element in focus. Pressing <kbd>enter</kbd> will select the element, showing its associated styles in the right hand style panel, and highlighting it in the page. 
+The DOM can be navigated using the arrow keys on the keyboard. Pressing the up and down arrows navigates between elements. The left and right arrow keys move between the individual tags, attributes and values of the element in focus. Pressing <kbd>Enter</kbd> will select the element, showing its associated styles in the right hand style panel, and highlighting it in the page. 
 
 Any resource that is linked from the DOM can be opened in the Resource Inspector by @@@clicking on the link@@@@ (@@@ this might change. Too easy to open instead of edit right now@@@) or pressing <kbd>Enter</kbd> when the attribute value has focus. Examples of resources include CSS files linked via the <code>href</code> attribute of the <code>link</code> element, JavaScript files linked via the <code>src</code> attribute of the <code>script</code> element, and images linked via the <code>href</code> attribute of the <code>img</code> element, to name but a few.
 
@@ -58,7 +58,7 @@ The styles associated with the currently selected DOM element can be found in th
 
 The computed styles lists all the properties that Opera supports in alphabetical order. Each property lists its computed value. This is the value that Opera stores internally after all the rules have been evaluated and values have been converted. Number values are converted to pixels (px) (@@@are all numbers converted to px or just most?) and color values are converted to hexadecimal notation (except values that have an alpha channel which are converted to RGBA). 
 
-The styles section contains a list of CSS rules in order of selector specificity (most specific first). Invalid rules that Opera could not parse are dropped from the rules, and shorthands are expanded into their individual properties. Like computed styles, units are converted to the value Opera stores internally. (@@@ is this a bug? I'm sure it used to display the type you select if you convert it while editing?@@@) Properties in a less specific rule that are overridden by the same property in a more specific rule displayed with a strike through to show they do not apply. Properties that have a color value (such as <code>color</code> or <code>background-color</code>) show a color swatch after the value. Clicking on this swatch opens the color picker, which can be used to adjust the color on the fly.
+The styles section contains a list of CSS rules in order of selector specificity (most specific first). Invalid rules that Opera could not parse are dropped from the rules, and shorthands are expanded into their individual properties. Like computed styles, units are converted to the value Opera stores internally. Properties in a less specific rule that are overridden by the same property in a more specific rule displayed with a strike through to show they do not apply. Properties that have a color value (such as <code>color</code> or <code>background-color</code>) show a color swatch after the value. Clicking on this swatch opens the color picker, which can be used to adjust the color on the fly.
 
 It is easy to forget what a property does, or what its values mean. In Opera Dragonfly the relevant spec is only a click away. Each property includes a link to its spec in its context menu. This will open in a new tab. 
 
@@ -70,7 +70,7 @@ Adding a new property can be achieved by double clicking at the end of an existi
 
 Deleting a property can be achieved by entering edit mode, selecting the whole line and pressing <kbd>Delete</kbd>.  (@@@@NOTE: why is there no delete declaration here?) 
 
-Instead of deleting a property it is often useful while debugging to temporarily disable it. This can be achieved by hovering over a property and unchecking the check box. This will grey out the property. Checking the box again will re-enable it. (@@@NOTE: what about disable all? We should remove it while it is buggy)
+Instead of deleting a property it is often useful while debugging to temporarily disable it. This can be achieved by hovering over a property and unchecking the check box. This will grey out the property. Checking the box again will re-enable it.
 
 A quick way to make an overridden property apply without disabling all the more specific rules is to edit the property and add <code>!important</code>. The use of <code>!important</code> is generally not recommended but it can be useful while debugging. This will of course not work if the more specific rules also use <code>!important</code>.
 
@@ -109,7 +109,7 @@ The properties panel lists all the properties (called attributes in the DOM spec
 
 DOM node objects inherit properties and functions from their parent objects. For example, a <code>p</code> element is represented in the DOM by a <code>HTMLParagraphElement</code>  object, which inherits from <code>HTMLElementPrototype</code>, which in turn inherits from <code>ElementPrototype</code>, <code>NodePrototype</code> and finally the <code>Object</code> object. Each prototype that the currently selected DOM node object inherits from are listed along with their properties and functions. This can be expanded and inspected just like regular objects.
 
-###Showing and hiding attributes
+###Showing and hiding properties
 
 If prototypes are not of interest, they can be hidden by unselecting the @@@show the prototypes@@@ button in the toolbar. It is also possible to hide non-enumerable properties, and default, null and empty strings using the corresponding buttons.
 

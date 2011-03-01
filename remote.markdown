@@ -34,7 +34,7 @@ Note: If the Opera instance doesn’t have a URL field (such as a Opera Widget),
 
 ### Debugging pages on a remote device ###
 
-With the connection established the final step is to select the document to debug. The document selector [@@@what should this be called?] at the upper right of the Opera Dragonfly window will contain a list of the open documents on the remote device. Navigate to the page to be debugged on the remote device, and make sure the correct document is selected in the document selector. It may also be useful to detach Opera Dragonfly to give more real estate.
+With the connection established the final step is to select the document to debug. The debugging context selector at the upper right of the Opera Dragonfly window will contain a list of the open documents on the remote device. Navigate to the page to be debugged on the remote device, and make sure the correct document is selected in the document selector. It may also be useful to detach Opera Dragonfly to give more real estate.
 
 [// Show screenshot with document selector active, and the detach button]
 
