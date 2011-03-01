@@ -69,6 +69,10 @@ A debugging context often has multiple scripts (including inline scripts, and ev
 
 Editing of content is consistent across the application. All editing commands can be found in the context menu when right clicking on editable content. Double clicking also enters editing mode, and <kbd>Enter</kbd> submits the edit in single line edit mode, and <kbd>Ctrl</kbd>+<kbd>Enter</kbd> in multi-line edit mode. The <kbd>Esc</kbd> key cancels the edit. Full details on editing can be found in the relevant chapter for each tool.
 
+### Specification links
+
+Throughout the application it is possible to access the specification for features such as DOM properties and functions, ECMAScript objects, CSS properties, and HTTP headers. The spec can be accessed by clicking the specification option in the context menu of the relevant feature. 
+
 ## Global features
 
 There are three global features that can be accessed when using any tool in Opera Dragonfly. The buttons to access these features can be found to the left of the window controls in the application toolbar.
