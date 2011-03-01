@@ -34,7 +34,7 @@ While element selection is turned on the page’s default actions such as activa
 
 It is also possible to disable the element highlight. This can be useful when it is important to see the original color of the selected element, such as when using the color picker.  The element highlight can be toggled off with the button highlighted in @@y.
 
-The element highlight is fully customizable. The colors can be inverted using <kbd>Control<kbd>+<kbd>I</kbd> (<kbd>⌘</kbd>+<kbd>I</kbd>). Individual components of the highlight can be enable or disabled as well as given a custom color in the @@Spotlight sections of the @@Document tab in Settings. 
+The element highlight is fully customizable. The colors can be inverted using <kbd>Ctrl<kbd>+<kbd>I</kbd> (<kbd>⌘</kbd>+<kbd>I</kbd>). Individual components of the highlight can be enable or disabled as well as given a custom color in the @@Spotlight sections of the @@Document tab in Settings. 
 
 It is sometimes useful to highlight multiple elements, such as when testing if elements line up correctly. This can be achieved in Opera Dragonfly by selecting @@name of string from the DOM view context menu. When this option is enabled Opera Dragonfly will highlight each element that is selected on the page. Disabling this will return to only highlighting the last element that is clicked on. //@@@ This is currently not working. DFL-1598
 
@@ -44,9 +44,9 @@ To search the DOM press the Search button or <kbd>@@insert keyboard shortcut</kb
 
 ##Editing the DOM
 
-There are two different modes in Opera Dragonfly for editing the DOM. All elements are editable, except the <code>script</code> element. Editing individual attributes or values can be achieved by double clicking on the attribute or value, which will cause it to enter editing mode.  Alternatively select <q>Edit attribute</q> or <q>Edit attribute value</q> from the context menu, or pressing <kbd>Control</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) when the attribute or value has focus. Pressing <kbd>Enter</kbd> will commit any changes. Pressing <kbd>Esc</kbd> cancels editing.
+There are two different modes in Opera Dragonfly for editing the DOM. All elements are editable, except the <code>script</code> element. Editing individual attributes or values can be achieved by double clicking on the attribute or value, which will cause it to enter editing mode.  Alternatively select <q>Edit attribute</q> or <q>Edit attribute value</q> from the context menu, or pressing <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) when the attribute or value has focus. Pressing <kbd>Enter</kbd> will commit any changes. Pressing <kbd>Esc</kbd> cancels editing.
 
-To edit the entire element, including its children, double click on the start or end tag. This will cause Opera Dragonfly to go into block edit mode, which allows for free form editing. Alternatively select <q>Edit markup</q> from the context menu, or press <kbd>Control</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) when the start or end tag has focus. As <kbd>Enter</kbd> enters a new line, submitting changes is achieved by pressing <kbd>Control</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) or clicking outside of the edit field.
+To edit the entire element, including its children, double click on the start or end tag. This will cause Opera Dragonfly to go into block edit mode, which allows for free form editing. Alternatively select <q>Edit markup</q> from the context menu, or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) when the start or end tag has focus. As <kbd>Enter</kbd> enters a new line, submitting changes is achieved by pressing <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) or clicking outside of the edit field.
 
 An additional attribute can be added to the element while in edit mode by tabbing to the end of the element. An edit field for a new attribute will be created when tabbing past the last attribute. A quicker alternative is to select <q>Add attribute</q> from the element’s context menu.
 
@@ -64,7 +64,7 @@ It is easy to forget what a property does, or what its values mean. In Opera Dra
 
 ##Editing styles
 
-Editing styles works the same way as editing the DOM. Double clicking on a property enters editing mode. Alternatively, select <q>Edit declaration</q> from the context menu, or press <kbd>Control</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>). The property name or property value will be highlighted when entering editing mode, depending on which one was clicked upon. All styles can be edited except computed styles and default values. Default values are highlighted slightly differently to show they can’t be edited. Pressing <kbd>Enter</kbd> will commit the change, while <kbd>Esc</kbd> cancels editing. Invalid edits are ignored and the property returns to its original value.
+Editing styles works the same way as editing the DOM. Double clicking on a property enters editing mode. Alternatively, select <q>Edit declaration</q> from the context menu, or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>). The property name or property value will be highlighted when entering editing mode, depending on which one was clicked upon. All styles can be edited except computed styles and default values. Default values are highlighted slightly differently to show they can’t be edited. Pressing <kbd>Enter</kbd> will commit the change, while <kbd>Esc</kbd> cancels editing. Invalid edits are ignored and the property returns to its original value.
 
 Adding a new property can be achieved by double clicking at the end of an existing property and pressing <kbd>Enter</kbd> or selecting <q>Add declaration</q> from the context menu. It is important to note that as the properties are ordered alphabetically, if the new property is valid it will be move into the correct alphabetical position. An invalid property is ignored.
 

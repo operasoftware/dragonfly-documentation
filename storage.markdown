@@ -30,7 +30,7 @@ Clicking on the header row will sort the table in ascending or descending order 
 
 ###Selecting cookies
 
-Clicking on the cookie row will select it. It is possible to select multiple cookies by holding down the <kbd>Control</kbd> (<kbd>⌘</kbd>) key.  
+Clicking on the cookie row will select it. It is possible to select multiple cookies by holding down the <kbd>Ctrl</kbd> (<kbd>⌘</kbd>) key.  
 
 ###Editing cookies
 
