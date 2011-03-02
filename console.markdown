@@ -7,13 +7,15 @@
     .bug { background-color: pink; }
 </style>
 
-#Introducing the Opera Dragonfly Console
+#Console
 
-// mention how to open the console (button and Esc key) and an intro of what it is.
+The Console HUD is a useful tool for evaluating JavaScript statements, inspecting and logging objects and properties and even adding functionality to a page for quick debugging.
+
+The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or pressing the button with the command prompt icon in the application toolbar. This displays a HUD over the bottom half of the Opera Dragonfly window which can be made taller or shorter by dragging the top with the mouse.
 
 ## Console API
 
-Opera Dragonfly ships with support for the [Firebug Console API](http://getfirebug.com/wiki/index.php/Console_API) <ins class="bug">(but see DFL-1522, DFL-1535)</ins>. What this means is that console-based JavaScript debugging is now interoperable with Firebug, WebKit Web Inspector, and the IE Developer Tools.
+Opera Dragonfly ships with support for the [Firebug Console API](http://getfirebug.com/wiki/index.php/Console_API) <ins class="bug">(but see DFL-1522, DFL-1535)</ins>. Anything logged by `console` methods are visible in the Console HUD.
 
 ###`console.log(obj [, obj, ...])` and `console.debug(obj [, obj, ...])`
 
