@@ -100,18 +100,35 @@ Opera Dragonfly makes it easy to precisely tailor an HTTP request by specifying 
 
 When clicking on the Send request button, the HTTP request is sent and in the Response box appears the answer of the server as communicated over the network.
 
-ISSUE: If we replace GET by HEAD for example, we do not get an answer back. We might want to authorize only GET or better to create a real HTTP client with more methods. To be discussed.
-ISSUE: There is a mistake in the Accept header, the plus signs are not displayed. For example, in application/xhtml+xml
-ISSUE: the Accept-Language header is specified to norwegian. nb-NO,nb;q=0.9,no-NO;q=0.8,no;q=0.7,en;q=0.6
+* ISSUE: If we replace GET by HEAD for example, we do not get an answer back. We might want to authorize only GET or better to create a real HTTP client with more methods. To be discussed.
+* ISSUE: There is a mistake in the Accept header, the plus signs are not displayed. For example, in application/xhtml+xml
+* ISSUE: the Accept-Language header is specified to norwegian. nb-NO,nb;q=0.9,no-NO;q=0.8,no;q=0.7,en;q=0.6
 
 
 ### Network Options
 
 The third panels provide options for fine tuning the browser behavior with regards to HTTP requests.
 
-@@screenshot@@
-* description of elements
+![Network Network Log Opt](img/network-network-log-opt.png)
 
+#### Caching behaviour
+
+When testing HTTP requests, it might be important to disable all sources of  browser (and network?@@) caching. When caching is disable, Opera will bypass all caching, always doing full reloads from the server.
+
+#### Content tracking behaviour
+
+This setting controls if the bodies of responses will be available to Dragonfly when a page loads. Enabling it will make load operations slower, and use more memory. It will also make network body reporting more accurate
+
+@@more explanation needed@@
+
+#### Global header overrides
+
+It is sometimes necessary to impersonate another HTTP client such as a bot, a mobile browser, etc. It is already possible to do that through the Make request tab, but might be cumbersome in some circumstances to have to manually type these.  Once the *Enable global header overrides*  checkbox is selected, there are two choices: 
+
+* select a predefined profile
+* create a profile and save it
+
+@@There are still a few issues around this option@@
 
 ### How to identify some basic HTTP issues with Make Request
 
