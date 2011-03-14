@@ -87,11 +87,23 @@ A more complex file containing a few images, styles and scripts. The Network log
 
 ### Make Request
 
-@@screenshot@@
-* description of elements
+The Make Request tab is a tool for creating a custom HTTP request to a specific URI and obtain the HTTP response with or without the payload. 
 
-* ISSUE: The window should resize to fit in the window when the space is available specifically the textarea for the request body.
-* ISSUE: REQUEST BODY is not the right nomenclature. -> REQUEST HEADER
+![Network Network Log Req](img/network-network-log-req.png)
+
+Opera Dragonfly makes it easy to precisely tailor an HTTP request by specifying each individual HTTP headers. When entering the URI in the URL box, the HTTP request is being crafted in the Request body box. The default proposed HTTP method is GET (In the beta version of Opera Dragonfly, only the HTTP GET method is available). The default Opera HTTP headers are written in the Request body. They can be changed for testing Web servers with different type of HTTP requests. For example, it is possible to create an HTTP request that would enforce `application/xhtml+xml`.
+
+    GET / HTTP/1.1
+    Host: www.opera.com
+    User-Agent: Opera/9.80 (Macintosh; Intel Mac OS X 10.6.6; U; fr) Presto/2.7.62 Version/11.01
+    Accept: application/xhtml+xml
+
+When clicking on the Send request button, the HTTP request is sent and in the Response box appears the answer of the server as communicated over the network.
+
+ISSUE: If we replace GET by HEAD for example, we do not get an answer back. We might want to authorize only GET or better to create a real HTTP client with more methods. To be discussed.
+ISSUE: There is a mistake in the Accept header, the plus signs are not displayed. For example, in application/xhtml+xml
+ISSUE: the Accept-Language header is specified to norwegian. nb-NO,nb;q=0.9,no-NO;q=0.8,no;q=0.7,en;q=0.6
+
 
 ### Network Options
 
