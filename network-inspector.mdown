@@ -4,7 +4,11 @@ The Network Inspector is the HTTP dashboard of Opera Dragonfly. An overview of a
 
 ### Network log
 
-The first tab of the Network Inspector is called **Network log**. In the left column, every URI is preceded with an icon giving a visual cue on the resource type (the format of its content).
+The first tab of the Network Inspector is called **Network log**. 
+
+![Network Network Log](img/network-network-log.png)
+
+In the left column, every URI is preceded with an icon giving a visual cue on the resource type (the format of its content). 
 
 <table style="width:15em;">
 <caption>Table of filetype and their icons</caption>
@@ -38,9 +42,19 @@ The first tab of the Network Inspector is called **Network log**. In the left co
 </tr>
 </table>
 
-* @@What is the double arrow in squares in the first column?@@
+Some of these URIs will be followed by a two arrows icon. It means that the resource has been loaded from the browser cache instead of the network.
 
-The right column is a long panel with vertical lines. Each line marks @@number@@ of milliseconds. For each resource a a bar displays when the browser created the element in the DOM (the left part of the bar), then a colored bar showing when the download started and when it finished.
+The right column is a long panel with vertical lines. Each line marks 100 milliseconds. Thicker vertical black lines mark 1 second. For each resource line, a colored horizontal bar is displayed composed of three events:
+
+* the start time when the URI is loaded, 
+* the [request time](https://bitbucket.org/scope/dragonfly-stp-1/src/197e88952ad3/src/network/network_service.js#cl-316) (left end of the colored bar)
+* the end time when the request has been completed. (right end of the colored bar)
+
+![Network Network Log Bar](img/network-network-log-bar.png)
+
+Putting the mouse over the horizontal bar will reveal three values in a box for these events in milliseconds: [[Total duration]], [[Request time]] and [[Response time]]. When the information has been loaded from the cache, `Cached:` is displayed with the time in milliseconds.
+
+@@processing order and cascade - what does it tell me?@@
 
 
 #### A very simple HTML file
