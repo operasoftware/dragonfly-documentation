@@ -57,34 +57,6 @@ Putting the mouse over the horizontal bar will reveal three values in a box for 
 @@processing order and cascade - what does it tell me?@@
 
 
-#### A very simple HTML file
-
-When accessing a very simple HTML file (no images, no external stylesheets or scripts), the Network log panel will show two resources.
-
-* The HTML file itself
-* The favicon.ico
-
-Note: [favicons](http://en.wikipedia.org/wiki/Favicon) are small icons that have been introduced by Microsoft and then implemented by other browser vendors.
-
-The network log shows the download of the HTML file, then once finished, the favicon is being downloaded.
-
-![network log with a simple html file](img/network-simple-html.png)
-
-#### HTML file with an image
-
-To have a better understanding of what is happening, an image has been added to the document. We now notice that the HTML document is being downloaded, then parsed and the resource (here the image) is being downloaded, and finally the favicon.
-
-![network log with an HTML file containing an image](img/network-simple-html-img.png)
-
-#### HTML file with multiple resources
-
-A more complex file containing a few images, styles and scripts. The Network log clearly shows when each resources are downloaded and in which order. This is essential for understanding the fluidity of user interactions with the resources of the Web page. 
-
-#### Summary of the UI
-@@ put here a graph of a bar with a legend with numbers@@
-
-![Network Network Log](img/network-network-log.png)
-
 ### Make Request
 
 The Make Request tab is a tool for creating a custom HTTP request to a specific URI and obtain the HTTP response with or without the payload. 
