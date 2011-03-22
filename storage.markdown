@@ -10,23 +10,23 @@ The cookies panel lists all cookies set by the site being debugged in a table so
 
 ####Session cookie
 
-A session cookie expires at the end of the session. This is usually when the browser is closed or the session timesout after a period of inactivity. These cookies are labelled with <q>session</q> in the <q>@@@Expires</q> column.
+A session cookie expires at the end of the session. This is usually when the browser is closed or the session timesout after a period of inactivity. These cookies are labelled with <q>session</q> in the <q>Expires</q> column.
 
 ####Persistent cookie
 
-A persistent cookie is not destroyed when the session ends. It lasts for the time period listed in the <q>@@@Expires</q> column. The @@@expires column uses a fuzzy, human friendly representation of the expiry date. Hovering over the expiry date will show the actual expiry date and time in a tooltip. 
+A persistent cookie is not destroyed when the session ends. It lasts for the time period listed in the <q>Expires</q> column. The Expires column uses a fuzzy, human friendly representation of the expiry date. Hovering over the expiry date will show the actual expiry date and time in a tooltip. 
 
 ####Secure cookie
 
-A secure cookie is encrypted when sent to the browser using the HTTPS protocol. A secure cookie is not transmitted when using HTTP. A secure cookie is labelled with a @@@@what? Broken image currently@@@ in the <q>Secure</q> column.
+A secure cookie is encrypted when sent to the browser using the HTTPS protocol. A secure cookie is not transmitted when using HTTP. A secure cookie is labelled with a tick icon in the <q>Secure</q> column.
 
 ####HTTPOnly cookie
 
-A HTTPOnly cookie can not be accessed by client-side scripting. It thus helps protect against cross-site scripting attacks. A HTTPOnly cookie is labelled with a @@@@what? Broken image currently@@@ in the <q>HTTPOnly</q> column.
+A HTTPOnly cookie can not be accessed by client-side scripting. It thus helps protect against cross-site scripting attacks. A HTTPOnly cookie is labelled with a tick icon in the <q>HTTPOnly</q> column.
 
 ###Sorting and grouping cookies
 
-Clicking on the header row will sort the table in ascending or descending order by the column in question. Cookies are grouped by host and path by default, but it is possible to ungroup the cookies by selecting @@@@<q>No grouping</q> from the table header row’s context menu.
+Clicking on the header row will sort the table in ascending or descending order by the column in question. Cookies are grouped by host and path by default, but it is possible to ungroup the cookies by selecting <q>No grouping</q> from the table header row’s context menu.
 
 ###Selecting cookies
 
@@ -58,7 +58,7 @@ Session Storage is somewhat similar to a session cookie in that it lasts for the
 
 ###Local Storage
 
-Local Storage is more similar to persistent cookies. The data stored withLocal Storage is not destroyed unless the user deletes it through the browser UI, or for security reasons. Data stored with Local Storage can be found in the Local Storage panel.
+Local Storage is more similar to persistent cookies. The data stored with Local Storage is not destroyed unless the user deletes it through the browser UI, or for security reasons. Data stored with Local Storage can be found in the Local Storage panel.
 
 
 ###Editing an entry
@@ -76,7 +76,7 @@ An entry can be added by pressing the plus icon under the table. This will add a
 
 ##Widget Preferences
 
-Widget preferences use the same Storage interface as Web Storage, but are specific to applications implementing the Widgets API. In Opera each Widget or Extension has its own storage area to store its preference data. The data in this storage area can be found in the @@@Widget Preferences@@@ panel. This panel is blank for web sites and applications that do not implement the Widgets API.
+Widget preferences use the same Storage interface as Web Storage, but are specific to applications implementing the Widgets API. In Opera each Widget or Extension has its own storage area to store its preference data. The data in this storage area can be found in the Widget Preferences panel. This panel is blank for web sites and applications that do not implement the Widgets API.
 
 Data in the Widget Preferences panel can be manipulated in the same way as in Web Storage.
 
