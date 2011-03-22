@@ -54,14 +54,14 @@ There are a number of common UI features between tools:
 
 ### Search
 
-The [[search bar]] can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd><kbd>⌘</kbd>+<kbd>F</kbd> on Mac), or clicking on the search button. The JavaScript Debugger includes an advanced mode for searching in all scripts. More information on search can be found in the relevant section of each tool.
+The [[search bar]] can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd><kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> on Mac), or clicking on the search button. The JavaScript Debugger includes an advanced mode for searching in all scripts. More information on search can be found in the relevant section of each tool.
 
 ### Filtering
 
 A number of panels support [[filtering]]. This is similar to search, but removes all statements which do not meet the [[filter query]]. Navigation between results works the same way as the search field, using <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd>. The filter fields can be found in the [[side panels]] of the DOM Inspector and JavaScript Debugger. Various [[properties]] can be filtered out by default, such as [[initial styles]] in the Style Inspector, and [[null and empty strings]] in the JavaScript Debugger. Switches next to the [[filter field]] enable and disable these filters. 
 
 
-### @@@Document selection
+### Document selection
 
 A debugging context often has multiple scripts (including [[inline scripts]], and [[eval]]) or documents (such as documents embedded using the <code>object</code> or <code>iframe</code> elements). These documents or scrips can be selected using the [[document selector]] in the [[main panel]]’s [[toolbar]]. Scripts are organised under their [[parent document]] from which they are linked or defined. Selecting an entry in the document selector will display that document or script in the script panel. As the console is global, if there is more than one script, it also needs to be selected from its own document selector. 
 
