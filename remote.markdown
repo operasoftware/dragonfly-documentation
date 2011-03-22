@@ -8,9 +8,9 @@ With Opera Dragonfly it is possible to debug separate instances of Opera (or oth
 
 #### Stage 1: Network setup ####
 
-The first step is to make sure both instances are connected to the same network. If debugging a mobile device it will be useful to connect to a WiFi network (@@@@question: what about tethering?). Make a note of the IP address of the machine running Opera Dragonfly. If connecting to a separate instance on the same machine, such as a different version of Opera or a Opera Widget, it is possible to use 127.0.0.1 (localHost).
+The first step is to make sure both instances are connected to the same network. If debugging a mobile device it will be useful to connect to a WiFi network (@@@@question: what about tethering?). Make a note of the IP address of the machine running Opera Dragonfly. If connecting to a separate instance on the same machine, such as a different version of Opera or a Opera Widget, it is possible to use <kbd>127.0.0.1</kbd> (localHost).
 
-The IP address can be found on Mac and Linux by typing ifconfig in a terminal window and looking for the inet value of the active connection. If there are  multiple connections—such as Ethernet, WiFi, Bluetooth, etc. there will be multiple inet values, so it is important to specify the correct value. On Windows the output is somewhat simpler. Enter ipconfig in the Windows Command Prompt, and look for the IP Address label.
+The IP address can be found on Mac and Linux by typing <kbd>ifconfig</kbd> in a terminal window and looking for the inet value of the active connection. If there are  multiple connections—such as Ethernet, WiFi, Bluetooth, etc. there will be multiple inet values, so it is important to specify the correct value. On Windows the output is somewhat simpler. Enter <kbd>ipconfig</kbd> in the Windows Command Prompt, and look for the IP Address label.
 
 [//include figure showing the IP address in terminal and command prompt?]
 
@@ -19,12 +19,12 @@ The IP address can be found on Mac and Linux by typing ifconfig in a terminal wi
 In Opera Dragonfly perform the following steps:
 1. Click the Remote Debug button at the top right of the Opera Dragonfly window (highlighted in figure [xx]).
 2. Specify the port that will be used to connect over. This defaults to 7001. Make sure the firewall is configured to allow connections on the chosen port.
-3. Click the Apply [may change this in string review. Listen?] button.
+3. Click the Apply button.
 
 #### Stage 3: Connect to Opera Dragonfly ####
 
 On the remote Opera instance, perform the following steps:
-1. Enter opera:debug in the URL field
+1. Enter <kbd>opera:debug</kbd> in the URL field
 2. Enter the IP address and port number from stage 1
 3. Click Connect
 
@@ -42,4 +42,4 @@ Everything will behave as if a local document is being debugged. The main differ
 
 ### Disconnecting ###
 
-Once the debugging session is over the remote debugging connection can be disconnected by clicking on the Remote Debug button and then clicking on [Cancel] [should it be disconnect?]. It can also be disconnected on the device by returning to opera:debug and clicking the Disconnect button. Opera Dragonfly will then return to local debug mode. 
+Once the debugging session is over the remote debugging connection can be disconnected by clicking on the Remote Debug button and then clicking on the Cancel button. It can also be disconnected on the device by returning to opera:debug and clicking the Disconnect button. Opera Dragonfly will then return to local debug mode. 
