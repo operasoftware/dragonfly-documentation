@@ -40,7 +40,7 @@ The expiry date can be selected using the provided calendar widget. Opera Dragon
 
 ###Deleting cookies
 
-There are two options for deleting cookies. An individual cookie can be removed by selecting @@@<q>Remove cookie</q>@@@ from the cookie row’s context menu. All cookies for a specific domain can be removed by selecting @@@<q>Remove cookies of domain name</q> from the context menu of a cookie that is set on that domain.
+There are two options for deleting cookies. An individual cookie can be removed by selecting <q>Remove cookie</q> from the cookie row’s context menu. All cookies for a specific domain can be removed by selecting <q>Remove cookies of domain name</q> from the context menu of a cookie that is set on that domain.
 
 ###Add a cookie
 
