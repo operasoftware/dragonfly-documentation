@@ -44,8 +44,6 @@ The `console.dir()` method is useful when you need to inspect the properties of 
 
 The `console.dirxml()` method is useful too for logging the structural representation of a DOM element, logging the structure of the node similar to what is seen in the Document view. Clicking on the logged element highlights it in the main document.
 
-<ins class="bug">(dirxml() -> CORE-35765)</ins>
-
 ###`console.count([name])`
 
 The `console.count()` method logs the number of times a line of code is executed. It is possible to pass in an optional name to aid in readability.
@@ -79,8 +77,6 @@ The `console.trace()` method prints a stack trace to the console. It is possible
 `console.assert()` logs an exception if an expression evaluates to false.
 
     console.assert( !true );
-
-<ins>(see CORE-35518)</ins>
 
 ## Command Line API
 
