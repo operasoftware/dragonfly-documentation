@@ -1,6 +1,6 @@
 ## JavaScript Debugger ##
 
-// TODO: Check terms, add section on Watches and Breakpoints panel. Remove DataTips if they don't make it. Review strings
+// TODO: Check terms. Remove DataTips as they probably wont make it. Add screenshots.
 
 Opera Dragonfly features a fully featured JavaScript Debugger. This is accessible from the Scripts panel in the application toolbar. The JavaScript Debugger enables the state of the web page or application to be inspected by setting break points to control the flow of the program. The debugger supports stepping through code, breaking due to user-defined events, and tracking of program state such as variable and object values. This makes it easier to identify bugs in the application, and understand exactly what is happening at any given stage. Opera Dragonfly also features a Console HUD, which is fully integrated with the debugger.
 
@@ -78,7 +78,7 @@ A conditional breakpoint has an expression attached to it, which is evaluated wh
 
 A regular breakpoint can be changed to a conditional breakpoint by selecting <q>Add condition<q> from the context menu of the appropriate breakpoint in the Breakpoints panel, and entering a valid expression in the <q>condition</q> field. The expression must return a boolean value. The breakpoint symbol in the source view gutter will change to indicate it has a condition attached.
 
-For line breakpoints, it is also possible to right clicking on the breakpoint symbol in the source view gutter and select add condition(@@@@not implemented yet).
+For line breakpoints, it is also possible to right clicking on the breakpoint symbol in the source view gutter and select <q>Add condition</q>.
 
 Examples of conditions include testing if a variable equals a specific value (<samp>foo == 10</samp>), a variable is greater than another variable (<samp>foo > bar</samp>, a function returns <q>true</q> (<samp>foo.bar(baz) === true</samp>), or when an event breakpoint fires, if it is a specific element (<samp>event.target.id == "foo"</samp>).
 
@@ -88,13 +88,13 @@ An individual breakpoint can be disabled by clicking on the breakpoint icon in t
 
 It is often useful to disable all breakpoints when debugging to see how the application runs normally without losing all the breakpoints. This can be achieved by clicking the <q>Disable all breakpoints</q> button in the Breakpoints toolbar, or selecting <q>Disable all</q> from the context menu inside the breakpoints list.  
 
-If a breakpoint is not needed anymore it can be deleted by selecting <q>Delete</kbd> in the contex menu of the breakpoint to be deleted in the breakpoint list. 
+If a breakpoint is not needed anymore it can be deleted by selecting <q>Delete</q> in the context menu of the breakpoint to be deleted in the breakpoint list. For line breakpoints it is also possible to select <q>Delete breakpoint</q> from the gutter context menu. 
 
 Deleting all breakpoints can be achieved in the same way as disabling all breakpoints, but by pressing the <q>Delete all breakpoints</q> or selecting the <q>Delete all</q> context menu item.
 
 ### Viewing variables and state ###
 
-There are various ways to see and monitor variables and their state in Opera Dragonfly. When in the paused state, a full list of properties in scope can be found in the Inspection section of the State panel. Properties of interest can be watched in the Watches panel. For a quick overview it is possible to use the Data Tips feature in the source panel (@@@@@ NOT IMPLEMENTED YET).
+There are various ways to see and monitor variables and their state in Opera Dragonfly. When in the paused state, a full list of properties in scope can be found in the Inspection section of the State panel. Properties of interest can be watched in the Watches panel. <!-- For a quick overview it is possible to use the Data Tips feature in the source panel (@@@@@ NOT IMPLEMENTED YET). -->
 
 #### Inspecting properties ####
 
@@ -106,11 +106,12 @@ All variables in scope for the execution context are listed along with their cur
 As the number of properties can start to get unwieldy, it is possible to hide variables if they still have their default value which is a null or an empty string by unclicking the relevant button on the Inspection toolbar. It is also possible to hide enumerable properties. Another option is to filter by a search term using the Filter field in the toolbar. This will only match properties that are currently visible by its parent being expanded.
 // how should the last sentance be phrased?
 
+<!--
 #### Data Tips ####
 @@@@not implemented yet. Check back later to be sure and describe better. Will probably not make it so can comment out.
 
 When execution is paused at a breakpoint, hovering over variables in the the source will show data tips which show the current value at that point in time. If the variable is an object or array, it is possible to drill down into it to see all the enclosed values.
-
+-->
 
 #### Watches ####
 
