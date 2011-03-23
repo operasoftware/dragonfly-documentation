@@ -15,7 +15,7 @@ The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or press
 
 ## Console API
 
-Opera Dragonfly ships with support for the [Firebug Console API](http://getfirebug.com/wiki/index.php/Console_API) <ins class="bug">(but see DFL-1522, DFL-1535)</ins>. Anything logged by `console` methods are visible in the Console HUD.
+Opera Dragonfly ships with support for the [Firebug Console API](http://getfirebug.com/wiki/index.php/Console_API) <ins class="bug">(but see DFL-1522, DFL-1535)</ins>. Anything logged by `console` methods are visible in the Console HUD. Certain console methods also appear in the Error Log (i.e., `console.log()`, `console.info()`, `console.warn()`, `console.error()`, `console.assert()`)
 
 ###`console.log(obj [, obj, ...])` and `console.debug(obj [, obj, ...])`
 
