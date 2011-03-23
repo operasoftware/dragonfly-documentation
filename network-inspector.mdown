@@ -100,19 +100,6 @@ It is sometimes necessary to impersonate another HTTP client such as a bot, a mo
 * select a predefined profile
 * create a profile and save it
 
-@@There are still a few issues around this option@@
 
-### How to identify some basic HTTP issues with Make Request
-
-(the dragonfly curl manual). Here take part of the articles written with common issues. and explain how to use the HTTP request dance to see the differences.
-
-#### HTTP Client-Server dance
-
-Explain a few basics of HTTP client-server dialog.
-
-#### Content Negotiation On Language
-#### Content Negotiation On Mime-Type
-#### Identify User-Agent Sniffing
-#### More exploration with HTTP
 
 
