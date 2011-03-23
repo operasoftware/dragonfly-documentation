@@ -21,6 +21,10 @@ Opera Dragonfly supports a number of advanced methods to search inside scripts. 
 
 Clicking on the <q>More</q> button will open a floating window, which allows for searching in all JavaScript files, including inline scripts. Search results show the line of code where the result is contained, along with its line number. Clicking on the line will select it in the source code panel, switching to the correct script if necessary.
 
+#### Go to line 
+
+Pressing <kbd>Ctrl</kbd>+<kbd>M</kbd> (<kbd>⌘</kbd>+<kbd>L</kbd>) when the source panel is active will open the Go to line window. Entering a number will scroll to the specified line. //double check M is the correct shortcut on Windows.
+
 ### Program flow ###
 //Add something about how to get to a breakpoint, such as how you may need to reload the document (unless it is something that hasn't happened such as an event listener.
 
