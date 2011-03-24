@@ -28,10 +28,13 @@ Error messages can be opened one by one by clicking on them, or globally by clic
 
 ###Error Types
 
+There are three error types displayed in the Error Log:
 
-* Mention the error types (shown by the icon) Not sure these are correct though
+  * error: for example, a syntax error or 
+  * information: for example, an unknown property or value 
+  * warning: for example, when console.warning() is used
 
-* Clicking on the URL in the expanded error opens the style sheet in the Resource Inspector
+For CSS and JavaScript errors, clicking on the URL of the file in the expanded view will open the stylesheet as a new tab in the Resource inspector.
 
 <ins>screenshot</ins>
 
