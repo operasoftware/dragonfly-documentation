@@ -54,7 +54,7 @@ There are a number of common UI features between tools:
 
 ### Search
 
-The [[search bar]] can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd><kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> on Mac), or clicking on the search button. The JavaScript Debugger includes an advanced mode for searching in all scripts. More information on search can be found in the relevant section of each tool.
+The [[search bar]] can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd><kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> on Mac) @@subject to change@@, or clicking on the search button. The JavaScript Debugger includes an advanced mode for searching in all scripts. More information on search can be found in the relevant section of each tool.
 
 ### Filtering
 

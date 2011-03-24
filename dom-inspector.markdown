@@ -1,6 +1,6 @@
 #DOM Inspector
 
-//TODO: check terminology. Fix header levels. Add screenshots. Change strings after string review
+//TODO: Fix header levels. Add screenshots. Update when bugs are fixed or decided upon
 
 The DOM and Style Inspectors in Opera Dragonfly are accessible from the Documents panel in the application toolbar. The DOM Inspector is like View Source on steroids. While View Source shows the original document as it was written, the DOM Inspector shows the DOM tree as Opera sees it internally. This means that any DOM manipulation by scripts which have already been executed will show up in the DOM tree. Any malformed markup, such as misnested elements or missing mandatory close tags will also have been corrected according to Opera’s parsing algorithm. 
 
@@ -22,7 +22,7 @@ The DOM is shown collapsed by default. Clicking on the expander button to the le
 
 The DOM can be navigated using the arrow keys on the keyboard. Pressing the up and down arrows navigates between elements. The left and right arrow keys move between the individual tags, attributes and values of the element in focus. Pressing <kbd>Enter</kbd> will select the element, showing its associated styles in the right hand style panel, and highlighting it in the page. 
 
-Any resource that is linked from the DOM can be opened in the Resource Inspector by @@@clicking on the link@@@@ (@@@ this might change. Too easy to open instead of edit right now@@@) or pressing <kbd>Enter</kbd> when the attribute value has focus. Examples of resources include CSS files linked via the <code>href</code> attribute of the <code>link</code> element, JavaScript files linked via the <code>src</code> attribute of the <code>script</code> element, and images linked via the <code>src</code> attribute of the <code>img</code> element, to name but a few.
+Any resource that is linked from the DOM can be opened in the Resource Inspector by @@@clicking on the link@@@@ (@@@ this might change. Too easy to open instead of edit right now. Debating adding to right click. See DFL-1712 @@@) or pressing <kbd>Enter</kbd> when the attribute value has focus. Examples of resources include CSS files linked via the <code>href</code> attribute of the <code>link</code> element, JavaScript files linked via the <code>src</code> attribute of the <code>script</code> element, and images linked via the <code>src</code> attribute of the <code>img</code> element, to name but a few.
 
 ##Highlighting and selecting elements
 
@@ -40,7 +40,7 @@ It is sometimes useful to highlight multiple elements, such as when testing if e
 
 ##Search
 
-To search the DOM press the Search button or <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> @@not currently working on Mac@@. A search toolbar will appear similar to the one in the Opera browser. From here it is possible to enter a search term, and navigate between the results with either the forward and backwards buttons or the <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd> keys. This only searches the currently visible DOM, so it is worth expanding all elements before searching.
+To search the DOM press the Search button or <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> @@not currently working on 11.10 Mac. Will change. Need to check what to.@@. A search toolbar will appear similar to the one in the Opera browser. From here it is possible to enter a search term, and navigate between the results with either the forward and backwards buttons or the <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd> keys. This only searches the currently visible DOM, so it is worth expanding all elements before searching.
 
 ##Editing the DOM
 
@@ -50,7 +50,7 @@ To edit the entire element, including its children, double click on the start or
 
 An additional attribute can be added to the element while in edit mode by tabbing to the end of the element. An edit field for a new attribute will be created when tabbing past the last attribute. A quicker alternative is to select <q>Add attribute</q> from the element’s context menu.
 
-An element can be removed from the document by selecting <q>Remove node</q> from the element’s context menu. @@@@ how to delete using keyboard? @@@@
+An element can be removed from the document by selecting <q>Remove node</q> from the element’s context menu.
 
 ##Viewing styles
 
