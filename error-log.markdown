@@ -1,9 +1,17 @@
+<style>
+	ins { 
+		font-size: 11px;
+		text-decoration: none;
+	}
+    .comment { background-color: yellow; }
+    .bug { background-color: pink; }
+</style>
+
 ## Error Log
 
-The Error Log is the place to track down syntax and parse errors that may be causing an application to behave unexpectedly.
+The Error Log is the place to track down syntax and parser errors that may be cause an application or web page to behave unexpectedly.
 
-Click on the Errors icon in the application toolbar to access the Error Log. Pages that contain errors will cause the icon to display a small number which indicates how many errors there are in the log.
-
+Click on the Errors icon in the application toolbar to access the Error Log. The number of errors for the current debugging context is conveniently displayed in the icon itself.
 
 ###Search
 
@@ -17,6 +25,20 @@ To add (or remove) tabs from the Error Log, select the appropriate checkbox from
 <ins>screenshot here</ins>
 
 Error messages can be opened one by one by clicking on them, or globally by clicking the **Expand All** icon in the Error Log toolbar.
+
+###Error Types
+
+
+* Mention the error types (shown by the icon) Not sure these are correct though
+
+* Clicking on the URL in the expanded error opens the style sheet in the Resource Inspector
+
+<ins>screenshot</ins>
+
+You can direct messages to the Error Log programmatically by using the `console.log()`, `console.info()`, `console.warn()`, `console.error()`, and `console.assert()` methods. For more information, see the Console chapter.
+
+<ins>screenshot here--but depends on <span class="bug">DFL-1711</span> and <span class="bug">DFL-1710</span></ins>
+
 
 ###CSS Filters
 
