@@ -21,7 +21,7 @@ To search through all errors on a page, use the Search control on the Error Log 
 
 By default, the **All** tab will be selected, showing every type of error for the current page. Errors can be filtered by selecting a more specific tab, for example the **JavaScript** tab.
 
-To add (or remove) tabs from the Error Log, select the appropriate checkbox from the Error Log tab of the Dragonfly Preferences.
+To add (or remove) tabs from the Error Log, select the appropriate checkbox from the Error Log tab of the Opera Dragonfly Preferences.
 <ins>screenshot here</ins>
 
 Error messages can be opened one by one by clicking on them, or globally by clicking the **Expand All** icon in the Error Log toolbar.
