@@ -44,11 +44,11 @@ There are two options for deleting cookies. An individual cookie can be removed 
 
 ###Add a cookie
 
-A cookie can be added by selecting <q>Add cookie</q> from the contextual menu, or clicking on the <q>Add cookie</q> button. When the cookies are grouped, each domain has a <q>Add cookies</q> button, which pre-fills the domain field to that domain. When ungrouped, the button can be found at the bottom of the table, and the domain is pre-filled to the same domain as the previous cookie. The domain can be set to any valid domain, but it will not be shown if it doesn't match one of the listed domains. The cookie will be shown when inspecting the domain on which it was set.
+A cookie can be added by selecting <q>Add cookie</q> from the contextual menu, or clicking on the <q>Add cookie</q> button. When the cookies are grouped, each domain has a <q>Add cookie</q> button, which pre-fills the domain field to that domain. When ungrouped, the button can be found at the bottom of the table, and the domain is pre-filled to the same domain as the previous cookie. The domain can be set to any valid domain, but it will not be shown if it doesn't match one of the listed domains. The cookie will be shown when inspecting the domain on which it was set.
 
 ##Web Storage
 
-HTML5 introduced the Web Storage API for persistent storage of data using kay-value pairs. Web Storage can fulfil the same use cases as cookies, without many of the drawbacks, such as increased storage space. 
+HTML5 introduced the Web Storage API for persistent storage of data using key-value pairs. Web Storage can fulfill the same use cases as cookies, without many of the drawbacks, such as increased storage space. 
 
 The Storage Inspector separates the two types of Web Storage into their own panels. Each entry is displayed in a key-value list. 
 
@@ -68,11 +68,11 @@ The value can be edited by double clicking on the value column. This will enter 
 
 ###Deleting entries
 
-An entry can be deleted by clicking on the delete icon at the end of the row. All entries can be deleted by pressing the trash can icon under the table.
+An entry can be deleted by clicking on the <q>delete</q> icon at the end of the row. All entries can be deleted by pressing the <q>trash</q> can icon under the table.
 
 ###Adding an entry 
 
-An entry can be added by pressing the plus icon under the table. This will add an extra row at the end of the table where the key and value can be entered. Saving and cancelling is handled the same way as editing an entry.
+An entry can be added by pressing the plus icon under the table. This will add an extra row at the end of the table where the key and value can be entered. Saving and cancelling are handled the same way as editing an entry.
 
 ##Widget Preferences
 
@@ -80,6 +80,4 @@ Widget preferences use the same Storage interface as Web Storage, but are specif
 
 Data in the Widget Preferences panel can be manipulated in the same way as in Web Storage.
 
-A note about the Web Storage and Widget Preferences panels
-
-The UI for Local Storage, Session Storage and Widget Preferences panels will be updated to use the same UI as the Cookies panel in a future version of Opera Dragonfly. 
+A note about the Web Storage and Widget Preferences panels: The UI for Local Storage, Session Storage and Widget Preferences panels will be updated to use the same UI as the Cookies panel in a future version of Opera Dragonfly. 
