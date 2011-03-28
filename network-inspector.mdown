@@ -81,7 +81,7 @@ When testing HTTP requests, it might be important to disable all sources of  bro
 
 #### Content tracking behaviour
 
-This setting controls if the bodies of responses will be available to Dragonfly when a page loads. Enabling it will make load operations slower, and use more memory. It will also make network body reporting more accurate
+This setting controls if the bodies of responses will be available to Opera Dragonfly when a page loads. Enabling it will make load operations slower, and use more memory. It will also make network body reporting more accurate
 
 @@more explanation needed@@
 
@@ -92,6 +92,4 @@ It is sometimes necessary to impersonate another HTTP client such as a bot, a mo
 * select a predefined profile
 * create a profile and save it
 
-
-
-
+Both will spoof the HTTP headers sent by the browser to the server. These will last only the Opera Dragonfly session time. In a future version, we might give the possibility to add more profiles. 
