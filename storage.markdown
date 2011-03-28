@@ -48,7 +48,7 @@ A cookie can be added by selecting <q>Add cookie</q> from the contextual menu, o
 
 ##Web Storage
 
-HTML5 introduced the Web Storage API for persistent storage of data using key-value pairs. Web Storage can fulfill the same use cases as cookies, without many of the drawbacks, such as increased storage space. 
+The [Web Storage API](http://www.w3.org/TR/webstorage/) defines persistent storage of data using key-value pairs in Web clients. Web Storage can fulfill the same use cases as cookies, without many of the drawbacks, such as increased storage space or accessing the same Web site across two different windows. 
 
 The Storage Inspector separates the two types of Web Storage into their own panels. Each entry is displayed in a key-value list. 
 
