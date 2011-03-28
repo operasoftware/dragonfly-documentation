@@ -2,7 +2,7 @@
 
 ##Cookies
 
-A cookie consists of a name-value pair, which is sent to the browser in the HTTP header response. The cookie is sent with every request which is in the same scope. 
+A cookie consists of a name-value pair and associated metadata. An HTTP server using `Set-Cookie` header can pass the pairs to the browser in the HTTP header response. When the user agent makes subsequent requests to the server, the user agent uses the metadata and other information to determine whether to return the name/value pairs in the `Cookie` header. Cookies were defined by [HTTP State Management Mechanism (RFC 2965)](http://tools.ietf.org/html/rfc2965) but it is in the process of being obsoleted by [HTTP State Management Mechanism](http://tools.ietf.org/html/draft-ietf-httpstate-cookie).
 
 The cookies panel lists all cookies set by the site being debugged in a table sorted by domain, and grouped by the host and path.  Each row includes a column for each of the cookie attributes, such as the name, value and the expiry date. 
 
@@ -10,7 +10,7 @@ The cookies panel lists all cookies set by the site being debugged in a table so
 
 ####Session cookie
 
-A session cookie expires at the end of the session. This is usually when the browser is closed or the session timesout after a period of inactivity. These cookies are labelled with <q>session</q> in the <q>Expires</q> column.
+A session cookie expires at the end of the session. This is usually when the browser is closed or the session times out after a period of inactivity. These cookies are labelled with <q>session</q> in the <q>Expires</q> column.
 
 ####Persistent cookie
 
