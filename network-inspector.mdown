@@ -54,9 +54,6 @@ The right column is a long panel with vertical lines. Each line marks 100 millis
 
 Putting the mouse over the horizontal bar will reveal three values in a box for these events in milliseconds: [[Total duration]], [[Request time]] and [[Response time]]. When the information has been loaded from the cache, `Cached:` is displayed with the time in milliseconds.
 
-@@processing order and cascade - what does it tell me?@@
-
-
 ### Make Request
 
 The Make Request tab is a tool for creating a custom HTTP request to a specific URI and obtain the HTTP response with or without the payload. 
@@ -72,11 +69,6 @@ Opera Dragonfly makes it easy to precisely tailor an HTTP request by specifying 
 
 When clicking on the Send request button, the HTTP request is sent and in the Response box appears the answer of the server as communicated over the network.
 
-* ISSUE: If we replace GET by HEAD for example, we do not get an answer back. We might want to authorize only GET or better to create a real HTTP client with more methods. To be discussed.
-* ISSUE: There is a mistake in the Accept header, the plus signs are not displayed. For example, in application/xhtml+xml
-* ISSUE: the Accept-Language header is specified to norwegian. nb-NO,nb;q=0.9,no-NO;q=0.8,no;q=0.7,en;q=0.6
-
-
 ### Network Options
 
 The third panels provide options for fine tuning the browser behavior with regards to HTTP requests.
@@ -89,7 +81,7 @@ When testing HTTP requests, it might be important to disable all sources of  bro
 
 #### Content tracking behaviour
 
-This setting controls if the bodies of responses will be available to Dragonfly when a page loads. Enabling it will make load operations slower, and use more memory. It will also make network body reporting more accurate
+This setting controls if the bodies of responses will be available to Opera Dragonfly when a page loads. Enabling it will make load operations slower, and use more memory. It will also make network body reporting more accurate
 
 @@more explanation needed@@
 
@@ -100,6 +92,4 @@ It is sometimes necessary to impersonate another HTTP client such as a bot, a mo
 * select a predefined profile
 * create a profile and save it
 
-
-
-
+Both will spoof the HTTP headers sent by the browser to the server. These will last only the Opera Dragonfly session time. In a future version, we might give the possibility to add more profiles. 
