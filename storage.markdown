@@ -10,8 +10,8 @@ The cookies panel lists all cookies set by the site being debugged in a table so
 
 ####Session cookie
 
-A session cookie expires at the end of the session. This is usually when the browser is closed or the session times out after a period of inactivity. These cookies are labelled with <q>session</q> in the <q>Expires</q> column.
-
+A session cookie, once set by the server, will be deleted at the end of the session (when the browser is closed or the session times out after a period of inactivity).  These cookies are labelled with <q>session</q> in the <q>Expires</q> column.
+   
 ####Persistent cookie
 
 A persistent cookie is not destroyed when the session ends. It lasts for the time period listed in the <q>Expires</q> column. The Expires column uses a fuzzy, human friendly representation of the expiry date. Hovering over the expiry date will show the actual expiry date and time in a tooltip. 
