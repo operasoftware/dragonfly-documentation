@@ -59,7 +59,7 @@ The [[search bar]] can be accessed in the JavaScript Debugger and DOM Inspector 
 ### Filtering
 
 A number of panels support [[filtering]]. This is similar to search, but removes all statements which do not meet the [[filter query]]. Navigation between results works the same way as the search field, using <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd>. The filter fields can be found in the [[side panels]] of the DOM Inspector and JavaScript Debugger. Various [[properties]] can be filtered out by default, such as [[initial styles]] in the Style Inspector, and [[null and empty strings]] in the JavaScript Debugger. Switches next to the [[filter field]] enable and disable these filters. 
-
+// check null and empty string, as string changed
 
 ### Document selection
 
