@@ -54,9 +54,6 @@ The right column is a long panel with vertical lines. Each line marks 100 millis
 
 Putting the mouse over the horizontal bar will reveal three values in a box for these events in milliseconds: [[Total duration]], [[Request time]] and [[Response time]]. When the information has been loaded from the cache, `Cached:` is displayed with the time in milliseconds.
 
-@@processing order and cascade - what does it tell me?@@
-
-
 ### Make Request
 
 The Make Request tab is a tool for creating a custom HTTP request to a specific URI and obtain the HTTP response with or without the payload. 
@@ -71,11 +68,6 @@ Opera Dragonfly makes it easy to precisely tailor an HTTP request by specifying 
     Accept: application/xhtml+xml
 
 When clicking on the Send request button, the HTTP request is sent and in the Response box appears the answer of the server as communicated over the network.
-
-* ISSUE: If we replace GET by HEAD for example, we do not get an answer back. We might want to authorize only GET or better to create a real HTTP client with more methods. To be discussed.
-* ISSUE: There is a mistake in the Accept header, the plus signs are not displayed. For example, in application/xhtml+xml
-* ISSUE: the Accept-Language header is specified to norwegian. nb-NO,nb;q=0.9,no-NO;q=0.8,no;q=0.7,en;q=0.6
-
 
 ### Network Options
 
