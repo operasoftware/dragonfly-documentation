@@ -103,12 +103,10 @@ There are various ways to see and monitor variables and their state in Opera Dra
 #### Inspecting properties ####
 
 When at a breakpoint it is possible to inspect the variables, objects and functions in the currently selected execution context. These can be found under the Inspection section in the State panel. The currently active execution context is selected in the Call Stack section. It is possible to step back in the call stack to access the previously active execution contexts. 
-//last sentance right? how should this be described?
 
 All variables in scope for the execution context are listed along with their current value. Functions and objects can be drilled into by clicking the expander icon next to its name. This will show all the properties and functions contained within it.
 
-As the number of properties can start to get unwieldy, it is possible to hide variables if they still have their default value which is a null or an empty string by unclicking the relevant button on the Inspection toolbar. It is also possible to hide enumerable properties. Another option is to filter by a search term using the Filter field in the toolbar. This will only match properties that are currently visible by its parent being expanded.
-// how should the last sentance be phrased?
+As the number of properties can start to get unwieldy, it is possible to hide variables if they still have their default value which is a null or an empty string by unclicking the relevant button on the Inspection toolbar. It is also possible to hide enumerable properties. Another option is to filter by a search term using the Filter field in the toolbar. This will only match properties that are currently visible.
 
 <!--
 #### Data Tips ####
@@ -125,9 +123,9 @@ Examples of watches include individual variables or objects (<samp>foo</samp>), 
 
 ##### Add a watch ####
 
-To add a watch, click the <q>Add watch</q> button, enter a valid JavaScript expression, and then press <kbd>Enter</kbd>. The expression will be evaluated and the result shown next to the expression. 
+Click the <q>Add watch</q> button in the Watch panel, enter a valid JavaScript expression, and then press <kbd>Enter</kbd>. The expression will be evaluated and the result shown next to it. 
 
-It is also possible to add a watch by selecting some JavaScript source of interest in the Script source panel and selecting <q>Watch <i>expression</i></q>, or from the context menu of a variable in the Inspection  panel.
+It is also possible to add a watch by selecting <q>Watch <var>expression</var></q> from the context menu when selecting code in the JavaScript scource panel, or from variables in the Inspection panel.
 
 ##### Edit a watch #####
 

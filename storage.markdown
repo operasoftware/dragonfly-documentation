@@ -18,33 +18,33 @@ A persistent cookie is not destroyed when the session ends. It lasts for the tim
 
 ####Secure cookie
 
-A secure cookie is encrypted when sent to the browser using the HTTPS protocol. A secure cookie is not transmitted when using HTTP. A secure cookie is labelled with a tick icon in the <q>Secure</q> column.
+A secure cookie is encrypted when sent to the browser using the HTTPS protocol. It is not transmitted when using HTTP. Secure cookies are labelled with a tick icon in the <q>Secure</q> column.
 
 ####HTTPOnly cookie
 
-A HTTPOnly cookie can not be accessed by client-side scripting. It thus helps protect against cross-site scripting attacks. A HTTPOnly cookie is labelled with a tick icon in the <q>HTTPOnly</q> column.
+A HTTPOnly cookie can not be accessed by client-side scripting. It thus helps protect against cross-site scripting attacks. HTTPOnly cookies are labelled with a tick icon in the <q>HTTPOnly</q> column.
 
 ###Sorting and grouping cookies
 
-Clicking on the header row will sort the table in ascending or descending order by the column in question. Cookies are grouped by host and path by default, but it is possible to ungroup the cookies by selecting <q>No grouping</q> from the table header row’s contextual menu  (<kbd>Ctrl+click</kbd> on macintosh).
+Clicking on the header row will sort the table in ascending or descending order by the column in question. Cookies are grouped by host and path by default, but it is possible to ungroup the cookies by selecting <q>No grouping</q> from the table header row’s context menu.
 
 ###Selecting cookies
 
-Clicking on the cookie row will select it. It is possible to select multiple cookies by holding down the <kbd>Ctrl</kbd> (<kbd>⌘</kbd> on macintosh) key.  
+Clicking on the cookie row will select it. It is possible to select multiple cookies by holding down the <kbd>Ctrl</kbd> (<kbd>⌘</kbd>) key.  
 
 ###Editing cookies
 
-The value for each column can be edited by double clicking on the relevant table cell, or selecting <q>Edit cookie</q> from the contextual menu. The domain can be selected from the list of domains for which the site or application already sets a cookie.  
+The value for each column can be edited by double clicking on the relevant table cell, or selecting <q>Edit cookie</q> from the context menu. The domain can be selected from the list of domains for which the site or application already sets a cookie.  
 
 The expiry date can be selected using the provided calendar widget. Opera Dragonfly will automatically translate the date and time into a fuzzy date. To change a persistent cookie to a session cookie, set the date to 1970-1-1 0:00 (the Unix epoch). This is due to a current limitation with the UI which will be fixed in a future version.
 
 ###Deleting cookies
 
-There are two options for deleting cookies. An individual cookie can be removed by selecting <q>Remove cookie</q> from the cookie row’s contextual menu. All cookies for a specific domain can be removed by selecting <q>Remove cookies of domain name</q> from the contextual menu of a cookie that is set on that domain.
+There are two options for deleting cookies. An individual cookie can be removed by selecting <q>Remove cookie</q> from the cookie row’s context menu. All cookies for a specific domain can be removed by selecting <q>Remove cookies from <var>domain name</var></q> from the context menu of a cookie that is set on that domain.
 
 ###Add a cookie
 
-A cookie can be added by selecting <q>Add cookie</q> from the contextual menu, or clicking on the <q>Add cookie</q> button. When the cookies are grouped, each domain has a <q>Add cookie</q> button, which pre-fills the domain field to that domain. When ungrouped, the button can be found at the bottom of the table, and the domain is pre-filled to the same domain as the previous cookie. The domain can be set to any valid domain, but it will not be shown if it doesn't match one of the listed domains. The cookie will be shown when inspecting the domain on which it was set.
+A cookie can be added by selecting <q>Add cookie</q> from the context menu, or clicking on the <q>Add cookie</q> button. When the cookies are grouped, each domain has a <q>Add cookie</q> button, which pre-fills the domain field to that domain. When ungrouped, the button can be found at the bottom of the table, and the domain is pre-filled to the same domain as the previous cookie. The domain can be set to any valid domain, but it will not be shown if it doesn't match one of the listed domains. The cookie will be shown when inspecting the domain on which it was set.
 
 ##Web Storage
 
