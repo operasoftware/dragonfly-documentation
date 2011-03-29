@@ -2,7 +2,7 @@
 
 ## Getting started
 
-[[Opera Dragonfly]] is a fully featured, development and [[debugging]] tool integrated into the [[Opera browser]]. It requires no additionally installation or setup, and works across many of Opera’s browsers and [[Opera Presto]] based products, such as [[Opera Mobile]] and [[Opera Widgets]].
+[[Opera Dragonfly]] is a fully featured, development and [[debugging]] tool integrated into the [[Opera browser]]. It requires no additional installation or setup, and works across many of Opera’s browsers and [[Opera Presto]] based products, such as [[Opera Mobile]] and [[Opera Widgets]].
 
 As the power of the [[Open Web platform]] increases, high quality tools such as Opera Dragonfly ease the development process. The various tools covered in the subsequent chapters of this guide cover the full debugging workflow, from inspecting network access and downloaded resources, to debugging [[JavaScript]] issues, and how [[CSS]] rules apply to the [[DOM]]. Support is included for debugging the very latest technologies, from [[SVG]] to [[HTML5 API]]s such as [[Web Storage]]. For lovers of the [[command line]], a [[Console HUD]] can be brought up at any time in the debugging process to interact with the document. There has never been a better excuse to banish JavaScript [[alert debugging]] to a thing of the past.
 
@@ -30,17 +30,17 @@ The [[windowing controls]] can be found at the top left of the Opera Dragonfly c
 
 ### Selecting the debugging context
 
-The first icon of the group is for selecting the [[debugging context]]. That is to say, the [[tab]], [[window]], Widget, [[Extension]] or so on that Opera Dragonfly attaches itself to, switching it to debug mode. The default debugging context when opening Opera Dragonfly is the currently [[active tab or window]]. It may be needed to switch the debugging context when switching tabs, debugging a page on a [[remote device]], or a Widget or Extension. 
+The first icon of the group is for selecting the [[debugging context]]. This switches the [[tab]], [[window]], Widget or [[Extension]] that Opera Dragonfly attaches itself to into debug mode. The default debugging context when opening Opera Dragonfly is the currently [[active tab or window]]. It may be necessary to switch the debugging context when switching tabs, debugging a page on a [[remote device]], or a Widget or Extension. 
 
 The [[debugging context selector]] lists all available contexts that Opera Dragonfly can connect to. Selecting a different context will disconnect Opera Dragonfly from the current debugging context and attach itself to the new one. If the connected debugging context is not the currently active window or tab, an option at the top of the list will be available to quickly switch to that context. It is also possible to [[reload the context]] from this menu. Reloading can also be done from the regular browser reload button. This is needed for Opera Dragonfly to receive information about [[scripts]], [[resources]] and [[errors]]. The DOM Inspector is functional without reloading.
 
 ### Detaching the window
 
-By default Opera Dragonfly is [[docked]] to the bottom of the browser window. For people with a second or larger monitor, there is a [[detached mode]] which gives Opera Dragonfly more real estate. Clicking the detach button switches between the two modes. The state is remembered when the window is closed.
+By default Opera Dragonfly is [[docked]] to the bottom of the browser window. For people with a second or larger monitor, there is a [[detached mode]]. This allows Opera Dragonfly to be placed elsewhere on the screen, or moved to the other monitor entirely, freeing up work space. Clicking the detach button switches between the two modes. The state is remembered when the window is closed.
 
 ### Closing Opera Dragonfly
 
-The final windowing control button is the close button. There is no prize for guessing what happens when this button is pressed. The Opera Dragonfly shortcut can also be used to close the window.
+The final windowing control button is the close button. This button closes Opera Dragonfly. The Opera Dragonfly shortcut can also be used to close the window.
 
 ## Accessing the tools
 
@@ -54,16 +54,16 @@ There are a number of common UI features between tools:
 
 ### Search
 
-The [[search bar]] can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd><kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> on Mac) @@subject to change@@, or clicking on the search button. The JavaScript Debugger includes an advanced mode for searching in all scripts. More information on search can be found in the relevant section of each tool.
+The [[search bar]] can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd><kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> on Mac), or clicking on the search button. The JavaScript Debugger includes an advanced mode for searching in all scripts. More information on search can be found in the relevant section of each tool.
 
 ### Filtering
 
 A number of panels support [[filtering]]. This is similar to search, but removes all statements which do not meet the [[filter query]]. Navigation between results works the same way as the search field, using <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd>. The filter fields can be found in the [[side panels]] of the DOM Inspector and JavaScript Debugger. Various [[properties]] can be filtered out by default, such as [[initial styles]] in the Style Inspector, and [[null and empty strings]] in the JavaScript Debugger. Switches next to the [[filter field]] enable and disable these filters. 
-
+// check null and empty string, as string changed
 
 ### Document selection
 
-A debugging context often has multiple scripts (including [[inline scripts]], and [[eval]]) or documents (such as documents embedded using the <code>object</code> or <code>iframe</code> elements). These documents or scrips can be selected using the [[document selector]] in the [[main panel]]’s [[toolbar]]. Scripts are organised under their [[parent document]] from which they are linked or defined. Selecting an entry in the document selector will display that document or script in the script panel. As the console is global, if there is more than one script, it also needs to be selected from its own document selector. 
+A debugging context often has multiple scripts (including [[inline scripts]], and [[eval]]) or documents (such as documents embedded using the <code>object</code> or <code>iframe</code> elements). These documents or scripts can be selected using the [[document selector]] in the [[main panel]]’s [[toolbar]]. Scripts are organized under their [[parent document]] from which they are linked or defined. Selecting an entry in the document selector will display that document or script in the script panel. As the console is global, if there is more than one script, it also needs to be selected from its own document selector. 
 
 ### Editing
 
