@@ -2,9 +2,9 @@
 
 ## Getting started
 
-[[Opera Dragonfly]] is a fully featured, development and [[debugging]] tool integrated into the [[Opera browser]]. It requires no additional installation or setup, and works across many of Opera’s browsers and [[Opera Presto]] based products, such as [[Opera Mobile]] and [[Opera Widgets]].
+[[Opera Dragonfly]] is a fully featured development and [[debugging]] tool integrated into the [[Opera browser]]. It requires no additional installation or setup, and works across many of Opera’s browsers and [[Opera Presto]] based products, such as [[Opera Mobile]] and [[Opera Widgets]].
 
-As the power of the [[Open Web platform]] increases, high quality tools such as Opera Dragonfly ease the development process. The various tools covered in the subsequent chapters of this guide cover the full debugging workflow, from inspecting network access and downloaded resources, to debugging [[JavaScript]] issues, and how [[CSS]] rules apply to the [[DOM]]. Support is included for debugging the very latest technologies, from [[SVG]] to [[HTML5 API]]s such as [[Web Storage]]. For lovers of the [[command line]], a [[Console HUD]] can be brought up at any time in the debugging process to interact with the document. There has never been a better excuse to banish JavaScript [[alert debugging]] to a thing of the past.
+As the power of the [[Open Web platform]] increases, high quality tools such as Opera Dragonfly ease the development process. The various tools explained in this guide cover the full debugging workflow, from inspecting network access and downloaded resources, to debugging [[JavaScript]] issues and how [[CSS]] rules apply to the [[DOM]]. Support is included for debugging the very latest technologies, from [[SVG]] to [[HTML5 API]]s such as [[Web Storage]]. For lovers of the [[command line]], a [[Console HUD]] (CHRIS - AGAIN, INTERFACE? HUD SOUNDS TOO "AEROPLANE CONSOLE" TO ME) can be brought up at any time in the debugging process to interact with the document. There has never been a better excuse to banish JavaScript [[alert debugging]] to the past.
 
 ## Launching Opera Dragonfly
 
@@ -12,35 +12,39 @@ Opera Dragonfly comes pre-installed with the Opera desktop browser. It can be la
 
 ### Inspect Element
 
-When debugging the markup or styles, the quickest way to launch Opera Dragonfly is to [[right click]] on the element or area of interest and select <q>Inspect Element</q> from the [[context menu]]. This opens Opera Dragonfly with the element selected in the [[DOM Inspector]].
+When debugging markup or styles, the quickest way to launch Opera Dragonfly is to [[right click]] (CHRIS - OR CTRL + CLICK?) on the element or area of interest and select <q>Inspect Element</q> from the [[context menu]]. This opens Opera Dragonfly with the element selected in the [[DOM Inspector]].
 
 ### Keyboard shortcut
 
-The keyboard shortcut to launch Opera Dragonfly is <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> on Windows and Linux, and <kbd>⌘</kbd>+<kbd>⌥</kbd>+<kbd>I</kbd> on Mac.
+The keyboard shortcut to launch Opera Dragonfly is <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> on Windows and Linux, and <kbd>⌘</kbd>+<kbd>⌥</kbd>+<kbd>I</kbd> on Mac. (CHRIS - FOR SOME PEOPLE, ⌥ IS "OPTION". MENTION THIS? MIGHT CONFUSE SOME PEOPLE. FOR EXAMPLE, MY MAC DOESN'T HAVE THE ⌥ SYMBOL ON THE OPTION KEYS. IT JUST SAYS OPTION.)
 
 ### Menu item
 
-On Windows and Linux click on the [[Opera menu ]]in the upper left hand corner of the Opera browser [[chrome]] and select Edit → Developer Tools → Opera Dragonfly.
+On Windows and Linux click on the [[Opera menu]] in the upper left hand corner of the Opera browser [[chrome]] and select Edit → Developer Tools → Opera Dragonfly.
 
 On Mac select Tools → Advanced → Opera Dragonfly from the [[menu bar]].
+
+CHRIS - YOU CAN ALSO RIGH CLICK ON THE OPERA UI, SELECT CUSTOMIZE -> APPEARANCE -> BUTTONS, THEN SELECT THE BROWSER VIEW CATEGORY, THEN DRAG A OPERA DRAGONFLY BUTTON TO ANYWHERE YOU WANT IT ON THE INTERFACE, THEN PRESS OK. THIS IS WHAT I ALWAYS DO - IT IS REALLY CONVENIENT TO HAVE A UI BUTTON TO PRESS TO BRING IT UP.
 
 ## Window and tab management
 
 The [[windowing controls]] can be found at the top left of the Opera Dragonfly chrome. 
 
+CHRIS - TOP RIGHT? THEY ARE AT THE TOP RIGHT ON MY COMPUTER.
+
 ### Selecting the debugging context
 
-The first icon of the group is for selecting the [[debugging context]]. This switches the [[tab]], [[window]], Widget or [[Extension]] that Opera Dragonfly attaches itself to into debug mode. The default debugging context when opening Opera Dragonfly is the currently [[active tab or window]]. It may be necessary to switch the debugging context when switching tabs, debugging a page on a [[remote device]], or a Widget or Extension. 
+The first icon of the group is for selecting the [[debugging context]]. This switches the [[tab]], [[window]], Widget, or [[Extension]] that Opera Dragonfly attaches itself to into debug mode. The default debugging context when opening Opera Dragonfly is the currently [[active tab or window]]. It may be necessary to switch the debugging context when switching tabs, debugging a page on a [[remote device]], or a debugging a Widget or Extension. 
 
-The [[debugging context selector]] lists all available contexts that Opera Dragonfly can connect to. Selecting a different context will disconnect Opera Dragonfly from the current debugging context and attach itself to the new one. If the connected debugging context is not the currently active window or tab, an option at the top of the list will be available to quickly switch to that context. It is also possible to [[reload the context]] from this menu. Reloading can also be done from the regular browser reload button. This is needed for Opera Dragonfly to receive information about [[scripts]], [[resources]] and [[errors]]. The DOM Inspector is functional without reloading.
+The [[debugging context selector]] lists all available contexts that Opera Dragonfly can connect to. Selecting a different context will disconnect Opera Dragonfly from the current debugging context and attach itself to the new one. If the connected debugging context is not the currently active window or tab, an option at the top of the list will be available to quickly switch to that context. It is also possible to [[reload the context]] from this menu. Reloading can also be done from the regular browser reload button. This is needed for Opera Dragonfly to receive information about [[scripts]], [[resources]] and [[errors]]. The DOM Inspector functions fine without reloading.
 
 ### Detaching the window
 
-By default Opera Dragonfly is [[docked]] to the bottom of the browser window. For people with a second or larger monitor, there is a [[detached mode]]. This allows Opera Dragonfly to be placed elsewhere on the screen, or moved to the other monitor entirely, freeing up work space. Clicking the detach button switches between the two modes. The state is remembered when the window is closed.
+By default Opera Dragonfly is [[docked]] to the bottom of the browser window. For people with a second or larger monitor, there is a [[detached mode]], which allows Opera Dragonfly to be placed elsewhere on the screen, or moved to the other monitor entirely, freeing up work space. Clicking the detach button switches between the two modes. The state is remembered when the window is closed.
 
 ### Closing Opera Dragonfly
 
-The final windowing control button is the close button. This button closes Opera Dragonfly. The Opera Dragonfly shortcut can also be used to close the window.
+The final windowing control button is the close button. This button closes Opera Dragonfly. The Opera Dragonfly shortcut can also be used to close the window if it is already open.
 
 ## Accessing the tools
 
@@ -48,26 +52,28 @@ Each of the main tools in Opera Dragonfly are organized into [[panels]], accesse
 
 Each tool replaces the area below the application toolbar with its own UI. Each tool is generally split into several [[sub-panels]], which can be accessed by clicking on the panel’s tab. 
 
+CHRIS - THIS IS SOMETHING YOU NEED TO MAKE CONSISTENT IN SUBSEQUENT CHAPTERS - WHEN YOU ARE TALKING ABOUT A SUB-PANEL, CALL IT A SUB-PANEL, NOT JUST A PANEL, AS YOU OFTEN DO.
+
 ## Common features
 
-There are a number of common UI features between tools:
+There are a number of UI features common between all the different tools:
 
 ### Search
 
-The [[search bar]] can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd><kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> on Mac), or clicking on the search button. The JavaScript Debugger includes an advanced mode for searching in all scripts. More information on search can be found in the relevant section of each tool.
+The [[search bar]] can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd><kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> on Mac) (CHRIS - THIS KEYBOARD SHORTCUT IS THE SAME AS THE SHORTCUT FOR ENTER FULL SCREEN MODE. I TRIED IT, AND OPERA ENTERED FULLSCREEN AND THEN CRASHED!), or clicking on the search button. The JavaScript Debugger includes an advanced mode for searching in all scripts. More information on search can be found in the relevant chapter for each tool.
 
 ### Filtering
 
-A number of panels support [[filtering]]. This is similar to search, but removes all statements which do not meet the [[filter query]]. Navigation between results works the same way as the search field, using <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd>. The filter fields can be found in the [[side panels]] of the DOM Inspector and JavaScript Debugger. Various [[properties]] can be filtered out by default, such as [[initial styles]] in the Style Inspector, and [[null and empty strings]] in the JavaScript Debugger. Switches next to the [[filter field]] enable and disable these filters. 
+A number of panels support [[filtering]]. This is similar to search, but removes all statements that do not meet the [[filter query]]. Navigation between results works in the same way as the search field, using <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd> (CHRIS - THIS SOUNDS LIKE YOU ARE SAYING THAT YOU'VE ALREADY GIVEN THE READER THIS SHORTCUT IN THE ABOVE SECTION, WHEN YOU HAVEN'T. INTRODUCE IT IN THE ABOVE SECTION, AND THEN RECAP IT HERE?). The filter fields can be found in the [[side panels]] of the DOM Inspector and JavaScript Debugger. Various [[properties]] can be filtered out by default, such as [[initial styles]] in the Style Inspector, and [[null and empty strings]] in the JavaScript Debugger. Switches next to the [[filter field]] enable and disable these filters. 
 // check null and empty string, as string changed
 
 ### Document selection
 
-A debugging context often has multiple scripts (including [[inline scripts]], and [[eval]]) or documents (such as documents embedded using the <code>object</code> or <code>iframe</code> elements). These documents or scripts can be selected using the [[document selector]] in the [[main panel]]’s [[toolbar]]. Scripts are organized under their [[parent document]] from which they are linked or defined. Selecting an entry in the document selector will display that document or script in the script panel. As the console is global, if there is more than one script, it also needs to be selected from its own document selector. 
+A debugging context often has multiple scripts (including [[inline scripts]] and [[eval]] scripts) or documents (such as documents embedded using the <code>object</code> or <code>iframe</code> elements). These documents or scripts can be selected using the [[document selector]] (CHRIS - THE DROPDOWN?) in the [[main panel]]’s [[toolbar]]. Scripts are organized under the [[parent document]] from which they are linked or defined. Selecting an entry in the document selector will display that document or script in the script panel. As the console is global, if there is more than one script it also needs to be selected from its own document selector. 
 
 ### Editing
 
-Editing of content is consistent across the application. All editing commands can be found in the context menu when right clicking on editable content. Double clicking also enters [[editing mode]], and <kbd>Enter</kbd> submits the edit in [[single line edit mode]], and <kbd>Ctrl</kbd>+<kbd>Enter</kbd> in [[multi-line edit mode]]. The <kbd>Esc</kbd> key cancels the edit. Full details on editing can be found in the relevant chapter for each tool.
+Editing content is done consistently across the application. All editing commands can be found in the context menu when right clicking any editable content. Double clicking also enters [[editing mode]]; <kbd>Enter</kbd> submits the edit in [[single line edit mode]], and <kbd>Ctrl</kbd>+<kbd>Enter</kbd> submits an edit in [[multi-line edit mode]]. The <kbd>Esc</kbd> key cancels the edit. Full details on editing can be found in the relevant chapter for each tool.
 
 ### Specification links
 
@@ -77,14 +83,14 @@ Throughout the application it is possible to access the [[specification]] for fe
 
 There are three [[global features]] that can be accessed when using any tool in Opera Dragonfly. The buttons to access these features can be found to the left of the windowing controls in the application toolbar.
 
-### Console HUD
+### Console HUD (CHRIS - AGAIN, INTERFACE?)
 
-The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or pressing the button with the command prompt icon. The displays a HUD over the bottom half of the Opera Dragonfly window. This can be used to enter commands and evaluate JavaScript statements. Full details can be found in the Console chapter.
+The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or pressing by the button with the command prompt icon. The displays a HUD over the bottom half of the Opera Dragonfly window. This can be used to enter commands and evaluate JavaScript statements. Full details can be found in the Console chapter.
 
 ### Settings
 
-All settings for the application can be accessed from the settings overlay. This can be accessed from the button with a cog wheel. Most settings take immediate effect. 
+All settings for the application can be accessed from the settings overlay. This can be accessed from the cog wheel button. Most settings take immediate effect. 
 
 ### Remote Debugging
 
-The Remote Debug feature allows Opera Dragonfly to connect to other instances of Opera on a [[local]] or [[remote machine]]. This is especially useful when working with devices such as [[mobile phones]], [[tablets]] and [[TVs]]. Pressing the remote debug button opens the connection overlay. For more information see the remote debugging chapter.
+The Remote Debug feature allows Opera Dragonfly to connect to other instances of Opera on a [[local]] or [[remote machine]]. This is especially useful when working with devices such as [[mobile phones]], [[tablets]], and [[TVs]]. Pressing the remote debug button opens the connection overlay. For more information see the remote debugging chapter.
