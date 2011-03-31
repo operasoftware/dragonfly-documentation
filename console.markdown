@@ -15,7 +15,7 @@ The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or press
 
 ## Console API
 
-Opera Dragonfly ships with support for the [Firebug Console API](http://getfirebug.com/wiki/index.php/Console_API) <ins class="bug">(but see DFL-1522, DFL-1535)</ins>. Anything logged by `console` methods are visible in the Console HUD. Certain console methods also appear in the Error Log (i.e., `console.log()`, `console.info()`, `console.warn()`, `console.error()`, `console.assert()`)
+Opera Dragonfly ships with support for the [Console API](http://getfirebug.com/wiki/index.php/Console_API) <ins class="bug">(but see DFL-1522, DFL-1535)</ins>. Anything logged by `console` methods is visible in the Console HUD. Certain console methods also appear in the Error Log (i.e., `console.log()`, `console.info()`, `console.warn()`, `console.error()`, `console.assert()`).
 
 ###`console.log(obj [, obj, ...])` and `console.debug(obj [, obj, ...])`
 
@@ -135,7 +135,7 @@ The following command line shortcuts are available in the console:
 
 ## Keyboard Shortcuts
 
-The following cross-platform, Bash-like keyboard shortcuts are available in the:
+The following cross-platform, Bash-like keyboard shortcuts are available in the console (note: <kbd>Ctrl</kbd> is used on Mac rather than <kbd>Cmd</kbd> to be consistent with how Bash on Mac works):
 
 <table>
   <tr>
