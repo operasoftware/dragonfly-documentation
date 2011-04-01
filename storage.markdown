@@ -1,83 +1,87 @@
-#Storage Inspector
+## Storage Inspector
 
-##Cookies
+The Storage Inspector displays all the data that is stored by the site or application on the client-side. This includes cookies and HTML5 Web Storage. For applications based on W3C Widgets (such as Opera Widgets and Opera Extensions), data stored in Widget Preferences is also shown.
 
-A cookie consists of a name-value pair and associated metadata. An HTTP server using `Set-Cookie` header can pass the pairs to the browser in the HTTP header response. When the user agent makes subsequent requests to the server, the user agent uses the metadata and other information to determine whether to return the name/value pairs in the `Cookie` header. Cookies were defined by [HTTP State Management Mechanism (RFC 2965)](http://tools.ietf.org/html/rfc2965) but it is in the process of being obsoleted by [HTTP State Management Mechanism](http://tools.ietf.org/html/draft-ietf-httpstate-cookie).
+###Cookies
 
-The cookies panel lists all cookies set by the site being debugged in a table sorted by domain, and grouped by the host and path.  Each row includes a column for each of the cookie attributes, such as the name, value and the expiry date. 
+A cookie consists of name-value pairs and associated metadata. An HTTP server can use the `Set-Cookie` header to pass the pairs to the browser in the HTTP header response. When the user agent makes subsequent requests to the server, the user agent uses the metadata and other information to determine whether to return the name/value pairs in the `Cookie` header. Cookies were defined by [HTTP State Management Mechanism (RFC 2965)](http://tools.ietf.org/html/rfc2965) but it is in the process of being obsoleted by [HTTP State Management Mechanism] (http://tools.ietf.org/html/draft-ietf-httpstate-cookie).
 
-###Types of cookies
+The cookies panel lists all cookies set by the site being debugged: they are arranged in a table, sorted by domain and grouped by the host and path. Each row includes a column for each cookie attribute: name, value, expiry date etc. 
 
-####Session cookie
+####Types of cookie
+
+#####Session cookie
 
 A session cookie, once set by the server, will be deleted at the end of the session (when the browser is closed or the session times out after a period of inactivity).  These cookies are labelled with <q>session</q> in the <q>Expires</q> column.
    
-####Persistent cookie
+#####Persistent cookie
 
-A persistent cookie is not destroyed when the session ends. It lasts for the time period listed in the <q>Expires</q> column. The Expires column uses a fuzzy, human friendly representation of the expiry date. Hovering over the expiry date will show the actual expiry date and time in a tooltip. 
+A persistent cookie is not destroyed when the session ends. It lasts for the time period listed in the <q>Expires</q> column. The Expires column uses an easily-human readable representation of the expiry date. Hovering over the expiry date will show the formal, complete expiry date and time in a tooltip. 
 
-####Secure cookie
+#####Secure cookie
 
-A secure cookie is encrypted when sent to the browser using the HTTPS protocol. It is not transmitted when using HTTP. Secure cookies are labelled with a tick icon in the <q>Secure</q> column.
+Session and persistent cookies can also be secure. A secure cookie is encrypted when sent to the browser using the HTTPS protocol. It is not transmitted when using HTTP. Secure cookies are labelled with a tick icon in the <q>Secure</q> column.
 
-####HTTPOnly cookie
+#####HTTPOnly cookie
 
-A HTTPOnly cookie can not be accessed by client-side scripting. It thus helps protect against cross-site scripting attacks. HTTPOnly cookies are labelled with a tick icon in the <q>HTTPOnly</q> column.
+Session and persistent cookies can also be HTTPOnly. A HTTPOnly cookie can not be accessed by client-side scripting, which is designed to help against cross-site scripting attacks. HTTPOnly cookies are labelled with a tick icon in the <q>HTTPOnly</q> column.
 
-###Sorting and grouping cookies
+####Sorting and grouping cookies
 
-Clicking on the header row will sort the table in ascending or descending order by the column in question. Cookies are grouped by host and path by default, but it is possible to ungroup the cookies by selecting <q>No grouping</q> from the table header row’s context menu.
+Clicking on the headings of each column will sort the table in ascending/descending order by the column in question.
 
-###Selecting cookies
+Cookies are grouped by their hosts and paths by default. It is possible to ungroup the cookies by selecting <q>No grouping</q> from the table header row’s context menu.
 
-Clicking on the cookie row will select it. It is possible to select multiple cookies by holding down the <kbd>Ctrl</kbd> (<kbd>⌘</kbd>) key.  
+####Selecting cookies
 
-###Editing cookies
+Clicking on a cookie's row will select it. It is possible to select multiple cookies by holding down the <kbd>Ctrl</kbd> (<kbd>⌘</kbd>) key while clicking on them.  
 
-The value for each column can be edited by double clicking on the relevant table cell, or selecting <q>Edit cookie</q> from the context menu. The domain can be selected from the list of domains for which the site or application already sets a cookie.  
-
-The expiry date can be selected using the provided calendar widget. Opera Dragonfly will automatically translate the date and time into a fuzzy date. To change a persistent cookie to a session cookie, set the date to 1970-1-1 0:00 (the Unix epoch). This is due to a current limitation with the UI which will be fixed in a future version.
-
-###Deleting cookies
-
-There are two options for deleting cookies. An individual cookie can be removed by selecting <q>Remove cookie</q> from the cookie row’s context menu. All cookies for a specific domain can be removed by selecting <q>Remove cookies from <var>domain name</var></q> from the context menu of a cookie that is set on that domain.
-
-###Add a cookie
+####Adding a cookie
 
 A cookie can be added by selecting <q>Add cookie</q> from the context menu, or clicking on the <q>Add cookie</q> button. When the cookies are grouped, each domain has a <q>Add cookie</q> button, which pre-fills the domain field to that domain. When ungrouped, the button can be found at the bottom of the table, and the domain is pre-filled to the same domain as the previous cookie. The domain can be set to any valid domain, but it will not be shown if it doesn't match one of the listed domains. The cookie will be shown when inspecting the domain on which it was set.
 
-##Web Storage
+The expiry date can be selected using the provided calendar widget. Opera Dragonfly will automatically translate the date and time into a easily human-readable date. To set a session cookie, set the date to 1970-1-1 0:00 (the Unix epoch). This is a current limitation with the UI, which will be fixed in a future version.
 
-The [Web Storage API](http://www.w3.org/TR/webstorage/) defines persistent storage of data using key-value pairs in Web clients. Web Storage can fulfill the same use cases as cookies, without many of the drawbacks, such as increased storage space or accessing the same Web site across two different windows. 
+####Editing cookies
 
-The Storage Inspector separates the two types of Web Storage into their own panels. Each entry is displayed in a key-value list. 
+Cookies can be edited by double clicking on the cookie row (or selecting <q>Edit cookie</q> from the context menu) to bring up editable fields and then altering the text in each field. As with adding a cookie, editing a cookie to apply to a different domain will keep the cookie, but it will not show in the list as it will no longer apply to the current debugging context.
 
-###Session Storage
+####Deleting cookies
+
+There are two options for deleting cookies. An individual cookie can be removed by selecting <q>Remove cookie</q> from the cookie row’s context menu. All cookies for a specific domain can be removed by selecting <q>Remove cookies of <var>domain name</var></q> from the context menu of any cookie that is set on that domain.
+
+###Web Storage
+
+The [Web Storage API](http://www.w3.org/TR/webstorage/) defines persistent storage of data using key-value pairs in Web clients. Web Storage can fulfill the same use cases as cookies, without many of the drawbacks, such as increased storage space or the ability to access stored data for the same Web site across two different windows. 
+ 
+The Storage Inspector separates the two types of Web Storage into their own sub panels. Each entry is displayed in a key-value list. 
+
+####Session Storage
 
 Session Storage is somewhat similar to a session cookie in that it lasts for the lifetime of the session and is then destroyed. Data stored with Session Storage can be found in the Session Storage panel.
 
-###Local Storage
+####Local Storage
 
-Local Storage is more similar to persistent cookies. The data stored with Local Storage is not destroyed unless the user deletes it through the browser UI, or for security reasons. Data stored with Local Storage can be found in the Local Storage panel.
-
-
-###Editing an entry
-
-The value can be edited by double clicking on the value column. This will enter editing mode. After updating the value click on the <q>Apply</q> button. Pressing the <q>Cancel</q> button will revert the change. The key can not be edited in Opera Dragonfly.
+Local Storage is more like persistent cookies. The data stored with Local Storage is not destroyed unless the user deletes it through the browser UI, or for security reasons. Data stored with Local Storage can be found in the Local Storage panel.
 
 
-###Deleting entries
+####Editing an entry
 
-An entry can be deleted by clicking on the <q>delete</q> icon at the end of the row. All entries can be deleted by pressing the <q>trash</q> can icon under the table.
+Local and Session Storage Values can be edited by double-clicking on the value column. After updating the value click on the <q>Apply</q> button. Pressing the <q>Cancel</q> button will revert the change. The key can not be edited in Opera Dragonfly.
 
-###Adding an entry 
 
-An entry can be added by pressing the plus icon under the table. This will add an extra row at the end of the table where the key and value can be entered. Saving and cancelling are handled the same way as editing an entry.
+####Deleting entries
 
-##Widget Preferences
+An entry can be deleted by clicking on the <q>delete</q> icon at the end of the row. All entries can be deleted by pressing the <q>trash can</q> icon under the table.
 
-Widget preferences use the same Storage interface as Web Storage, but are specific to applications implementing the Widgets API. In Opera each Widget or Extension has its own storage area to store its preference data. The data in this storage area can be found in the Widget Preferences panel. This panel is blank for web sites and applications that do not implement the Widgets API.
+####Adding an entry 
 
-Data in the Widget Preferences panel can be manipulated in the same way as in Web Storage.
+An entry can be added by pressing the plus icon under the table. This will add an extra row at the end of the table where the key and value can be entered. Saving and cancelling are handled in the same way as editing an entry.
+
+###Widget Preferences
+
+Widget preferences use the same Storage interface as Web Storage, but are specific to applications implementing the Widgets API. In Opera each Widget or Extension has its own storage area to store its preference data. The data in this storage area can be found in the Widget Preferences panel, which remains blank for web sites and applications that do not implement the Widgets API.
+
+Data in the Widget Preferences panel can be manipulated in the same way as Web Storage entries.
 
 A note about the Web Storage and Widget Preferences panels: The UI for Local Storage, Session Storage and Widget Preferences panels will be updated to use the same UI as the Cookies panel in a future version of Opera Dragonfly. 
