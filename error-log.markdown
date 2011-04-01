@@ -30,11 +30,11 @@ Error messages can be opened one by one by clicking on them, or globally by clic
 
 There are three error types displayed in the Error Log:
 
-  * error: for example, a syntax error or 
+  * error: for example, a syntax error or an uncaught exception
   * information: for example, an unknown property or value 
   * warning: for example, when console.warning() is used
 
-For CSS and JavaScript errors, clicking on the URL of the file in the expanded view will open the stylesheet as a new tab in the Resource inspector.
+For CSS and JavaScript errors, clicking on the URL of the file in the expanded view will open the style sheet or script as a new tab in the Resource inspector.
 
 <ins>screenshot</ins>
 
@@ -45,7 +45,7 @@ You can direct messages to the Error Log programmatically by using the `console.
 
 ###CSS Filters
 
-Custom CSS filters can be defined to remove certain types of errors from the **All** and **CSS** tabs of the Error Log. For example, a filter like `*padding` will tell the Error log to ignore any IE6- or IE7-specific padding hacks.
+Custom CSS filters can be defined in the Error Log settings tab to remove certain types of errors from the **All** and **CSS** tabs of the Error Log. Comma separated filters will be matched and ignored. For example, a filter like `_padding` will tell the Error log to ignore the IE6 underscore hack for padding properties.
 
 ###Clearing the Error Log
 

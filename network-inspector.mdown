@@ -1,6 +1,6 @@
 ## Network Inspector ##
 
-The Network Inspector is the HTTP dashboard of Opera Dragonfly. An overview of all HTTP requests (images, scripts, style, etc.) initiated by the primary Web page (primary HTTP request) is provided along a visualization of when and how long resources have been downloaded. You will get a better understanding on the order of downloads when you need to work out issues with script order or usability performances. 
+The Network Inspector is the HTTP dashboard of Opera Dragonfly. An overview of all HTTP requests (images, scripts, style, etc.) initiated by the primary Web page (primary HTTP request) is provided along a visualization of when and how long resources have been downloaded. When working out issues related to scripts execution order, performances, caching, this inspector becomes very handy.
 
 ### Network log
 
@@ -25,6 +25,14 @@ In the left column, every URI is preceded with an icon giving a visual cue on th
     <td>image</td>
 </tr>
 <tr>
+    <td><img src="img/filetype_audio.png" alt="audio icon"/></td>
+    <td>audio</td>
+</tr>
+<tr>
+    <td><img src="img/filetype_video.png" alt="video icon"/></td>
+    <td>video</td>
+</tr>
+<tr>
     <td><img src="img/filetype_stylesheet.png" alt="stylesheet icon"/></td>
     <td>stylesheet</td>
 </tr>
@@ -42,7 +50,7 @@ In the left column, every URI is preceded with an icon giving a visual cue on th
 </tr>
 </table>
 
-Some of these URIs will be followed by a two arrows icon. It means that the resource has been loaded from the browser cache instead of the network.
+Each URIs will be followed by the specific HTTP status code associated with them. When hovering the status code, an explanation of the HTTP status code is given.
 
 The right column is a long panel with vertical lines. Each line marks 100 milliseconds. Thicker vertical black lines mark 1 second. For each resource line, a colored horizontal bar is displayed composed of three events:
 
@@ -54,13 +62,15 @@ The right column is a long panel with vertical lines. Each line marks 100 millis
 
 Putting the mouse over the horizontal bar will reveal three values in a box for these events in milliseconds: [[Total duration]], [[Request time]] and [[Response time]]. When the information has been loaded from the cache, `Cached:` is displayed with the time in milliseconds.
 
+There are two buttons on the toolbar just under Network log tab label. The first one pauses all subsequent HTTP requests. It becomes handy for a Web page using intensively XMLHttpRequest. The second one fits the network cascade view to the width of the window in order to avoid horizontal scrolling.
+ 
 ### Make Request
 
 The Make Request tab is a tool for creating a custom HTTP request to a specific URI and obtain the HTTP response with or without the payload. 
 
 ![Network Network Log Req](img/network-network-log-req.png)
 
-Opera Dragonfly makes it easy to precisely tailor an HTTP request by specifying each individual HTTP headers. When entering the URI in the URL box, the HTTP request is being crafted in the Request body box. The default proposed HTTP method is GET (In the beta version of Opera Dragonfly, only the HTTP GET method is available). The default Opera HTTP headers are written in the Request body. They can be changed for testing Web servers with different type of HTTP requests. For example, it is possible to create an HTTP request that would enforce `application/xhtml+xml`.
+Opera Dragonfly makes it easy to precisely tailor an HTTP request by specifying each individual HTTP headers. When entering the URI in the URL box, the HTTP request is being crafted in the Request body box. The default proposed HTTP method is GET (In Opera Dragonfly 1.0, only the HTTP GET method is available). The default Opera HTTP headers are written in the Request body. They can be changed for testing Web servers with different type of HTTP requests. For example, it is possible to create an HTTP request that would enforce `application/xhtml+xml`.
 
     GET / HTTP/1.1
     Host: www.opera.com
@@ -93,3 +103,5 @@ It is sometimes necessary to impersonate another HTTP client such as a bot, a mo
 * create a profile and save it
 
 Both will spoof the HTTP headers sent by the browser to the server. These will last only the Opera Dragonfly session time. In a future version, we might give the possibility to add more profiles. 
+
+If a preset profile is not used, headers will be added or overrided. When adding for example `X-Foo` header, the rest of the headers will be kept. It is practical for overriding the `User-Agent` header or mocking specific proxies or Web clients.
