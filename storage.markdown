@@ -1,6 +1,6 @@
 ## Storage Inspector
 
-The Storage Inspector displays all the data that is stored by the site or application on the client-side. This includes cookies and HTML5 Web Storage. For applications based on W3C Widgets (such as Opera Widgets and Opera Extensions), data stored in Widget Preferences is also shown.
+The Storage Inspector in Opera Dragonfly is accessible from the Stoage panel in the application toolbar. The Storage Inspector displays all the data that is stored by the site or application on the client-side. This includes cookies and HTML5 Web Storage. For applications based on W3C Widgets (such as Opera Widgets and Opera Extensions), data stored in Widget Preferences is also shown.
 
 ###Cookies
 
