@@ -48,15 +48,13 @@ Each of the main tools in Opera Dragonfly are organized into [[panels]], accesse
 
 Each tool replaces the area below the application toolbar with its own UI. Each tool is generally split into several [[sub-panels]], which can be accessed by clicking on the panel’s tab. 
 
-CHRIS - THIS IS SOMETHING YOU NEED TO MAKE CONSISTENT IN SUBSEQUENT CHAPTERS - WHEN YOU ARE TALKING ABOUT A SUB-PANEL, CALL IT A SUB-PANEL, NOT JUST A PANEL, AS YOU OFTEN DO.
-
 ## Common features
 
 There are a number of UI features common between all the different tools:
 
 ### Search
 
-The [[search bar]] can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd><kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> on Mac) (CHRIS - THIS KEYBOARD SHORTCUT IS THE SAME AS THE SHORTCUT FOR ENTER FULL SCREEN MODE. I TRIED IT, AND OPERA ENTERED FULLSCREEN AND THEN CRASHED!), or clicking on the search button. It is possible to navigate between results using <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd>. The JavaScript Debugger includes an advanced mode for searching in all scripts. More information on search can be found in the relevant chapter for each tool.
+The [[search bar]] can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>F3</kbd> on Mac, or <kbd>fn</kbd>+<kbd>F3</kbd> for keyboards the define OS functions to the function keys), or clicking on the search button. It is possible to navigate between results using <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd>. The JavaScript Debugger includes an advanced mode for searching in all scripts. More information on search can be found in the relevant chapter for each tool.
 
 ### Filtering
 
