@@ -26,7 +26,7 @@ Clicking on the <q>More</q> button will open a floating window, which allows for
 
 #### Go to line 
 
-Pressing <kbd>Ctrl</kbd>+<kbd>G</kbd> (<kbd>⌘</kbd>+<kbd>L</kbd>) when the source panel is active will open the Go to line window. Entering a number will scroll to the specified line.
+Pressing <kbd>Ctrl</kbd>+<kbd>G</kbd> (<kbd>⌘</kbd>+<kbd>L</kbd>) when the source panel is active will open the Go to line window. Entering a number will scroll to the specified line. It will temporarily highlight to show which is the correct line.
 
 ### Breakpoints ###
 
