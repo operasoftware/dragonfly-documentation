@@ -1,6 +1,6 @@
 ##DOM Inspector
 
-//TODO: Fix header levels. Add screenshots. Update when bugs are fixed or decided upon - D: have you done this, or are we not yet ready? Overall, a very clear, concise and accurate guide to the DOM features. Good work! Comments inline -m
+//TODO: Fix header levels. Add screenshots.
 
 The DOM and Style Inspectors in Opera Dragonfly are accessible from the Documents panel in the application toolbar. The DOM Inspector is like View Source on steroids. While View Source shows the original document as it was written, the DOM Inspector shows the DOM tree as Opera sees it internally. This means that any DOM manipulation by scripts which have already been executed will show up in the DOM tree. Any malformed markup, such as improperly nested elements or missing mandatory closing tags will also have been corrected according to Opera’s parsing algorithm. 
 
@@ -22,9 +22,7 @@ The DOM is shown collapsed by default. Clicking on the expander button to the le
 
 The DOM can be navigated using the arrow keys on the keyboard. Pressing the up and down arrows navigates between elements. The left and right arrow keys move between the individual tags, attributes and values of the element in focus. Pressing <kbd>Enter</kbd> will select the element, showing its associated styles in the right hand style sub-panel, and highlighting it in the page. 
 
-Any resource that is linked from the DOM can be opened in the Resource Inspector by @@@clicking on the link@@@@ (@@@ this might change. Too easy to open instead of edit right now. Debating adding to right click. See DFL-1712 @@@) or pressing <kbd>Enter</kbd> when the attribute value has focus. Examples of resources include CSS files linked via the <code>href</code> attribute of the <code>link</code> element, JavaScript files linked via the <code>src</code> attribute of the <code>script</code> element, and images linked via the <code>src</code> attribute of the <code>img</code> element, to name but a few.
-
-//David: Be sure to recheck the clicking method for the Resource Inspector! -m
+Any resource that is linked from the DOM can be opened in the Resource Inspector by selecting <q>@@@Show resource</q> from the context menu. Examples of resources include CSS files linked via the <code>href</code> attribute of the <code>link</code> element, JavaScript files linked via the <code>src</code> attribute of the <code>script</code> element, and images linked via the <code>src</code> attribute of the <code>img</code> element, to name but a few.
 
 ###Highlighting and selecting elements
 
@@ -32,13 +30,9 @@ Any resource that is linked from the DOM can be opened in the Resource Inspector
 
 Clicking on an element in the web page will select it in the DOM view, and highlight its dimensions, including the margin, border, padding and content boxes. Guidelines will also be shown to help judge the element’s alignment. Alternatively, an element can also be selected by clicking on it in the DOM view. The quickest way to select an element when Opera Dragonfly is not open is to right click on the element in the page and select <q>Inspect Element</q> from the context menu. This will open Opera Dragonfly and pre-select the element.
 
-When element selection is turned on, the page’s default actions such as activating links or buttons are cancelled in favor of selecting the element in the DOM view. To restore the default action, element selection can be toggled off with the button highlighted in @@x.
+When element selection is turned on, the page’s default actions such as activating links or buttons are cancelled in favor of selecting the element in the DOM view. To restore the default action, element selection can be toggled off with the select element button.
 
-//David: Please add the toggle off action to the above sentence once you know it! thanks - m. Molly: I was thinking of pointing to the button in figure x, once we have screenshots - d.
-
-It is also possible to disable the element highlight. This can be useful when it is important to see the original color of the selected element, such as when using the color picker.  The element highlight can be toggled off with the button highlighted in @@y.
-
-//David: Again, please check on the final behavior for the toggle off action -m
+It is also possible to disable the element highlight. This can be useful when it is important to see the original color of the selected element, such as when using the color picker.  The element highlight can be toggled off with the highlight element button.
 
 The element highlight is fully customizable. The colors can be inverted using <kbd>Ctrl<kbd>+<kbd>I</kbd> (<kbd>⌘</kbd>+<kbd>I</kbd>) when the Opera Dragonfly window has focus. Individual components of the highlight can be enabled or disabled as well as given a custom color. This customization can all be done in the Element highlight section of the Documents tab in Settings. 
 
@@ -64,10 +58,7 @@ An element can be removed from the document by selecting <q>Remove node</q> from
 
 The styles associated with the currently selected DOM element can be found in the Styles sub-panel. There are two main sections; computed style and styles. 
 
-The computed style section lists all the properties that Opera supports in alphabetical order. Each property lists its computed value. This is the value that Opera stores internally after all the rules have been evaluated and values have been converted. Number values are converted to pixels (px) (@@@are all numbers converted to px or just most?) and color values are converted to hexadecimal notation (except values that have an alpha channel which are converted to RGBA).
-
-//Good question David, I don't know the answer - please find out and correct above paragraph accordingly. -m 
-//May need to rewrite this  to be more abstract as it isn't really specced anywhere- david.
+The computed style section lists all the properties that Opera supports in alphabetical order. Each property lists its computed value. This is the value that Opera stores internally after all the rules have been evaluated, and values and units have been converted. For example, color values are converted to hexadecimal notation (except values that have an alpha channel which are converted to RGBA), and length values are converted to pixels (<code>px</code>).
 
 The styles section contains a list of CSS rules in order of selector specificity with the most specific first. Invalid rules that Opera could not parse are dropped from the rules, and shorthands are expanded into their individual properties. Like computed styles, units are converted to the value Opera stores internally. Properties in a less specific rule that are overridden by the same property in a more specific rule displayed with a strike through to show they do not apply. Properties that have a color value (such as <code>color</code> or <code>background-color</code>) show a color swatch after the value. Clicking on this swatch opens the color picker, which can be used to adjust the color on the fly.
 
@@ -99,6 +90,7 @@ The color can be adjusted using either the RGB or HSV color models. Clicking on 
 
 If the color value has an alpha channel (RGBA or HSLA), an opacity slider is also available. This adjusts the color between fully opaque and fully transparent. A black and white pattern is displayed behind the original and adjusted color swatches to help visualize how the color will look. 
 
+A color palette is available at the bottom of the color picker. This contains all the colors stored from the Utilities color picker. The list of colors can be managed from the <q>color palette</q> sub-panel in Utilities. This can be useful for storing the colors defined in a company style guide for example.  
 
 ###Filtering styles
 
@@ -123,6 +115,4 @@ DOM node objects inherit properties and functions from their parent objects. For
 ###Showing and hiding properties
 
 It is possible to hide non-enumerable properties, and default values which are null or empty strings using the corresponding buttons on the properties toolbar.
-
-//David: A little more on what a non-enumerable property is might be helpful here. Consider adding a little description if you like. thx -m
 
