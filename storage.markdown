@@ -1,14 +1,18 @@
 ## Storage Inspector
 
-The Storage Inspector in Opera Dragonfly is accessible from the Stoage panel in the application toolbar. The Storage Inspector displays all the data that is stored by the site or application on the client-side. This includes cookies and HTML5 Web Storage. For applications based on W3C Widgets (such as Opera Widgets and Opera Extensions), data stored in Widget Preferences is also shown.
+The Storage Inspector in Opera Dragonfly is accessible from the Storage panel in the application toolbar. The Storage Inspector displays all the data that is stored by the site or application on the client-side. This includes cookies and HTML5 Web Storage. For applications based on W3C Widgets (such as Opera Widgets and Opera Extensions), data stored in Widget Preferences is also shown.
 
 ###Cookies
 
-A cookie consists of name-value pairs and associated metadata. An HTTP server can use the `Set-Cookie` header to pass the pairs to the browser in the HTTP header response. When the user agent makes subsequent requests to the server, the user agent uses the metadata and other information to determine whether to return the name/value pairs in the `Cookie` header. Cookies were defined by [HTTP State Management Mechanism (RFC 2965)](http://tools.ietf.org/html/rfc2965) but it is in the process of being obsoleted by [HTTP State Management Mechanism] (http://tools.ietf.org/html/draft-ietf-httpstate-cookie).
+A cookie consists of name-value pairs and associated metadata. An HTTP server can use the `Set-Cookie` header to pass the pairs to the browser in the HTTP header response. When the user agent makes subsequent requests to the server, the user agent uses the metadata and other information to determine whether to return the name/value pairs in the `Cookie` header. 
+
+Note: Cookies were defined by [HTTP State Management Mechanism (RFC 2965)](http://tools.ietf.org/html/rfc2965) but it is in the process of being obsoleted by [HTTP State Management Mechanism] (http://tools.ietf.org/html/draft-ietf-httpstate-cookie).
 
 The cookies panel lists all cookies set by the site being debugged: they are arranged in a table, sorted by domain and grouped by the host and path. Each row includes a column for each cookie attribute: name, value, expiry date etc. 
 
-####Types of cookie
+####Types of cookies
+
+There are various kinds of cookies. Opera Dragonfly provides a means to view and modify cookies as follows.
 
 #####Session cookie
 
@@ -16,7 +20,7 @@ A session cookie, once set by the server, will be deleted at the end of the sess
    
 #####Persistent cookie
 
-A persistent cookie is not destroyed when the session ends. It lasts for the time period listed in the <q>Expires</q> column. The Expires column uses an easily-human readable representation of the expiry date. Hovering over the expiry date will show the formal, complete expiry date and time in a tooltip. 
+A persistent cookie is not destroyed when the session ends. It lasts for the time period listed in the <q>Expires</q> column. The Expires column uses a human-friendly representation of the expiry date. Hovering over the expiry date will show the complete expiry date and time in a tooltip. 
 
 #####Secure cookie
 
@@ -52,7 +56,7 @@ There are two options for deleting cookies. An individual cookie can be removed 
 
 ###Web Storage
 
-The [Web Storage API](http://www.w3.org/TR/webstorage/) defines persistent storage of data using key-value pairs in Web clients. Web Storage can fulfill the same use cases as cookies, without many of the drawbacks, such as increased storage space or the ability to access stored data for the same Web site across two different windows. 
+The [Web Storage API](http://www.w3.org/TR/webstorage/) defines persistent storage of data using key-value pairs in Web clients. Web Storage can fulfill the same use cases as cookies, without many of the drawbacks such as increased storage space or the ability to access stored data for the same Web site across two different windows. 
  
 The Storage Inspector separates the two types of Web Storage into their own sub panels. Each entry is displayed in a key-value list. 
 
@@ -67,7 +71,7 @@ Local Storage is more like persistent cookies. The data stored with Local Storag
 
 ####Editing an entry
 
-Local and Session Storage Values can be edited by double-clicking on the value column. After updating the value click on the <q>Apply</q> button. Pressing the <q>Cancel</q> button will revert the change. The key can not be edited in Opera Dragonfly.
+Local and Session Storage Values can be edited by double-clicking on the value column. After updating the value click on the <q>Apply</q> button. Pressing the <q>Cancel</q> button will revert the change. Note that the key can not be edited in Opera Dragonfly.
 
 
 ####Deleting entries
@@ -76,11 +80,11 @@ An entry can be deleted by clicking on the <q>delete</q> icon at the end of the 
 
 ####Adding an entry 
 
-An entry can be added by pressing the plus icon under the table. This will add an extra row at the end of the table where the key and value can be entered. Saving and cancelling are handled in the same way as editing an entry.
+An entry can be added by pressing the plus icon under the table. This will add an extra row at the end of the table where the key and value can be entered. Saving and canceling are handled in the same way as editing an entry.
 
 ###Widget Preferences
 
-Widget preferences use the same Storage interface as Web Storage, but are specific to applications implementing the Widgets API. In Opera each Widget or Extension has its own storage area to store its preference data. The data in this storage area can be found in the Widget Preferences panel, which remains blank for web sites and applications that do not implement the Widgets API.
+Widget preferences use the same Storage interface as Web Storage, but are specific to applications implementing the Widgets API. In the Opera browser, each Widget or Extension has its own storage area to store its preference data. The data in this storage area can be found via the Widget Preferences panel, which remains blank for web sites and applications that do not implement the Widgets API.
 
 Data in the Widget Preferences panel can be manipulated in the same way as Web Storage entries.
 
