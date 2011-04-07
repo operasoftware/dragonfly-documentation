@@ -9,7 +9,7 @@
 
 ## Error Log
 
-The Error Log is the place to track down syntax and parser errors that may be cause an application or web page to behave unexpectedly.
+The Error Log is the place to track down syntax and parser errors that may cause an application or web page to behave unexpectedly.
 
 Click on the Errors icon in the application toolbar to access the Error Log. The number of errors for the current debugging context is conveniently displayed in the icon itself.
 
@@ -45,7 +45,7 @@ You can direct messages to the Error Log programmatically by using the `console.
 
 ###CSS Filters
 
-Custom CSS filters can be defined in the Error Log settings tab to remove certain types of errors from the **All** and **CSS** tabs of the Error Log. Comma separated filters will be matched and ignored. For example, a filter like `_padding` will tell the Error log to ignore the IE6 underscore hack for padding properties.
+Custom CSS filters can be defined in the Error Log settings tab to remove certain types of errors from the **All** and **CSS** tabs of the Error Log. Comma separated filters will be matched and ignored. For example, a filter such as `_padding` will tell the Error log to ignore the IE6 underscore hack for padding properties.
 
 ###Clearing the Error Log
 

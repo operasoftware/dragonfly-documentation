@@ -42,7 +42,7 @@ The `console.warn()`, `console.error()`, and `console.info()` methods offer the 
 
 The `console.dir()` method is useful when you need to inspect the properties of an object or DOM node. It will log all the properties and values of the object passed in as interactive, inspectable items.
 
-The `console.dirxml()` method is useful too for logging the structural representation of a DOM element, logging the structure of the node similar to what is seen in the Document view. Clicking on the logged element highlights it in the main document.
+The `console.dirxml()` method is useful for logging the structural representation of a DOM element, logging the structure of the node similarly to what is seen in the Document view. Clicking on the logged element highlights it in the main document.
 
 ###`console.count([name])`
 
