@@ -8,10 +8,10 @@ The first tab of the Network Inspector is called **Network log**.
 
 ![Network Network Log](img/network-network-log.png)
 
-In the left column, every URI is preceded with an icon giving a visual cue on the resource type (the format of its content). 
+In the left column, each URI is preceded with an icon. This provides a visual cue about the resource's file type.
 
 <table style="width:15em;">
-<caption>Table of filetype and their icons</caption>
+<caption>Table of file types and related icons</caption>
 <tr>
     <th>icon</th>
     <th>file type</th>
@@ -60,7 +60,7 @@ The right column is a long panel with vertical lines. Each line marks 100 millis
 
 ![Network Network Log Bar](img/network-network-log-bar.png)
 
-Putting the mouse over the horizontal bar will reveal three values in a box for these events in milliseconds: [[Total duration]], [[Request time]] and [[Response time]]. When the information has been loaded from the cache, `Cached:` is displayed with the time in milliseconds.
+Placing the mouse over the horizontal bar will reveal three values in a box for these events in milliseconds: [[Total duration]], [[Request time]] and [[Response time]]. When the information has been loaded from the cache, `Cached:` is displayed with the time in milliseconds.
 
 There are two buttons on the toolbar just under Network log tab label. The first one pauses all subsequent HTTP requests. It becomes handy for a Web page using intensively XMLHttpRequest. The second one fits the network cascade view to the width of the window in order to avoid horizontal scrolling.
  
@@ -81,19 +81,17 @@ When clicking on the Send request button, the HTTP request is sent and in the Re
 
 ### Network Options
 
-The third panels provide options for fine tuning the browser behavior with regards to HTTP requests.
+The third panel provides options for fine-tuning the browser behavior with regards to HTTP requests.
 
 ![Network Network Log Opt](img/network-network-log-opt.png)
 
 #### Caching behaviour
 
-When testing HTTP requests, it might be important to disable all sources of  browser (and network?@@) caching. When caching is disable, Opera will bypass all caching, always doing full reloads from the server.
+When testing HTTP requests, it is often important to disable all sources of caching. When caching is disabled, Opera will bypass all caching, always doing full reloads from the server.
 
 #### Content tracking behaviour
 
 This setting controls if the bodies of responses will be available to Opera Dragonfly when a page loads. Enabling it will make load operations slower, and use more memory. It will also make network body reporting more accurate
-
-@@more explanation needed@@
 
 #### Global header overrides
 
