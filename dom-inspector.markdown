@@ -84,7 +84,7 @@ It is often useful to add new rules while debugging, especially when there are n
 
 The color picker can be used to edit a color value by selecting the desired color visually, rather than typing the color value. Every property in the styles section which accepts a color value includes a color swatch. Clicking on this opens the color picker. 
 
-Using the color picker will be familiar to anyone that has used similar tools in an image editor. The two color swatches in the upper right hand corner show the original color (left) and the adjusted color (right). Clicking the original color swatch will revert the updated color to the original. 
+Using the color picker will be familiar to anyone who has used similar graphics-related tools. The two color swatches in the upper right hand corner show the original color (left) and the adjusted color (right). Clicking the original color swatch will revert the updated color to the original. 
 
 The color can be adjusted using either the RGB or HSV color models. Clicking on the radio button next to a color component will clamp the color slider to the selected component. For instance, which clicking on the Hue (H) component the color slider is clamped to the values 0–360 (red to red, via the entire hue spectrum). Moving the slider will adjust only that component. The color field to the left of the slider is clamped to the other two components. Selecting a color in the field will update these two components. It is possible to directly enter the color value in either RGB, HSV or hexadecimal in the appropriate text fields.
 
