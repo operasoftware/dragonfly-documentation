@@ -72,11 +72,11 @@ It is possible to get Opera Dragonfly to stop execution when a JavaScript error 
 
 #### Deleting and disabling breakpoints ####
 
-An individual breakpoint can be disabled by clicking on the breakpoint icon in the source view gutter (for line breakpoints) or unchecking the check box next to the name of the breakpoint in the Breakpoints sub-panel. The icon in the gutter will change to show it is disabled.
+An individual breakpoint can be disabled by unchecking the checkbox next to the name of the breakpoint in the Breakpoints sub-panel. The icon in the gutter will change to show it is disabled.
 
 It is often useful to disable all breakpoints when debugging to see how the application runs normally without losing all the breakpoints. This can be achieved by clicking the <q>Disable all breakpoints</q> button in the Breakpoints toolbar, or selecting <q>Disable all</q> from the context menu inside the breakpoints list.  
 
-If a breakpoint is not needed anymore it can be deleted by selecting <q>Delete</q> in the context menu of the breakpoint to be deleted in the breakpoint list. For line breakpoints it is also possible to select <q>Delete breakpoint</q> from the gutter context menu. 
+If a breakpoint is not needed anymore it can be deleted by selecting <q>Delete</q> in the context menu of the breakpoint to be deleted in the breakpoint list. For line breakpoints it is also possible to click on the breakpoint symbol in the gutter. 
 
 Deleting all breakpoints can be achieved in a similar way: by pressing the <q>Delete all breakpoints</q> button, or selecting the <q>Delete all</q> context menu item.
 
