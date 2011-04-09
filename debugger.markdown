@@ -101,7 +101,7 @@ The Step Over button or <kbd>F10</kbd> (<kbd>F6</kbd>) also steps to the next li
 
 #### Step Out
 
-The Step Out button or <kbd>Shift</kbd>+<<kbd>F11</kbd> (<kbd>Shift</kbd>+<kbd>F7</kbd>) continues execution until the end of the current function and breaks at the next line after the function returns.
+The Step Out button or <kbd>Shift</kbd>+<kbd>F11</kbd> (<kbd>Shift</kbd>+<kbd>F7</kbd>) continues execution until the end of the current function and breaks at the next line after the function returns.
 
 ### Viewing variables and state ###
 
