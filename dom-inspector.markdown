@@ -22,7 +22,7 @@ The DOM is shown collapsed by default. Clicking on the expander button to the le
 
 The DOM can be navigated using the arrow keys on the keyboard. Pressing the up and down arrows navigates between elements. The left and right arrow keys move between the individual tags, attributes and values of the element in focus. Pressing <kbd>Enter</kbd> will select the element, showing its associated styles in the right hand style sub-panel, and highlighting it in the page. 
 
-Any resource that is linked from the DOM can be opened in the Resource Inspector by selecting <q>@@@Show resource</q> from the context menu. Examples of resources include CSS files linked via the <code>href</code> attribute of the <code>link</code> element, JavaScript files linked via the <code>src</code> attribute of the <code>script</code> element, and images linked via the <code>src</code> attribute of the <code>img</code> element, to name but a few.
+Any resource that is linked from the DOM can be opened in the Resource Inspector by selecting <q>Show resource</q> from the context menu. Examples of resources include CSS files linked via the <code>href</code> attribute of the <code>link</code> element, JavaScript files linked via the <code>src</code> attribute of the <code>script</code> element, and images linked via the <code>src</code> attribute of the <code>img</code> element, to name but a few.
 
 ###Highlighting and selecting elements
 
@@ -34,9 +34,9 @@ When element selection is turned on, the page’s default actions such as activa
 
 It is also possible to disable the element highlight. This can be useful when it is important to see the original color of the selected element, such as when using the color picker.  The element highlight can be toggled off with the highlight element button.
 
-The element highlight is fully customizable. The colors can be inverted using <kbd>Ctrl<kbd>+<kbd>I</kbd> (<kbd>⌘</kbd>+<kbd>I</kbd>) when the Opera Dragonfly window has focus. Individual components of the highlight can be enabled or disabled as well as given a custom color. This customization can all be done in the Element highlight section of the Documents tab in Settings. 
+The element highlight is fully customizable. The colors can be inverted using <kbd>Ctrl<kbd>+<kbd>I</kbd> (<kbd>⌘</kbd>+<kbd>I</kbd>) when the Opera Dragonfly window has focus. A custom color can be set in the Element highlight section of the Documents tab in Settings. 
 
-It is sometimes useful to highlight multiple elements, such as when testing if elements line up correctly. This can be achieved in Opera Dragonfly by selecting @@<q>Keep elements highlighted</q> from the DOM sub-panel context menu. When this option is enabled Opera Dragonfly will highlight each element that is selected on the page. Disabling this will return to only highlighting the last element that is clicked on.
+It is sometimes useful to highlight multiple elements, such as when testing if elements line up correctly. This can be achieved in Opera Dragonfly by selecting <q>Keep elements highlighted</q> from the DOM sub-panel context menu. When this option is enabled Opera Dragonfly will highlight each element that is selected on the page. Disabling this will return to only highlighting the last element that is clicked on.
 
 //Current string is too long for "keep element highlighted when selecting a f…". Keeping string to "Keep elements highlighted" until we work out what to do - d
 
