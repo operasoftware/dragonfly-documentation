@@ -62,6 +62,8 @@ The computed style section lists all the properties that Opera supports in alpha
 
 The styles section contains a list of CSS rules in order of selector specificity with the most specific first. Invalid rules that Opera could not parse are dropped from the rules, and shorthands are expanded into their individual properties. Like computed styles, units are converted to the value Opera stores internally. Properties in a less specific rule that are overridden by the same property in a more specific rule displayed with a strike through to show they do not apply. Properties that have a color value (such as <code>color</code> or <code>background-color</code>) show a color swatch after the value. Clicking on this swatch opens the color picker, which can be used to adjust the color on the fly.
 
+Links to the right of the selector show which file the CSS rule was defined in. Clicking the link will open the file in the Resource Inspector. This will show the style sheet as it was written originally.
+
 It is easy to forget what a property does, or what its values mean. In Opera Dragonfly the relevant spec is only a click away. Each property includes a link to its spec in its context menu. This will open in a new tab. 
 
 ###Editing styles
