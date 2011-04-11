@@ -10,9 +10,9 @@ The source view provides a means to view and interact with JavaScript files and 
 
 ####Selecting a script
 
-Any linked, inline and evaled scripts can be selected from the document selector in the Scripts toolbar. These are organized under their parent runtime. If there are multiple documents–such as iframes or linked SVG files, the scripts will be listed under the document they are defined in. Injected scripts such as Browser.js and User.js are also listed under their respective headings.
+Any linked, inline and evaled scripts can be selected from the document selector in the Scripts toolbar. These are organized under their parent runtime. If there are multiple documents, such as iframes or linked SVG files, the scripts will be listed under the document in which they are defined. Injected scripts such as Browser.js and User.js are also listed under their respective headings.
 
-If Opera Dragonfly is opened after the page was loaded it will have to be reloaded–either using the browser reload button or the reload button in the center of the Source panel–for the scripts to be shown. This is because debugging information is not collected when Opera Dragonfly is inactive for performance reasons.
+If Opera Dragonfly is opened after the page was loaded it will have to be reloaded, either using the browser reload button or the reload button in the center of the Source panel for the scripts to be shown. This is because debugging information is not collected when Opera Dragonfly is inactive due to performance reasons.
 
 #### The Source panel
 
@@ -32,7 +32,7 @@ Pressing <kbd>Ctrl</kbd>+<kbd>G</kbd> (<kbd>⌘</kbd>+<kbd>L</kbd>) when the Sou
 
 Breakpoints define where the execution of the program halts. When a breakpoint is reached Opera Dragonfly switches to break mode. When you add breakpoints, you can then manage them using the Breakpoints sub-panel.  
 
-#### Types of breakpoint ####
+#### Types of breakpoints ####
 
 Opera Dragonfly supports a number of different kinds of breakpoints:
 
@@ -52,7 +52,7 @@ With DOM Level 3 Events it is possible to use the CustomEvent interface to defin
 
 ##### Conditional breakpoint
 
-A conditional breakpoint has an expression attached to it, which is evaluated when the breakpoint is reached. If the evaluation returns true the execution breaks, otherwise it continues. 
+A conditional breakpoint has an expression attached to it which is evaluated when the breakpoint is reached. If the evaluation returns true, the execution breaks, otherwise it continues. 
 
 A regular line or event breakpoint can be changed to a conditional breakpoint by selecting <q>Add condition<q> from the context menu of the appropriate breakpoint in the Breakpoints sub-panel, and entering a valid expression in the <q>condition</q> field. The expression must return a boolean value. The breakpoint symbol in the source view gutter will change to indicate it has a condition attached.
 
