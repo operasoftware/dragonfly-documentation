@@ -32,7 +32,7 @@ The [[windowing controls]] can be found at the top right of the Opera Dragonfly 
 
 The first icon of the group is for selecting the [[debugging context]]. This switches the [[tab]], [[window]], Widget, or [[Extension]] that Opera Dragonfly attaches itself to into debug mode. The default debugging context when opening Opera Dragonfly is the currently [[active tab or window]]. It may be necessary to switch the debugging context when switching tabs, debugging a page on a [[remote device]], or a debugging a Widget or Extension. 
 
-The [[debugging context selector]] lists all available contexts to which Opera Dragonfly can connect. Selecting a different context will disconnect Opera Dragonfly from the current debugging context and attach itself to the new one. If the connected debugging context is not the currently active window or tab, an option at the top of the list will be available to quickly switch to that context. It is also possible to [[reload the context]] from this menu. Reloading can also be done from the regular browser reload button. This is needed for Opera Dragonfly to receive information about [[scripts]], [[resources]] and [[errors]]. The DOM Inspector functions fine without reloading.
+The [[debugging context selector]] lists all available contexts to which Opera Dragonfly can connect. Selecting a different context will disconnect Opera Dragonfly from the current debugging context and attach itself to the new one. If the connected debugging context is not the currently active window or tab, an option at the top of the list will be available to quickly switch to that context. It is also possible to reload the context from this menu. Reloading can also be done from the regular browser reload button. This is needed for Opera Dragonfly to receive information about [[scripts]], [[resources]] and [[errors]]. The DOM Inspector functions fine without reloading.
 
 ### Detaching the window
 
@@ -58,7 +58,7 @@ The [[search bar]] can be accessed in the JavaScript Debugger and DOM Inspector 
 
 ### Filtering
 
-A number of panels support [[filtering]]. This is similar to search, but removes all statements that do not meet the [[filter query]]. The filter fields can be found in the [[side panels]] of the DOM Inspector and JavaScript Debugger. Various [[properties]] can be filtered out by default, such as [[initial styles]] in the Style Inspector, and default values which are null or empty strings in the JavaScript Debugger. Switches next to the [[filter field]] enable and disable these filters. 
+A number of panels support [[filtering]]. This is similar to search, but removes all statements that do not meet the [[filter query]]. The filter fields can be found in the [[side panels]] of the DOM Inspector and JavaScript Debugger. Various [[properties]] can be filtered out by default, such as [[initial styles]] in the Style Inspector, and default values which are null or empty strings in the JavaScript Debugger. Switches next to the filter field enable and disable these filters. 
 
 ### Document selection
 
@@ -66,11 +66,11 @@ A debugging context often has multiple scripts (including [[inline scripts]] and
 
 ### Editing
 
-Editing content is done consistently across the application. All editing commands can be found in the context menu when right clicking any editable content. Double clicking also enters [[editing mode]]; <kbd>Enter</kbd> submits the edit in [[single line edit mode]], and <kbd>Ctrl</kbd>+<kbd>Enter</kbd> submits an edit in [[multi-line edit mode]]. The <kbd>Esc</kbd> key cancels the edit. Full details on editing can be found in the relevant chapter for each tool.
+Editing content is done consistently across the application. All editing commands can be found in the context menu when right clicking any editable content. Double clicking also enters [[editing mode]]; <kbd>Enter</kbd> submits the edit in [[single-line edit mode]], and <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) submits an edit in [[multi-line edit mode]]. The <kbd>Esc</kbd> key cancels the edit. Full details on editing can be found in the relevant chapter for each tool.
 
 ### Specification links
 
-Throughout the application it is possible to access the [[specification]] for features such as [[DOM properties]] and [[functions]], [[ECMAScript objects]], [[CSS properties]], and [[HTTP headers]]. The spec can be accessed by clicking the specification option in the context menu of the relevant feature. 
+Throughout the application it is possible to access the [[specification]] for features such as DOM properties and functions, ECMAScript objects, CSS properties, and HTTP headers. The spec can be accessed by clicking the specification option in the context menu of the relevant feature. 
 
 ## Global features
 
@@ -86,4 +86,4 @@ All settings for the application can be accessed from the settings overlay. This
 
 ### Remote Debugging
 
-The Remote Debug feature allows Opera Dragonfly to connect to other instances of Opera on a [[local]] or [[remote machine]]. This is especially useful when working with devices such as [[mobile phones]], [[tablets]], and [[TVs]]. Pressing the remote debug button opens the connection overlay. For more information see the remote debugging chapter.
+The Remote Debug feature allows Opera Dragonfly to connect to other instances of Opera on a [[local]] or remote device. This is especially useful when working with devices such as mobile phones, tablets, and TVs. Pressing the remote debug button opens the connection overlay. For more information see the remote debugging chapter.
