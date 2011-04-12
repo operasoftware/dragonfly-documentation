@@ -2,6 +2,8 @@
 
 Opera Dragonfly contains a fully-featured JavaScript Debugger. This is accessible from the Scripts panel in the main application toolbar. The JavaScript Debugger enables the state of the web page or application to be inspected by setting break points to control the flow of the program as the code is stepped through. The debugger supports breaking due to user-defined events and tracking of program state, including variable and object values. This makes it easier to identify bugs in the application and understand exactly what is happening at any given stage.
 
+<img src="img/debugger.png" alt="The JavaScript Debugger" />
+
 Note: Opera Dragonfly also features a Console HUD, which is fully integrated with the debugger.
 
 ### Source view ###
@@ -11,6 +13,8 @@ The source view provides a means to view and interact with JavaScript files and 
 ####Selecting a script
 
 Any linked, inline and evaled scripts can be selected from the document selector in the Scripts toolbar. These are organized under their parent runtime. If there are multiple documents, such as iframes or linked SVG files, the scripts will be listed under the document in which they are defined. Injected scripts such as Browser.js and User.js are also listed under their respective headings.
+
+<img src="img/script-selector.png" alt="Selecting a script" />
 
 If Opera Dragonfly is opened after the page was loaded it will have to be reloaded, either using the browser reload button or the reload button in the center of the Source panel for the scripts to be shown. This is because debugging information is not collected when Opera Dragonfly is inactive due to performance reasons.
 
@@ -28,6 +32,8 @@ Clicking on the <q>More</q> button will open a floating window. This allows sear
 
 Pressing <kbd>Ctrl</kbd>+<kbd>G</kbd> (<kbd>⌘</kbd>+<kbd>L</kbd>) when the Source panel is active will open the Go to line window. Entering a number will scroll to the specified line. It will temporarily highlight to show which is the correct line.
 
+<img src="img/goto-line.png" alt="Go to line" />
+
 ### Breakpoints ###
 
 Breakpoints define where the execution of the program halts. When a breakpoint is reached Opera Dragonfly switches to break mode. When you add breakpoints, you can then manage them using the Breakpoints sub-panel.  
@@ -40,11 +46,15 @@ Opera Dragonfly supports a number of different kinds of breakpoints:
 
 Line breakpoints break the execution when the specified line is reached. A line breakpoint can be set by clicking the line number in the left hand gutter of the source view. 
 
+<img src="img/line-breakpoints.png" alt="An enabled and disabled breakpoint" />
+
 The breakpoint will show in the Breakpoints sub-panel, identified by the debugging context, the line number, and a snippet of code from that line.
 
 ##### Event breakpoint
 
-An event breakpoint pauses execution when the specified type of event is fired. An event breakpoint can be set by checking the box next to the event name in the Breakpoints sub-panel. The events are organized under expandable headings corresponding to the event type. When you check one of these boxes, the relevant event breakpoint will appear in the Breakpoints sub-panel, identified by the event name.
+An event breakpoint pauses execution when the specified type of event is fired. An event breakpoint can be set by checking the box next to the event name in the Breakpoints sub-panel. The events are organized under expandable headings corresponding to the event type. When an event is checked, the relevant event breakpoint will appear in the Breakpoints sub-panel, identified by the event name.
+
+<img src="img/event-breakpoints.png" alt="Event breakpoints" />
 
 ###### Custom events
 
@@ -55,6 +65,8 @@ With DOM Level 3 Events it is possible to use the CustomEvent interface to defin
 A conditional breakpoint has an expression attached to it which is evaluated when the breakpoint is reached. If the evaluation returns true, the execution breaks, otherwise it continues. 
 
 A regular line or event breakpoint can be changed to a conditional breakpoint by selecting <q>Add condition<q> from the context menu of the appropriate breakpoint in the Breakpoints sub-panel, and entering a valid expression in the <q>condition</q> field. The expression must return a boolean value. The breakpoint symbol in the source view gutter will change to indicate it has a condition attached.
+
+<img src="img/conditional-breakpoints.png" alt="Adding a conditional breakpoint" />
 
 For line breakpoints, it is also possible to right click on the breakpoint in the source view gutter and select <q>Add condition</q>.
 
@@ -83,6 +95,8 @@ Deleting all breakpoints can be achieved in a similar way: by pressing the <q>De
 ### Program flow ###
 
 The program flow is controlled by setting breakpoints. Once the program hits a breakpoint, the execution will halt and will switch to the paused state. A paused execution indicator will be shown on the Scripts application toolbar button to indicate the program is currently at a break point. When Opera Dragonfly is in this state the call stack and the variable object for the currently selected execution context are shown in the State sub-panel.
+
+<img src="img/at-breakpoint.png" alt="Paused at a breakpoint" />
 
 The breakpoint will be hit when the code the it is defined on is evaluated, and any condition evaluates to true. For example, if a breakpoint is set on the first line of a function for handling what happens when a button is pressed, pressing that button will likely hit that breakpoint and pause execution. The document will have to be reloaded if the breakpoint is set on code that is only evaluated once when loading the page, and it has already been evaluated when the breakpoint is set. 
 
@@ -113,6 +127,8 @@ When at a breakpoint it is possible to inspect the variables, objects and functi
 
 All variables in scope for the execution context are listed along with their current value. Functions and objects can be further examined by clicking the expander icon next to its name. This will show all the properties and functions contained within.
 
+<img src="img/inspection-section.png" alt="The inspection section" />
+
 As the number of properties can start to get unwieldy, it is possible to hide variables which have a default value of null or an empty string by un-clicking the relevant button on the Inspection toolbar. It is also possible to hide non-enumerable properties.
 
 It is also possible to filter by a search term using the Filter field in the toolbar. This will only match properties that are currently visible.
@@ -121,6 +137,8 @@ It is also possible to filter by a search term using the Filter field in the too
 
 Watches allow JavaScript expressions to be monitored. These can be useful if there is a specific piece of information, such as the value of a variable, that needs to be tracked as the application is executed.  Each time the application steps the expression is evaluated. Watches can be found under the <q>Watches</q> section in the State sub-panel. 
 
+<img src="img/watches.png" alt="The watches section" />
+
 Examples of watches include individual variables or objects (<samp>foo</samp>), the return value of a function (<samp>foo.bar()</samp>), or manipulating variables (<samp>bar + baz * superman</samp>). If the variables or functions are in scope the result will be returned.
 
 ##### Adding a watch ####
@@ -128,6 +146,8 @@ Examples of watches include individual variables or objects (<samp>foo</samp>), 
 Click the <q>Add watch</q> button in the Watches section of the State sub-panel, enter a valid JavaScript expression, and then press <kbd>Enter</kbd>. The expression will be evaluated and the result shown next to it. 
 
 It is also possible to add a watch by selecting <q>Watch <var>expression</var></q> from the context menu when selecting code in the Source panel, or from the context menu on variables in the Inspection section of the State sub-panel.
+
+<img src="img/adding-watch.png" alt="Adding a watch" />
 
 ##### Editing a watch #####
 
