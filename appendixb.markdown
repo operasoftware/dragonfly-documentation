@@ -6,9 +6,9 @@
 	<caption>Search</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -32,9 +32,9 @@
 	<caption>Single-line editing</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -53,9 +53,9 @@
 	<caption>Multi-line editing</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -75,25 +75,25 @@
 	<caption>Debugger stepping controls</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Continue</td>
-			<td>F8</td>
+			<td><kbd>F8</kbd></td>
 			<td><kbd>F5</kbd></td>
 		</tr>
 		<tr>
 			<td>Step over</td>
-			<td>F10</td>
+			<td><kbd>F10</kbd></td>
 			<td><kbd>F6</kbd></td>
 		</tr>
 		<tr>
 			<td>Step into</td>
-			<td>F11</td>
+			<td><kbd>F11</kbd></td>
 			<td><kbd>F7</kbd></td>
 		</tr>
 		<tr>
@@ -108,9 +108,9 @@
 	<caption>Miscellaneous global commands</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -120,7 +120,7 @@
 		</tr>
 		<tr>
 			<td>Invert element highlight</td>
-			<td><kbd>Ctrl<kbd>+<kbd>I</kbd></td>
+			<td><kbd>Ctrl</kbd>+<kbd>I</kbd></td>
 			<td><kbd>⌘</kbd>+<kbd>I</kbd></td>
 		</tr>
 		<tr>
@@ -137,9 +137,9 @@
 	<caption>Navigation</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -176,9 +176,9 @@
 	<caption>DOM specific editing</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -199,9 +199,9 @@
 	<caption>Navigation</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -225,9 +225,9 @@
 	<caption>Styles specific editing</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -257,9 +257,9 @@
 	<caption>Navigation</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -293,9 +293,9 @@
 	<caption>General</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -338,9 +338,9 @@
 	<caption>Autocomplete</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -370,9 +370,9 @@
 	<caption>Console specific single-line editing</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -395,9 +395,9 @@
 	<caption>Console specific multi-line editing</caption>
 	<thead>
 		<tr>
-			<td>Action</td>
-			<td>Shortcut</td>
-			<td>Shortcut (Mac)</td>
+			<th>Action</th>
+			<th>Shortcut</th>
+			<th>Shortcut (Mac)</th>
 		</tr>
 	</thead>
 	<tbody>

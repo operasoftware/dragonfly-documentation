@@ -1,6 +1,6 @@
 ## Network Inspector ##
 
-The Network Inspector is Opera Dragonfly's HTTP dashboard. It provides an overview of all HTTP requests such as images, scripts, and style, initiated by the primary Web page (primary HTTP request). The Network Inspector includes a visualization of the time and duration such resources have been downloaded. This visualization provides a clear map of how to repair or improve script and usability performance. 
+The Network Inspector is Opera Dragonfly’s HTTP dashboard. It provides an overview of all HTTP requests such as images, scripts, and style, initiated by the primary Web page (primary HTTP request). The Network Inspector includes a visualization of the time and duration such resources have been downloaded. This visualization provides a clear map of how to repair or improve script and usability performance. 
 
 ### Network log
 
