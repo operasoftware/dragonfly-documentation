@@ -1,29 +1,21 @@
-//David - please check bugs and remove references to them and the style section: Also, remove references to screenshots - I would have but didn't want to in case you needed to see them.
-
-<style>
-	ins { 
-		font-size: 11px;
-		text-decoration: none;
-	}
-    .comment { background-color: yellow; }
-    .bug { background-color: pink; }
-</style>
-
 ##Console
 
 The Console HUD is a useful tool for evaluating JavaScript statements, inspecting and logging objects and properties and even adding functionality to a page for quick debugging.
 
 The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or pressing the button with the command prompt icon in the application toolbar. This displays a HUD over the bottom half of the Opera Dragonfly window which can be made taller or shorter by dragging the top with the mouse.
 
+![Opera Dragonfly Console HUD](img/console-hud.png)
+
+
 ### Console API
 
-Opera Dragonfly ships with support for the [Console API](http://getfirebug.com/wiki/index.php/Console_API) <ins class="bug">(but see DFL-1522, DFL-1535)</ins>. Anything logged by `console` methods is visible in the Console HUD. Certain console methods also appear in the Error Log (i.e., `console.log()`, `console.info()`, `console.warn()`, `console.error()`, `console.assert()`).
+Opera Dragonfly ships with support for the [Console API](http://getfirebug.com/wiki/index.php/Console_API). Anything logged by `console` methods is visible in the Console HUD. Certain console methods also appear in the Error Log (i.e., `console.log()`, `console.info()`, `console.warn()`, `console.error()`, `console.assert()`).
+>>>>>>> other
 
 ####`console.log(obj [, obj, ...])` and `console.debug(obj [, obj, ...])`
 
-The most basic method for logging to the Opera Dragonfly console is `console.log()`. `console.debug()` logs to the console with the line number where the code was called from. <ins class="bug">(But see DFL-1542)</ins>
+The most basic method for logging to the Opera Dragonfly console is `console.log()`. `console.debug()` logs to the console with the line number where the code was called from.
 
-    (might this be better a screenshot?)
     console.log(myVar);
     console.debug(myVar);
 
@@ -33,9 +25,8 @@ Multiple values can be logged inline by passing them in as additional arguments.
 
 ####`console.warn(obj [, obj, ...])`, `console.error(obj [, obj, ...])`, and `console.info(obj [, obj, ...])`
 
-The `console.warn()`, `console.error()`, and `console.info()` methods offer the same functionality as console.log(), but with added semantics and visual emphasis <ins class="bug">(if DFL-1535 gets fixed)</ins>. Similar to `console.debug()`, these methods print a hyperlinked line number <ins class="bug">(see DFL-1542)</ins> that corresponds to where in the source it was called from.
+The `console.warn()`, `console.error()`, and `console.info()` methods offer the same functionality as console.log(), but with added semantics and visual emphasis. Similar to `console.debug()`, these methods print a hyperlinked line number that corresponds to where in the source it was called from.
 
-    [screenshot showing the color differences, some possible examples:]
     console.warn( document.getElementById('foo') == null );
     console.error( 'Session is secure: ' + false );
     console.info( userObject );
