@@ -74,7 +74,7 @@ Throughout the application it is possible to access the [[specification]] for fe
 
 ## Global features
 
-There are three [[global features]] that can be accessed when using any tool in Opera Dragonfly. The buttons to access these features can be found to the left of the windowing controls in the application toolbar.
+There are three [[global features]] that can be accessed when using any tool in Opera Dragonfly. The buttons to access these features are found to the left of the windowing controls in the application toolbar.
 
 ### Console HUD
 
