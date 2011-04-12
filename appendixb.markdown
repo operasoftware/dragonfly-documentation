@@ -120,7 +120,7 @@
 		</tr>
 		<tr>
 			<td>Invert element highlight</td>
-			<td><kbd>Ctrl<kbd>+<kbd>I</kbd></td>
+			<td><kbd>Ctrl</kbd>+<kbd>I</kbd></td>
 			<td><kbd>⌘</kbd>+<kbd>I</kbd></td>
 		</tr>
 		<tr>
