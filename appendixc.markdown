@@ -1,43 +1,41 @@
-<h2>Appendix C: Development</h2>
+## Appendix C: Development
 
-<h3>License</h3>
+### License
 
-<p>Opera Dragonfly and the Scope specification is released under the <a href="http://dev.opera.com/licenses/apache/">Apache 2.0</a> open source license. </p>
+Opera Dragonfly and the Scope specification is released under the <a href="http://dev.opera.com/licenses/apache/">Apache 2.0</a> open source license. 
 
-<h3>Code repository</h3>
+### Code repository
 
-<p>The code repository for Opera Dragonfly and associated tools can be found on <a href="https://bitbucket.org/">Bitbucket</a>. Repositories include:</p>
+The code repository for Opera Dragonfly and associated tools can be found on <a href="https://bitbucket.org/">Bitbucket</a>. Repositories include:
 
-<ul>
-<li><a href="https://bitbucket.org/scope/dragonfly-stp-1/">Opera Dragonfly</a></li>
-<li><a href="https://bitbucket.org/scope/dragonkeeper/">Dragonkeeper</a> (standalone proxy to support Opera Dragonfly development)</li>
-<li><a href="https://bitbucket.org/scope/hob/">Hob</a> (utility to create code from Protocol Buffer descriptions)</li>
-<li><a href="http://scope.bitbucket.org/scope/index.html">Scope interface</a></li>
-<li><a href="https://bitbucket.org/scope/scope.bitbucket.org/overview">Opera Dragonfly tests and experimental components</a></li>
-</ul>
+* <a href="https://bitbucket.org/scope/dragonfly-stp-1/">Opera Dragonfly</a>
+* <a href="https://bitbucket.org/scope/dragonkeeper/">Dragonkeeper</a> (standalone proxy to support Opera Dragonfly development)
+* <a href="https://bitbucket.org/scope/hob/">Hob</a> (utility to create code from Protocol Buffer descriptions)
+* <a href="http://scope.bitbucket.org/scope/index.html">Scope interface</a>
+* <a href="https://bitbucket.org/scope/scope.bitbucket.org/overview">Opera Dragonfly tests and experimental components</a>
 
-<h3>Checking out the code</h3>
+### Checking out the code
 
-<p>Opera Dragonfly uses the Mercurial version control system. Once <a href="http://mercurial.selenic.com/">Mercurial</a> is setup, it is possible to clone the Opera Dragonfly repository to a local machine. This can be done from the command line using:</p>
+Opera Dragonfly uses the Mercurial version control system. Once <a href="http://mercurial.selenic.com/">Mercurial</a> is setup, it is possible to clone the Opera Dragonfly repository to a local machine. This can be done from the command line using:
 
-<p>hg clone https://bitbucket.org/scope/dragonfly-stp-1/</p>
+<kbd>hg clone https://bitbucket.org/scope/dragonfly-stp-1/</kbd>
 
-<h3>Coding guidelines</h3>
+### Coding guidelines
 
-<p>Opera Dragonfly follows the Python <a href="http://www.python.org/dev/peps/pep-0008/">PEP 8</a> style guide. Any patch submitted to Opera Dragonfly must follow these guidelines to be accepted. See the <a href="https://bitbucket.org/scope/dragonfly-stp-1/wiki/styleguide">Opera Dragonfly coding conventions</a> for further information.</p>
+Opera Dragonfly follows the Python <a href="http://www.python.org/dev/peps/pep-0008/">PEP 8</a> style guide. Any patch submitted to Opera Dragonfly must follow these guidelines to be accepted. See the <a href="https://bitbucket.org/scope/dragonfly-stp-1/wiki/styleguide">Opera Dragonfly coding conventions</a> for further information.
 
-<h3>Development tutorial</h3>
+### Development tutorial
 
-<p>To get started with Opera Dragonfly and Scope development, follow the <a href="https://dragonfly.opera.com/app/scope-interface/tutorial-console-logger.html">basic error message logger tutorial</a>.</p>
+To get started with Opera Dragonfly and Scope development, follow the <a href="https://dragonfly.opera.com/app/scope-interface/tutorial-console-logger.html">basic error message logger tutorial</a>.
 
-<h3>Browsing bugs</h3>
+### Browsing bugs
 
-<p>It is possible to browse Opera Dragonfly bugs on the <a href="https://bitbucket.org/scope/dragonfly-stp-1/issues">Bitbucket issue tracker</a>.</p>
+It is possible to browse Opera Dragonfly bugs on the <a href="https://bitbucket.org/scope/dragonfly-stp-1/issues">Bitbucket issue tracker</a>.
 
-<h3>Reporting bugs</h3>
+### Reporting bugs
 
-<p>Bugs in Opera Dragonfly can be reported on the <a href="https://bitbucket.org/scope/dragonfly-stp-1/issues/new">Bitbucket issue tracker</a>.</p>
+Bugs in Opera Dragonfly can be reported on the <a href="https://bitbucket.org/scope/dragonfly-stp-1/issues/new">Bitbucket issue tracker</a>.
 
-<h3>Porting Opera Dragonfly to another browser or user agent</h3>
+### Porting Opera Dragonfly to another browser or user agent
 
-<p>Opera Dragonfly relies on the Scope module found in Opera Presto. This module would have to be ported to the rendering engine in question to enable Opera Dragonfly to communicate with it. The <a href="https://bitbucket.org/scope/scope-services/">specification for Scope</a> can be found in the Bitbucket repository. </p>
+Opera Dragonfly relies on the Scope module found in Opera Presto. This module would have to be ported to the rendering engine in question to enable Opera Dragonfly to communicate with it. The <a href="http://scope.bitbucket.org/scope/index.html">specification for Scope</a> can be found in the Bitbucket repository. 
