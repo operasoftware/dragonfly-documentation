@@ -1,27 +1,21 @@
-<style>
-	ins { 
-		font-size: 11px;
-		text-decoration: none;
-	}
-    .comment { background-color: yellow; }
-    .bug { background-color: pink; }
-</style>
-
-#Console
+##Console
 
 The Console HUD is a useful tool for evaluating JavaScript statements, inspecting and logging objects and properties and even adding functionality to a page for quick debugging.
 
 The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or pressing the button with the command prompt icon in the application toolbar. This displays a HUD over the bottom half of the Opera Dragonfly window which can be made taller or shorter by dragging the top with the mouse.
 
-## Console API
+![Opera Dragonfly Console HUD](img/console-hud.png)
 
-Opera Dragonfly ships with support for the [Console API](http://getfirebug.com/wiki/index.php/Console_API) <ins class="bug">(but see DFL-1522, DFL-1535)</ins>. Anything logged by `console` methods is visible in the Console HUD. Certain console methods also appear in the Error Log (i.e., `console.log()`, `console.info()`, `console.warn()`, `console.error()`, `console.assert()`).
 
-###`console.log(obj [, obj, ...])` and `console.debug(obj [, obj, ...])`
+### Console API
 
-The most basic method for logging to the Opera Dragonfly console is `console.log()`. `console.debug()` logs to the console with the line number where the code was called from. <ins class="bug">(But see DFL-1542)</ins>
+Opera Dragonfly ships with support for the [Console API](http://getfirebug.com/wiki/index.php/Console_API). Anything logged by `console` methods is visible in the Console HUD. Certain console methods also appear in the Error Log (i.e., `console.log()`, `console.info()`, `console.warn()`, `console.error()`, `console.assert()`).
+>>>>>>> other
 
-    (might this be better a screenshot?)
+####`console.log(obj [, obj, ...])` and `console.debug(obj [, obj, ...])`
+
+The most basic method for logging to the Opera Dragonfly console is `console.log()`. `console.debug()` logs to the console with the line number where the code was called from.
+
     console.log(myVar);
     console.debug(myVar);
 
@@ -29,29 +23,27 @@ Multiple values can be logged inline by passing them in as additional arguments.
 
     console.log( 9001, true, { hello: "world" } )
 
-###`console.warn(obj [, obj, ...])`, `console.error(obj [, obj, ...])`, and `console.info(obj [, obj, ...])`
+####`console.warn(obj [, obj, ...])`, `console.error(obj [, obj, ...])`, and `console.info(obj [, obj, ...])`
 
-The `console.warn()`, `console.error()`, and `console.info()` methods offer the same functionality as console.log(), but with added semantics and visual emphasis <ins class="bug">(if DFL-1535 gets fixed)</ins>. Similar to `console.debug()`, these methods print a hyperlinked line number <ins class="bug">(see DFL-1542)</ins> that corresponds to where in the source it was called from.
+The `console.warn()`, `console.error()`, and `console.info()` methods offer the same functionality as console.log(), but with added semantics and visual emphasis. Similar to `console.debug()`, these methods print a hyperlinked line number that corresponds to where in the source it was called from.
 
-    [screenshot showing the color differences, some possible examples:]
     console.warn( document.getElementById('foo') == null );
     console.error( 'Session is secure: ' + false );
     console.info( userObject );
 
-###`console.dir(obj)` and `console.dirxml(DOM node)`
+####`console.dir(obj)` and `console.dirxml(DOM node)`
 
 The `console.dir()` method is useful when you need to inspect the properties of an object or DOM node. It will log all the properties and values of the object passed in as interactive, inspectable items.
 
-The `console.dirxml()` method is useful for logging the structural representation of a DOM element, logging the structure of the node similarly to what is seen in the Document view. Clicking on the logged element highlights it in the main document.
+The `console.dirxml()` method is useful for logging the structural representation of a DOM element and logging the structure of the node, similarly to what is seen in the Document view. Clicking on the logged element highlights it in the main document.
 
-###`console.count([name])`
-
+####`console.count([name])`
 The `console.count()` method logs the number of times a line of code is executed. It is possible to pass in an optional name to aid in readability.
 
     var obj = { a: "a", b: "b" }
     for (var keys in obj) console.count('keys');
 
-###`console.group(name)`, `console.groupCollapsed(name)`, `console.groupEnd()`
+####`console.group(name)`, `console.groupCollapsed(name)`, `console.groupEnd()`
 
 To create a collapsible group for a set of logged values, use the `console.group()` and `console.groupCollapsed()` methods. Begin the group by calling `console.group()` or `console.groupCollapsed()`, providing a name as an argument. Anything logged before `console.groupEnd()` is included in the named group.
 
@@ -59,11 +51,11 @@ To create a collapsible group for a set of logged values, use the `console.group
     console.log('stuff that belongs in the group')
     console.groupEnd();
 
-###`console.trace()`
+####`console.trace()`
 
 The `console.trace()` method prints a stack trace to the console. It is possible to click on the functions and argument values and inspect those in the Script tab.
 
-###`console.time(name)`, `console.timeEnd(name)`
+####`console.time(name)`, `console.timeEnd(name)`
 
 `console.time()` and `console.timeEnd()` log execution time of a code block. The names passed into `console.time()` and `console.timeEnd()` must match.
 
@@ -72,13 +64,13 @@ The `console.trace()` method prints a stack trace to the console. It is possible
     while ( i-- ) console.log( i );
     console.timeEnd('loop');
 
-###console.assert(expression)
+#### console.assert(expression)
 
 `console.assert()` logs an exception if an expression evaluates to false.
 
     console.assert( !true );
 
-## Command Line API
+### Command Line API
 
 The following command line shortcuts are available in the console:
 
@@ -133,7 +125,7 @@ The following command line shortcuts are available in the console:
   </tr>
 </table>
 
-## Keyboard Shortcuts
+### Keyboard Shortcuts
 
 The following cross-platform, Bash-like keyboard shortcuts are available in the console (note: <kbd>Ctrl</kbd> is used on Mac rather than <kbd>Cmd</kbd> to be consistent with how Bash on Mac works):
 

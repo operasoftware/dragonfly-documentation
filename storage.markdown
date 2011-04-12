@@ -48,7 +48,7 @@ The expiry date can be selected using the provided calendar widget. Opera Dragon
 
 ####Editing cookies
 
-Cookies can be edited by double clicking on the cookie row (or selecting <q>Edit cookie</q> from the context menu) to bring up editable fields and then altering the text in each field. As with adding a cookie, editing a cookie to apply to a different domain will keep the cookie, but it will not show in the list as it will no longer apply to the current debugging context.
+Cookies can be edited by double clicking on the cookie row, or by selecting <q>Edit cookie</q> from the context menu, to bring up editable fields and then altering the text in each field. As with adding a cookie, editing a cookie to apply to a different domain will keep the cookie, but it will not show in the list as it will no longer apply to the current debugging context.
 
 ####Deleting cookies
 
@@ -72,7 +72,6 @@ Local Storage is more like persistent cookies. The data stored with Local Storag
 ####Editing an entry
 
 Local and Session Storage Values can be edited by double-clicking on the value column. After updating the value click on the <q>Apply</q> button. Pressing the <q>Cancel</q> button will revert the change. Note that the key can not be edited in Opera Dragonfly.
-
 
 ####Deleting entries
 

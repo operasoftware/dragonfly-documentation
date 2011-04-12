@@ -2,7 +2,7 @@
 
 ### Supported products
 
-Opera Dragonfly runs inside the Opera desktop browser. It is recommended to use the latest version of Opera, but all versions from Opera 9.5 and later are supported. Opera Dragonfly automatically fallback to a version compatible with the version of Opera that is being debugged. Opera Dragonfly relies on the Scope module in order to communicate with the browser or user agent. All features may not be available if debugging a product with an earlier version of Scope.
+Opera Dragonfly runs inside the Opera desktop browser. It is recommended to use the latest version of Opera, but all versions from Opera 9.5 and later are supported. Opera Dragonfly will automatically fallback to a version compatible with the version of Opera that is being debugged. Opera Dragonfly relies on the Scope module in order to communicate with the browser or user agent. All features may not be available if debugging a product with an earlier version of Scope.
 
 Opera Dragonfly can remotely debug different instances of Opera or other Opera Presto-based browsers which made the Scope module available. Supported products include:
 
@@ -17,7 +17,7 @@ It is recommended to use the latest version of both Opera and the product being 
 
 ### Unsupported products
 
-Opera Dragonfly is not supported in Opera products which use a Opera Presto version older than version 2.1. This includes the Nintendo Wii Internet Channel and the Nintendo DS(i).
+Opera Dragonfly is not supported in Opera products which use an Opera Presto version older than version 2.1. This includes the Nintendo Wii Internet Channel and the Nintendo DS(i).
 
 Although Opera Mini contains an up-to-date version of Opera Presto, the Opera Mini server compresses the output before sending it to the phone or tablet. Due to this, Opera Mini does not currently support Opera Dragonfly.
 
@@ -40,5 +40,3 @@ To switch versions of Opera Dragonfly:
 The new version will take effect when relaunching Opera Dragonfly.
 
 It is also possible to download an in-development branch of Opera Dragonfly from the  <a href="https://bitbucket.org/scope/dragonfly-stp-1">BitBucket</a> repository. The steps are the same to switch to a local version, except the <q>Developer Tools URL</q> should point to the <q>client-en.xml</q> location, using the <code>file://</code> protocol. This file is found within the <q>src</q> folder.
-
- 
