@@ -13,42 +13,77 @@ In the left column, each URI is preceded with an icon. This provides a visual cu
 <table style="width:15em;">
 <caption>Table of file types and related icons</caption>
 <tr>
-    <th>icon</th>
-    <th>file type</th>
-</tr>
-<tr>
-    <td><img src="img/filetype_html.png" alt="html icon"/></td>
-    <td>html</td>
-</tr>
-<tr>
-    <td><img src="img/filetype_image.png" alt="image icon"/></td>
-    <td>image</td>
-</tr>
-<tr>
-    <td><img src="img/filetype_audio.png" alt="audio icon"/></td>
+    <td><img src="img/type_audio.png" alt="audio icon"/></td>
     <td>audio</td>
 </tr>
 <tr>
-    <td><img src="img/filetype_video.png" alt="video icon"/></td>
-    <td>video</td>
+    <td><img src="img/type_data.png" alt="data icon"/></td>
+    <td>data</td>
 </tr>
 <tr>
-    <td><img src="img/filetype_stylesheet.png" alt="stylesheet icon"/></td>
-    <td>stylesheet</td>
+    <td><img src="img/type_feed.png" alt="feed icon"/></td>
+    <td>feed</td>
 </tr>
 <tr>
-    <td><img src="img/filetype_javascript.png" alt="javascript icon"/></td>
-    <td>javascript</td>
-</tr>
-<tr>
-    <td><img src="img/filetype_unknown.png" alt="unknown icon"/></td>
-    <td>unknown</td>
-</tr>
-<tr>
-    <td><img src="img/filetype_flash.png" alt="flash icon"/></td>
+    <td><img src="img/type_flash.png" alt="flash icon"/></td>
     <td>flash</td>
 </tr>
-</table>
+<tr>
+    <td><img src="img/type_font.png" alt="font icon"/></td>
+    <td>font</td>
+</tr>
+<tr>
+    <td><img src="img/type_generic.png" alt="generic icon"/></td>
+    <td>generic</td>
+</tr>
+<tr>
+    <td><img src="img/type_markup.png" alt="markup icon"/></td>
+    <td>markup (html, xhtml, …)</td>
+</tr>
+<tr>
+    <td><img src="img/type_other.png" alt="other icon"/></td>
+    <td>other, unknown</td>
+</tr>
+<tr>
+    <td><img src="img/type_pdf.png" alt="pdf icon"/></td>
+    <td>pdf</td>
+</tr>
+<tr>
+    <td><img src="img/type_picture.png" alt="picture icon"/></td>
+    <td>picture (png, webp, jpg, gif, …)</td>
+</tr>
+<tr>
+    <td><img src="img/type_plugin.png" alt="plugin icon"/></td>
+    <td>plugin</td>
+</tr>
+<tr>
+    <td><img src="img/type_postscript.png" alt="postscript icon"/></td>
+    <td>postscript</td>
+</tr>
+<tr>
+    <td><img src="img/type_script.png" alt="script icon"/></td>
+    <td>script (javascript, …)</td>
+</tr>
+<tr>
+    <td><img src="img/type_silverlight.png" alt="silverlight icon"/></td>
+    <td>silverlight</td>
+</tr>
+<tr>
+    <td><img src="img/type_style.png" alt="style icon"/></td>
+    <td>style (css)</td>
+</tr>
+<tr>
+    <td><img src="img/type_text.png" alt="text icon"/></td>
+    <td>text</td>
+</tr>
+<tr>
+    <td><img src="img/type_vector.png" alt="vector icon"/></td>
+    <td>vector (svg)</td>
+</tr>
+<tr>
+    <td><img src="img/type_video.png" alt="video icon"/></td>
+    <td>video (ogg, …)</td>
+</tr></table>
 
 Each URIs will be followed by the specific HTTP status code associated with them. When hovering the status code, an explanation of the HTTP status code is given.
 
@@ -58,12 +93,14 @@ The right column is a long panel with vertical lines. Each line marks 100 millis
 * the [request time](https://bitbucket.org/scope/dragonfly-stp-1/src/197e88952ad3/src/network/network_service.js#cl-316) (left end of the colored bar)
 * the end time when the request has been completed. (right end of the colored bar)
 
-![Network Network Log Bar](img/network-network-log-bar.png)
+![Network Network Log Bar](img/network-time-detail.png)
 
 Placing the mouse over the horizontal bar will reveal three values in a box for these events in milliseconds: [[Total duration]], [[Request time]] and [[Response time]]. When the information has been loaded from the cache, `Cached:` is displayed with the time in milliseconds.
 
 There are two buttons on the toolbar just under Network log tab label. The first one pauses all subsequent HTTP requests. It becomes handy for a Web page using intensively XMLHttpRequest. The second one fits the network cascade view to the width of the window in order to avoid horizontal scrolling.
- 
+
+![Resizing the window](img/network-window-tight.png)
+
 ### Make Request
 
 The Make Request tab is a tool for creating a custom HTTP request to a specific URI and obtain the HTTP response with or without the payload. 
