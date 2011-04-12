@@ -1,4 +1,4 @@
-## Storage Inspector
+##Storage Inspector
 
 The Storage Inspector in Opera Dragonfly is accessible from the Storage panel in the application toolbar. The Storage Inspector displays all the data that is stored by the site or application on the client-side. This includes cookies and HTML5 Web Storage. For applications based on W3C Widgets (such as Opera Widgets and Opera Extensions), data stored in Widget Preferences is also shown.
 
@@ -8,7 +8,9 @@ A cookie consists of name-value pairs and associated metadata. An HTTP server ca
 
 Note: Cookies were defined by [HTTP State Management Mechanism (RFC 2965)](http://tools.ietf.org/html/rfc2965) but it is in the process of being obsoleted by [HTTP State Management Mechanism] (http://tools.ietf.org/html/draft-ietf-httpstate-cookie).
 
-The cookies panel lists all cookies set by the site being debugged: they are arranged in a table, sorted by domain and grouped by the host and path. Each row includes a column for each cookie attribute: name, value, expiry date etc. 
+The cookies panel lists all cookies set by the site being debugged: they are arranged in a table, sorted by domain and grouped by the host and path. Each row includes a column for each cookie attribute: name, value, expiry date etc.
+
+<img src="img/cookies-list.png" alt="list of cookies" />
 
 ####Types of cookies
 
@@ -20,7 +22,7 @@ A session cookie, once set by the server, will be deleted at the end of the sess
    
 #####Persistent cookie
 
-A persistent cookie is not destroyed when the session ends. It lasts for the time period listed in the <q>Expires</q> column. The Expires column uses a human-friendly representation of the expiry date. Hovering over the expiry date will show the complete expiry date and time in a tooltip. 
+A persistent cookie is not destroyed when the session ends. It lasts for the time period listed in the <q>Expires</q> column. The Expires column uses a human-friendly representation of the expiry date. Hovering over the expiry date will show the complete expiry date and time in a tooltip.
 
 #####Secure cookie
 
@@ -36,6 +38,8 @@ Clicking on the headings of each column will sort the table in ascending/descend
 
 Cookies are grouped by their hosts and paths by default. It is possible to ungroup the cookies by selecting <q>No grouping</q> from the table header row’s context menu.
 
+<img src="img/no-grouping.png" alt="ungrouping cookies" />
+
 ####Selecting cookies
 
 Clicking on a cookie's row will select it. It is possible to select multiple cookies by holding down the <kbd>Ctrl</kbd> (<kbd>⌘</kbd>) key while clicking on them.  
@@ -43,6 +47,8 @@ Clicking on a cookie's row will select it. It is possible to select multiple coo
 ####Adding a cookie
 
 A cookie can be added by selecting <q>Add cookie</q> from the context menu, or clicking on the <q>Add cookie</q> button. When the cookies are grouped, each domain has a <q>Add cookie</q> button, which pre-fills the domain field to that domain. When ungrouped, the button can be found at the bottom of the table, and the domain is pre-filled to the same domain as the previous cookie. The domain can be set to any valid domain, but it will not be shown if it doesn't match one of the listed domains. The cookie will be shown when inspecting the domain on which it was set.
+
+<img src="img/adding-cookie.png" alt="Adding a new cookie" />
 
 The expiry date can be selected using the provided calendar widget. Opera Dragonfly will automatically translate the date and time into a easily human-readable date. To set a session cookie, set the date to 1970-1-1 0:00 (the Unix epoch). This is a current limitation with the UI, which will be fixed in a future version.
 
@@ -59,6 +65,8 @@ There are two options for deleting cookies. An individual cookie can be removed 
 The [Web Storage API](http://www.w3.org/TR/webstorage/) defines persistent storage of data using key-value pairs in Web clients. Web Storage can fulfill the same use cases as cookies, without many of the drawbacks such as increased storage space or the ability to access stored data for the same Web site across two different windows. 
  
 The Storage Inspector separates the two types of Web Storage into their own sub panels. Each entry is displayed in a key-value list. 
+
+<img src="img/local-storage.png" alt="local storage" />
 
 ####Session Storage
 
@@ -79,7 +87,7 @@ An entry can be deleted by clicking on the <q>delete</q> icon at the end of the 
 
 ####Adding an entry 
 
-An entry can be added by pressing the plus icon under the table. This will add an extra row at the end of the table where the key and value can be entered. Saving and canceling are handled in the same way as editing an entry.
+An entry can be added by clicking the <q>Add</q> button under the table. This will add an extra row at the end of the table where the key and value can be entered. Saving and canceling are handled in the same way as editing an entry.
 
 ###Widget Preferences
 
