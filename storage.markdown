@@ -91,7 +91,7 @@ An entry can be added by clicking the <q>Add</q> button under the table. This wi
 
 ###Widget Preferences
 
-Widget preferences use the same Storage interface as Web Storage, but are specific to applications implementing the Widgets API. In the Opera browser, each Widget or Extension has its own storage area to store its preference data. The data in this storage area can be found via the Widget Preferences panel, which remains blank for web sites and applications that do not implement the Widgets API.
+<a href="http://www.w3.org/TR/widgets-apis/#the-preferences-attribute">Widget preferences</a> use the same Storage interface as Web Storage, but are specific to applications implementing the Widgets API. In the Opera browser, each Widget or Extension has its own storage area to store its preference data. The data in this storage area can be found via the Widget Preferences panel, which remains blank for web sites and applications that do not implement the Widgets API.
 
 Data in the Widget Preferences panel can be manipulated in the same way as Web Storage entries.
 
