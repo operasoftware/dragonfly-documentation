@@ -4,6 +4,8 @@
 
 [[Opera Dragonfly]] is a fully featured development and [[debugging]] tool integrated into the [[Opera browser]]. It requires no additional installation or setup, and works across many of Opera’s browsers and [[Opera Presto]] based products, such as [[Opera Mobile]] and [[Opera Widgets]].
 
+<img src="img/intro.png" alt="Opera Dragonfly with color picker and magnifier open" />
+
 As the power of the [[Open Web platform]] increases, high quality tools such as Opera Dragonfly ease the development process. The various tools explained in this guide cover the full debugging workflow, from inspecting network access and downloaded resources, to debugging [[JavaScript]] issues and how [[CSS]] rules apply to the [[DOM]]. Support is included for debugging the very latest technologies, from [[SVG]] to [[HTML5 API]]s such as [[Web Storage]]. For lovers of the [[command line]], a [[Console HUD]] can be brought up at any time in the debugging process to interact with the document. There has never been a better excuse to banish JavaScript [[alert debugging]] to the past.
 
 ## Launching Opera Dragonfly
@@ -32,6 +34,8 @@ The [[windowing controls]] can be found at the top right of the Opera Dragonfly 
 
 The first icon of the group is for selecting the [[debugging context]]. This switches the [[tab]], [[window]], Widget, or [[Extension]] that Opera Dragonfly attaches itself to into debug mode. The default debugging context when opening Opera Dragonfly is the currently [[active tab or window]]. It may be necessary to switch the debugging context when switching tabs, debugging a page on a [[remote device]], or a debugging a Widget or Extension. 
 
+<img src="img/context-selector.png" alt="Selecting the debugging context" />
+
 The [[debugging context selector]] lists all available contexts to which Opera Dragonfly can connect. Selecting a different context will disconnect Opera Dragonfly from the current debugging context and attach itself to the new one. If the connected debugging context is not the currently active window or tab, an option at the top of the list will be available to quickly switch to that context. It is also possible to reload the context from this menu. Reloading can also be done from the regular browser reload button. This is needed for Opera Dragonfly to receive information about [[scripts]], [[resources]] and [[errors]]. The DOM Inspector functions fine without reloading.
 
 ### Detaching the window
@@ -46,9 +50,14 @@ The final windowing control button is the close button. This button closes Opera
 
 Each of the main tools in Opera Dragonfly are organized into [[panels]], accessed from the [[application toolbar]]. Each tool is identified by an icon and a label describing the type of content or activity that the tool is designed to inspect or debug. The Scripts button accesses the [[JavaScript Debugger]] for example, while Documents accesses the DOM and [[Style Inspectors]].
 
+<img src="img/uimap.png" alt="The UI components of Opera Dragonfly" />
+
 Each tool replaces the area below the application toolbar with its own UI. Each tool is generally split into several [[sub-panels]], which can be accessed by clicking on the panel’s tab. 
 
 ## Common features
+
+<img src="img/common-components.png" alt="Common UI components between tools" />
+
 
 There are a number of UI features common between all the different tools:
 
@@ -68,6 +77,8 @@ A debugging context often has multiple scripts (including [[inline scripts]] and
 
 Editing content is done consistently across the application. All editing commands can be found in the context menu when right clicking any editable content. Double clicking also enters [[editing mode]]; <kbd>Enter</kbd> submits the edit in [[single-line edit mode]], and <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) submits an edit in [[multi-line edit mode]]. The <kbd>Esc</kbd> key cancels the edit. Full details on editing can be found in the relevant chapter for each tool.
 
+<img src="img/edit-specs.png" alt="Context menu with options for editing and viewing the specification" />
+
 ### Specification links
 
 Throughout the application it is possible to access the [[specification]] for features such as DOM properties and functions, ECMAScript objects, CSS properties, and HTTP headers. The spec can be accessed by clicking the specification option in the context menu of the relevant feature. 
@@ -80,10 +91,16 @@ There are three [[global features]] that can be accessed when using any tool in 
 
 The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or pressing by the button with the command prompt icon. The displays a HUD over the bottom half of the Opera Dragonfly window. This can be used to enter commands and evaluate JavaScript statements. Full details can be found in the Console chapter.
 
+<img src="img/console.png" alt="The Console HUD overlays the UI" />
+
 ### Settings
 
-All settings for the application can be accessed from the settings overlay. This can be accessed from the cog wheel button. Most settings take immediate effect. 
+All settings for the application can be accessed from the settings overlay. This can be accessed from the cog wheel button. Most settings take immediate effect.
+
+<img src="img/settings.png" alt="Viewing settings" />
 
 ### Remote Debugging
 
 The Remote Debug feature allows Opera Dragonfly to connect to other instances of Opera on a [[local]] or remote device. This is especially useful when working with devices such as mobile phones, tablets, and TVs. Pressing the remote debug button opens the connection overlay. For more information see the remote debugging chapter.
+
+<img src="img/remote.png" alt="Enabling remote debugging" />
