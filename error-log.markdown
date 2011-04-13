@@ -4,13 +4,13 @@ The Error Log is the place to track down syntax and parser errors that may cause
 
 Click on the Errors icon in the application toolbar to access the Error Log. The number of errors for the current debugging context is conveniently displayed in the icon itself.
 
-![Dragonfly Error Log](img/error-whole.png)
+![Opera Dragonfly Error Log](img/error-whole.png)
 
 ###Search
 
 To search through all errors on a page, use the Search control on the Error Log toolbar.
 
-![Dragonfly Error Log search](img/error-search.png)
+![Opera Dragonfly Error Log search](img/error-search.png)
 
 ###Tabs
 
@@ -18,7 +18,7 @@ By default, the All tab will be selected, showing every type of error for the cu
 
 To add or remove tabs from the Error Log, select the appropriate checkbox from the Error Log tab of the Opera Dragonfly Settings.
 
-[screenshot] **I need someone to take this screenshot--my version is blank for the options.**
+<img src="img/error-tabs.png" alt="Enable and disable Error Log tabs" title="" />
 
 Error messages can be opened one by one by clicking on them, or globally by clicking the Expand All icon in the Error Log toolbar.
 
@@ -40,7 +40,7 @@ You can direct messages to the Error Log programmatically by using the `console.
 
 Custom CSS filters can be defined in the Error Log settings tab to remove certain types of errors from the All and CSS tabs of the Error Log. Comma separated filters will be matched and ignored. For example, a filter such as `_padding` will force the Error log to ignore the IE6 underscore hack for padding properties.
 
-[screenshot] I need someone to take this screenshot--my version is blank for the options.
+<img src="img/css-filter.png" alt="Filter for removing known CSS errors" title="" />
 
 ###Clearing the Error Log
 
