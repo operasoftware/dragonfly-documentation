@@ -4,7 +4,7 @@ Opera Dragonfly contains a fully-featured JavaScript Debugger. This is accessibl
 
 <img src="img/debugger.png" alt="The JavaScript Debugger" />
 
-Note: Opera Dragonfly also features a Console HUD, which is fully integrated with the debugger.
+Note: Opera Dragonfly also features a <a href="/dragonfly/documentation/console/">Console HUD</a>, which is fully integrated with the debugger.
 
 ### Source view ###
 
@@ -12,7 +12,7 @@ The source view provides a means to view and interact with JavaScript files and 
 
 ####Selecting a script
 
-Any linked, inline and evaled scripts can be selected from the document selector in the Scripts toolbar. These are organized under their parent runtime. If there are multiple documents, such as iframes or linked SVG files, the scripts will be listed under the document in which they are defined. Injected scripts such as Browser.js and User.js are also listed under their respective headings.
+Any linked, inline and evaled scripts can be selected from the document selector in the Scripts toolbar. These are organized under their parent runtime. If there are multiple documents, such as iframes or linked SVG files, the scripts will be listed under the document in which they are defined. Injected scripts such as <a href="http://www.opera.com/docs/browserjs/">Browser.js</a> and User.js are also listed under their respective headings.
 
 <img src="img/script-selector.png" alt="Selecting a script" />
 
@@ -58,7 +58,7 @@ An event breakpoint pauses execution when the specified type of event is fired. 
 
 ###### Custom events
 
-With DOM Level 3 Events it is possible to use the CustomEvent interface to define a custom event in JavaScript. In Opera Dragonfly it is possible to break on a custom event by entering the custom event name in the text field under the <q>Custom Events</q> heading and clicking the <q>Apply</q> button.
+With <a href="http://www.w3.org/TR/DOM-Level-3-Events/">DOM Level 3 Events</a> it is possible to use the <a href="http://www.w3.org/TR/DOM-Level-3-Events/#interface-CustomEvent">CustomEvent interface</a> to define a custom event in JavaScript. In Opera Dragonfly it is possible to break on a custom event by entering the custom event name in the text field under the <q>Custom Events</q> heading and clicking the <q>Apply</q> button.
 
 ##### Conditional breakpoint
 
