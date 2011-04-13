@@ -63,15 +63,15 @@ There are a number of UI features common between all the different tools:
 
 ### Search
 
-The <a href="/dragonfly/documentation/appendixd/#search-bar">search bar</a> can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>F3</kbd> on Mac, or <kbd>fn</kbd>+<kbd>F3</kbd> for keyboards the define OS functions to the function keys), or clicking on the search button. It is possible to navigate between results using <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd>. The JavaScript Debugger includes an advanced mode for searching in all scripts. More information on search can be found in the relevant chapter for each tool.
+The <a href="/dragonfly/documentation/appendixd/#search-bar">search bar</a> can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>F3</kbd> on Mac, or <kbd>fn</kbd>+<kbd>F3</kbd> for keyboards the define OS functions to the function keys), or clicking on the search button. It is possible to navigate between results using <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd>. The <a href="/dragonfly/documentation/debugger/">JavaScript Debugger</a> includes an advanced mode for searching in all scripts. More information on search can be found in the relevant chapter for each tool.
 
 ### Filtering
 
-A number of panels support <a href="/dragonfly/documentation/appendixd/#filtering">filtering</a>. This is similar to search, but removes all statements that do not meet the <a href="/dragonfly/documentation/appendixd/#filter-query">filter query</a>. The filter fields can be found in the <a href="/dragonfly/documentation/appendixd/#side-panels">side panels</a> of the DOM Inspector and JavaScript Debugger. Various <a href="/dragonfly/documentation/appendixd/#properties">properties</a> can be filtered out by default, such as <a href="/dragonfly/documentation/appendixd/#initial-style">initial styles</a> in the Style Inspector, and default values which are null or empty strings in the JavaScript Debugger. Switches next to the filter field enable and disable these filters. 
+A number of panels support <a href="/dragonfly/documentation/appendixd/#filtering">filtering</a>. This is similar to search, but removes all statements that do not meet the <a href="/dragonfly/documentation/appendixd/#filter-query">filter query</a>. The filter fields can be found in the <a href="/dragonfly/documentation/appendixd/#side-panels">side panels</a> of the <a href="/dragonfly/documentation/dom/">DOM Inspector</a> and JavaScript Debugger. Various <a href="/dragonfly/documentation/appendixd/#properties">properties</a> can be filtered out by default, such as <a href="/dragonfly/documentation/appendixd/#initial-style">initial styles</a> in the Style Inspector, and default values which are null or empty strings in the JavaScript Debugger. Switches next to the filter field enable and disable these filters. 
 
 ### Document selection
 
-A debugging context often has multiple scripts (including <a href="/dragonfly/documentation/appendixd/#inline-script">inline scripts</a> and <a href="/dragonfly/documentation/appendixd/#eval">eval</a>) or documents (such as documents embedded using the <code>object</code> or <code>iframe</code> elements). These documents or scripts can be selected using the <a href="/dragonfly/documentation/appendixd/#document-selector">document selector</a> in the <a href="/dragonfly/documentation/appendixd/#main-panel">main panel</a>’s <a href="/dragonfly/documentation/appendixd/#toolbar">toolbar</a>. Scripts are organized under the <a href="/dragonfly/documentation/appendixd/#parent-document">parent document</a> from which they are linked or defined. Selecting an entry in the document selector will display that document or script in the script panel. As the console is global, if there is more than one script it also needs to be selected from its own document selector. 
+A debugging context often has multiple scripts (including <a href="/dragonfly/documentation/appendixd/#inline-script">inline scripts</a> and <a href="/dragonfly/documentation/appendixd/#eval">eval</a>) or documents (such as documents embedded using the <code>object</code> or <code>iframe</code> elements). These documents or scripts can be selected using the <a href="/dragonfly/documentation/appendixd/#document-selector">document selector</a> in the <a href="/dragonfly/documentation/appendixd/#main-panel">main panel</a>’s <a href="/dragonfly/documentation/appendixd/#toolbar">toolbar</a>. Scripts are organized under the <a href="/dragonfly/documentation/appendixd/#parent-document">parent document</a> from which they are linked or defined. Selecting an entry in the document selector will display that document or script in the script panel. As the <a href="/dragonfly/documentation/console/">console</a> is global, if there is more than one script it also needs to be selected from its own document selector. 
 
 ### Editing
 
@@ -89,7 +89,7 @@ There are three <a href="/dragonfly/documentation/appendixd/#global-feature">glo
 
 ### Console HUD
 
-The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or pressing by the button with the command prompt icon. The displays a HUD over the bottom half of the Opera Dragonfly window. This can be used to enter commands and evaluate JavaScript statements. Full details can be found in the Console chapter.
+The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or pressing by the button with the command prompt icon. The displays a HUD over the bottom half of the Opera Dragonfly window. This can be used to enter commands and evaluate JavaScript statements. Full details can be found in the <a href="/dragonfly/documentation/console/">Console chapter</a>.
 
 <img src="img/console.png" alt="The Console HUD overlays the UI" />
 
@@ -101,6 +101,6 @@ All settings for the application can be accessed from the settings overlay. This
 
 ### Remote Debugging
 
-The Remote Debug feature allows Opera Dragonfly to connect to other instances of Opera on a <a href="/dragonfly/documentation/appendixd/#local-device">local</a> or remote device. This is especially useful when working with devices such as mobile phones, tablets, and TVs. Pressing the remote debug button opens the connection overlay. For more information see the remote debugging chapter.
+The Remote Debug feature allows Opera Dragonfly to connect to other instances of Opera on a <a href="/dragonfly/documentation/appendixd/#local-device">local</a> or remote device. This is especially useful when working with devices such as mobile phones, tablets, and TVs. Pressing the remote debug button opens the connection overlay. For more information see the <a href="/dragonfly/documentation/remote/">remote debugging</a> chapter.
 
 <img src="img/remote.png" alt="Enabling remote debugging" />
