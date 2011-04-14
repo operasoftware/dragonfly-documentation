@@ -78,7 +78,7 @@ Adding a new property can be achieved by double clicking at the end of an existi
 
 Deleting a property can be achieved by entering edit mode, selecting the whole line and pressing <kbd>Delete</kbd>, or selecting <q>Remove declaration</q> from the context menu.
 
-Instead of deleting a property it is often useful while debugging to temporarily disable it. This can be achieved by hovering over a property and unchecking the check box. This will grey out the property. Checking the box again will re-enable it.
+Instead of deleting a property it is often useful while debugging to temporarily disable it. This can be achieved by hovering over a property and unchecking the checkbox. This will grey out the property. Checking the box again will re-enable it.
 
 <img src="img/disabled-declarations.png" alt="Disabling CSS properties" />
 

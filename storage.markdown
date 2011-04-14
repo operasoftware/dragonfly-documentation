@@ -6,7 +6,7 @@ The Storage Inspector in Opera Dragonfly is accessible from the Storage panel in
 
 A cookie consists of name-value pairs and associated metadata. An HTTP server can use the `Set-Cookie` header to pass the pairs to the browser in the HTTP header response. When the user agent makes subsequent requests to the server, the user agent uses the metadata and other information to determine whether to return the name/value pairs in the `Cookie` header. 
 
-Note: Cookies were defined by [HTTP State Management Mechanism (RFC 2965)](http://tools.ietf.org/html/rfc2965) but it is in the process of being obsoleted by [HTTP State Management Mechanism] (http://tools.ietf.org/html/draft-ietf-httpstate-cookie).
+Note: Cookies were defined by [HTTP State Management Mechanism (RFC 2965)](http://tools.ietf.org/html/rfc2965) but it is in the process of being obsoleted by [HTTP State Management Mechanism](http://tools.ietf.org/html/draft-ietf-httpstate-cookie).
 
 The cookies panel lists all cookies set by the site being debugged: they are arranged in a table, sorted by domain and grouped by the host and path. Each row includes a column for each cookie attribute: name, value, expiry date etc.
 

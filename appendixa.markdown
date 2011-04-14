@@ -7,9 +7,9 @@ Opera Dragonfly runs inside the Opera desktop browser. It is recommended to use 
 Opera Dragonfly can remotely debug different instances of Opera or other Opera Presto-based browsers which made the Scope module available. Supported products include:
 
 * <a href="http://www.opera.com/browser/">Opera 9.5 and above</a> (Mac, Windows, Linux, and FreeBSD)
-* <a href="http://www.opera.com/mobile/">Opera Mobile 9.5 and above</a> (Android, Symbian, Windows Mobile, and MeeGo/Maemo)
-* <a href="http://www.opera.com/mobile/features/tablets/">Opera Mobile for Tablets 11</a> (Android, and Windows 7)
-* <a href="http://www.opera.com/developer/tools/">Opera Mobile Emulator 10.1 and above</a> (Mac, Windows, Linux, and FreeBSD)
+* <a href="http://www.opera.com/mobile/">Opera Mobile 9.51 and above</a> (Android, Symbian, Windows Mobile, and MeeGo/Maemo)
+* <a href="http://www.opera.com/mobile/features/tablets/">Opera Mobile 11 for Tablets</a> (Android, and Windows 7)
+* <a href="http://www.opera.com/developer/tools/">Opera Mobile Emulator 10.1 and above</a> (Mac, Windows, and Linux)
 * Opera Widgets Manager (Symbian, and Windows Mobile)
 * Opera Devices SDK 9.7 and above
 

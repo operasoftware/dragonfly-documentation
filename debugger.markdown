@@ -129,7 +129,7 @@ All variables in scope for the execution context are listed along with their cur
 
 <img src="img/inspection-section.png" alt="The inspection section" />
 
-As the number of properties can start to get unwieldy, it is possible to hide variables which have a default value of null or an empty string by un-clicking the relevant button on the Inspection toolbar. It is also possible to hide non-enumerable properties.
+As the number of properties can start to get unwieldy, it is possible to hide variables which have a default value of null or an empty string by deactivating the relevant button on the Inspection toolbar. It is also possible to hide non-enumerable properties.
 
 It is also possible to filter by a search term using the Filter field in the toolbar. This will only match properties that are currently visible.
 
