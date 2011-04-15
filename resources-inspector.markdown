@@ -22,7 +22,7 @@ When clicking on a specific line, a new tab opens with the source code for an HT
 
 ![Resource Detail Expand](img/resource-detail-expand.png)
 
-The first tab is the All resources view. When pressing Ctrl+click in this window, a menu appears. Resources can then be organized by hosts or by groups.
+The first tab is the All resources view. When pressing Ctrl+click in this window, a menu appears. Resources can then be organized by hosts or by type.
 
 ![Resource Grouping Opt](img/resource-grouping-opt.png)
 
@@ -30,7 +30,7 @@ Selecting "Group by Host" will reorder the resource list alphabetically by host.
 
 ![Resource By Host](img/resource-by-host.png)
 
-To focus on a specific resource by type, select the "Group by Groups" option. All styles, all images and all HTML resources will then be grouped together.
+To focus on a specific resource by type, select the "Group by Type" option. All styles, all images and all HTML resources will then be grouped together.
 
 ![Resource By Type](img/resource-by-type.png)
 

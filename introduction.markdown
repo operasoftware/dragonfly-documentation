@@ -24,7 +24,7 @@ The keyboard shortcut to launch Opera Dragonfly is <kbd>Ctrl</kbd>+<kbd>Shift</k
 
 On Windows and Linux click on the <a href="/dragonfly/documentation/appendixd/#opera-menu>Opera menu</a> in the upper left hand corner of the Opera browser <a href="/dragonfly/documentation/appendixd/#chrome">chrome</a> and select Edit → Developer Tools → Opera Dragonfly.
 
-On Mac select Tools → Advanced → Opera Dragonfly from the <a href="/dragonfly/documentation/appendixd/#">menu bar</a>.
+On Mac select Tools → Advanced → Opera Dragonfly from the <a href="/dragonfly/documentation/appendixd/#menu-bar">menu bar</a>.
 
 ## Window and tab management
 
@@ -32,7 +32,7 @@ The <a href="/dragonfly/documentation/appendixd/#windowing-controls">windowing c
 
 ### Selecting the debugging context
 
-The first icon of the group is for selecting the <a href="/dragonfly/documentation/appendixd/#debugging-contenxt">debugging context</a>. This switches the <a href="/dragonfly/documentation/appendixd/#tab">tab</a>, <a href="/dragonfly/documentation/appendixd/#window">window</a>, Widget, or <a href="/dragonfly/documentation/appendixd/#opera-extension">Extension</a> that Opera Dragonfly attaches itself to into debug mode. The default debugging context when opening Opera Dragonfly is the currently <a href="/dragonfly/documentation/appendixd/#active-tab">active tab or window</a>. It may be necessary to switch the debugging context when switching tabs, debugging a page on a <a href="/dragonfly/documentation/appendixd/#remote-device">remote device</a>, or a debugging a Widget or Extension. 
+The first icon of the group is for selecting the <a href="/dragonfly/documentation/appendixd/#debugging-context">debugging context</a>. This switches the <a href="/dragonfly/documentation/appendixd/#tab">tab</a>, <a href="/dragonfly/documentation/appendixd/#window">window</a>, Widget, or <a href="/dragonfly/documentation/appendixd/#opera-extension">Extension</a> that Opera Dragonfly attaches itself to into debug mode. The default debugging context when opening Opera Dragonfly is the currently <a href="/dragonfly/documentation/appendixd/#active-tab">active tab or window</a>. It may be necessary to switch the debugging context when switching tabs, debugging a page on a <a href="/dragonfly/documentation/appendixd/#remote-device">remote device</a>, or a debugging a Widget or Extension. 
 
 <img src="img/context-selector.png" alt="Selecting the debugging context" />
 
@@ -48,7 +48,7 @@ The final windowing control button is the close button. This button closes Opera
 
 ## Accessing the tools
 
-Each of the main tools in Opera Dragonfly are organized into <a href="/dragonfly/documentation/appendixd/#panels">panels</a>, accessed from the <a href="/dragonfly/documentation/appendixd/#application-toolbar">application toolbar</a>. Each tool is identified by an icon and a label describing the type of content or activity that the tool is designed to inspect or debug. The Scripts button accesses the <a href="/dragonfly/documentation/appendixd/#javaScript-debugger">JavaScript Debugger</a> for example, while Documents accesses the DOM and <a href="/dragonfly/documentation/appendixd/#style-inspector">Style Inspectors</a>.
+Each of the main tools in Opera Dragonfly are organized into <a href="/dragonfly/documentation/appendixd/#panel">panels</a>, accessed from the <a href="/dragonfly/documentation/appendixd/#application-toolbar">application toolbar</a>. Each tool is identified by an icon and a label describing the type of content or activity that the tool is designed to inspect or debug. The Scripts button accesses the <a href="/dragonfly/documentation/appendixd/#javaScript-debugger">JavaScript Debugger</a> for example, while Documents accesses the DOM and <a href="/dragonfly/documentation/appendixd/#style-inspector">Style Inspectors</a>.
 
 <img src="img/uimap.png" alt="The UI components of Opera Dragonfly" />
 
@@ -67,7 +67,7 @@ The <a href="/dragonfly/documentation/appendixd/#search-bar">search bar</a> can 
 
 ### Filtering
 
-A number of panels support <a href="/dragonfly/documentation/appendixd/#filtering">filtering</a>. This is similar to search, but removes all statements that do not meet the <a href="/dragonfly/documentation/appendixd/#filter-query">filter query</a>. The filter fields can be found in the <a href="/dragonfly/documentation/appendixd/#side-panels">side panels</a> of the <a href="/dragonfly/documentation/dom/">DOM Inspector</a> and JavaScript Debugger. Various <a href="/dragonfly/documentation/appendixd/#properties">properties</a> can be filtered out by default, such as <a href="/dragonfly/documentation/appendixd/#initial-style">initial styles</a> in the Style Inspector, and default values which are null or empty strings in the JavaScript Debugger. Switches next to the filter field enable and disable these filters. 
+A number of panels support <a href="/dragonfly/documentation/appendixd/#filtering">filtering</a>. This is similar to search, but removes all statements that do not meet the <a href="/dragonfly/documentation/appendixd/#filter-query">filter query</a>. The filter fields can be found in the <a href="/dragonfly/documentation/appendixd/#side-panel">side panels</a> of the <a href="/dragonfly/documentation/dom/">DOM Inspector</a> and JavaScript Debugger. Various <a href="/dragonfly/documentation/appendixd/#properties">properties</a> can be filtered out by default, such as <a href="/dragonfly/documentation/appendixd/#initial-style">initial styles</a> in the Style Inspector, and default values which are null or empty strings in the JavaScript Debugger. Switches next to the filter field enable and disable these filters. 
 
 ### Document selection
 
