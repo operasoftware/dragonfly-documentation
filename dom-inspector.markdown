@@ -54,7 +54,7 @@ To edit the entire element, including its children, double click on the start or
 
 An additional attribute can be added to the element while in edit mode by tabbing to the end of the element. An edit field for a new attribute will be created when tabbing past the last attribute. A quicker alternative is to select <q>Add attribute</q> from the element’s context menu.
 
-An element can be removed from the document by selecting <q>Remove node</q> from the element’s context menu.
+An element can be removed from the document by selecting <q>Delete node</q> from the element’s context menu.
 
 ####Viewing styles
 
@@ -76,7 +76,7 @@ Editing styles works the same way as editing the DOM. Double clicking on a prope
 
 Adding a new property can be achieved by double clicking at the end of an existing property and pressing <kbd>Enter</kbd> or selecting <q>Add declaration</q> from the context menu. It is important to note that as the properties are ordered alphabetically, if the new property is valid it will be move into the correct alphabetical position. An invalid property is ignored.
 
-Deleting a property can be achieved by entering edit mode, selecting the whole line and pressing <kbd>Delete</kbd>, or selecting <q>Remove declaration</q> from the context menu.
+Deleting a property can be achieved by entering edit mode, selecting the whole line and pressing <kbd>Delete</kbd>, or selecting <q>Delete declaration</q> from the context menu.
 
 Instead of deleting a property it is often useful while debugging to temporarily disable it. This can be achieved by hovering over a property and unchecking the checkbox. This will grey out the property. Checking the box again will re-enable it.
 
