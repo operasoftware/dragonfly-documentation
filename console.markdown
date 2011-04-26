@@ -1,8 +1,8 @@
 ##Console
 
-The Console HUD is a useful tool for evaluating JavaScript statements, inspecting and logging objects and properties and even adding functionality to a page for quick debugging.
+The Console HUD is a useful tool for evaluating JavaScript statements, inspecting and logging objects and properties, and even adding functionality to a page for quick debugging.
 
-The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or pressing the button with the command prompt icon in the application toolbar. This displays a HUD over the bottom half of the Opera Dragonfly window which can be made taller or shorter by dragging the top with the mouse.
+The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or pressing the button with the command prompt icon in the application toolbar. This displays a HUD over the bottom half of the Opera Dragonfly window, which can be made taller or shorter by dragging the top with the mouse.
 
 ![Opera Dragonfly Console HUD](img/console-hud.png)
 
@@ -14,7 +14,7 @@ Opera Dragonfly ships with support for the [Console API](http://getfirebug.com/w
 
 ####`console.log(obj [, obj, ...])` and `console.debug(obj [, obj, ...])`
 
-The most basic method for logging to the Opera Dragonfly console is `console.log()`. `console.debug()` logs to the console with the line number where the code was called from.
+The most basic method for logging to the Opera Dragonfly console is `console.log()`. `console.debug()` logs to the console with the line number from where the code was called.
 
     console.log(myVar);
     console.debug(myVar);
@@ -72,7 +72,7 @@ The `console.trace()` method prints a stack trace to the console. It is possible
 
 ### Command Line API
 
-The following command line shortcuts are available in the console:
+The following command line shortcuts are available in the Console:
 
 <table>
   <tr>
@@ -127,7 +127,7 @@ The following command line shortcuts are available in the console:
 
 ### Keyboard Shortcuts
 
-The following cross-platform, Bash-like keyboard shortcuts are available in the console (note: <kbd>Ctrl</kbd> is used on Mac rather than <kbd>Cmd</kbd> to be consistent with how Bash on Mac works):
+The following cross-platform, Bash-like keyboard shortcuts are available in the Console (note: <kbd>Ctrl</kbd> is used on Mac rather than <kbd>Cmd</kbd> to be consistent with how Bash on Mac works):
 
 <table>
   <tr>
@@ -140,27 +140,27 @@ The following cross-platform, Bash-like keyboard shortcuts are available in the 
   </tr>
   <tr>
     <td><kbd>Ctrl + e</kbd></td>
-    <td>Move to the end of the line</td>
+    <td>Moves to the end of the line</td>
   </tr>
   <tr>
     <td><kbd>Ctrl + a</kbd></td>
-    <td>Move to the beginning of the line</td>
+    <td>Moves to the beginning of the line</td>
   </tr>
   <tr>
     <td><kbd>Ctrl + k</kbd></td>
-    <td>Delete text to end of line</td>
+    <td>Deletes text to end of line</td>
   </tr>
   <tr>
     <td><kbd>Ctrl + u</kbd></td>
-    <td>Delete text to the beginning of the line</td>
+    <td>Deletes text to the beginning of the line</td>
   </tr>
   <tr>
     <td><kbd>Ctrl + w</kbd></td>
-    <td>Delete a word backwards</td>
+    <td>Deletes a word backwards</td>
   </tr>
   <tr>
     <td><kbd>Ctrl + y</kbd></td>
-    <td>Pastes the content of the delete buffer. The buffer is set to whatever was last deleted by Ctrl-K,U, or W.</td>
+    <td>Pastes the content of the delete buffer; sets the buffer to whatever was last deleted by Ctrl-K,U, or W.</td>
   </tr>
   <tr>
     <td><kbd>Tab</kbd></td>
