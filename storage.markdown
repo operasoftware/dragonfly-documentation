@@ -1,6 +1,6 @@
 ##Storage Inspector
 
-The Storage Inspector in Opera Dragonfly is accessible from the Storage panel in the application toolbar. The Storage Inspector displays all the data that is stored by the site or application on the client-side. This includes cookies and HTML5 Web Storage. For applications based on W3C Widgets (such as Opera Widgets and Opera Extensions), data stored in Widget Preferences is also shown.
+The Storage Inspector in Opera Dragonfly is accessible from the Storage panel in the application toolbar. The Storage Inspector displays all the data that is stored by the site or application on the client side. This includes cookies and HTML5 Web Storage. For applications based on W3C Widgets (such as Opera Widgets and Opera’s extensions), data stored in Widget Preferences is also shown.
 
 ###Cookies
 
@@ -46,7 +46,7 @@ Clicking on a cookie's row will select it. It is possible to select multiple coo
 
 ####Adding a cookie
 
-A cookie can be added by selecting <q>Add cookie</q> from the context menu, or clicking on the <q>Add cookie</q> button. When the cookies are grouped, each domain has a <q>Add cookie</q> button, which pre-fills the domain field to that domain. When ungrouped, the button can be found at the bottom of the table, and the domain is pre-filled to the same domain as the previous cookie. The domain can be set to any valid domain, but it will not be shown if it doesn't match one of the listed domains. The cookie will be shown when inspecting the domain on which it was set.
+A cookie can be added by selecting <q>Add cookie</q> from the context menu or by clicking on the <q>Add cookie</q> button. When the cookies are grouped, each domain has a <q>Add cookie</q> button, which pre-fills the domain field to that domain. When ungrouped, the button can be found at the bottom of the table, and the domain is pre-filled to the same domain as the previous cookie. The domain can be set to any valid domain, but it will not be shown if it doesn't match one of the listed domains. The cookie will be shown when inspecting the domain on which it was set.
 
 <img src="img/adding-cookie.png" alt="Adding a new cookie" />
 
@@ -54,7 +54,7 @@ The expiry date can be selected using the provided calendar widget. Opera Dragon
 
 ####Editing cookies
 
-Cookies can be edited by double clicking on the cookie row, or by selecting <q>Edit cookie</q> from the context menu, to bring up editable fields and then altering the text in each field. As with adding a cookie, editing a cookie to apply to a different domain will keep the cookie, but it will not show in the list as it will no longer apply to the current debugging context.
+Cookies can be edited by double-clicking on the cookie row, or by selecting <q>Edit cookie</q> from the context menu, to bring up editable fields and then altering the text in each field. As with adding a cookie, editing a cookie to apply to a different domain will keep the cookie, but it will not show in the list as it will no longer apply to the current debugging context.
 
 ####Deleting cookies
 
@@ -62,7 +62,7 @@ There are two options for deleting cookies. An individual cookie can be removed 
 
 ###Web Storage
 
-The [Web Storage API](http://www.w3.org/TR/webstorage/) defines persistent storage of data using key-value pairs in Web clients. Web Storage can fulfill the same use cases as cookies, without many of the drawbacks such as increased storage space or the ability to access stored data for the same Web site across two different windows. 
+The [Web Storage API](http://www.w3.org/TR/webstorage/) defines persistent storage of data using key-value pairs in web clients. Web Storage can fulfill the same use cases as cookies, without many of the drawbacks such as increased storage space or the ability to access stored data for the same website across two different windows. 
  
 The Storage Inspector separates the two types of Web Storage into their own sub panels. Each entry is displayed in a key-value list. 
 
@@ -91,8 +91,8 @@ An entry can be added by clicking the <q>Add</q> button under the table. This wi
 
 ###Widget Preferences
 
-<a href="http://www.w3.org/TR/widgets-apis/#the-preferences-attribute">Widget preferences</a> use the same Storage interface as Web Storage, but are specific to applications implementing the Widgets API. In the Opera browser, each Widget or Extension has its own storage area to store its preference data. The data in this storage area can be found via the Widget Preferences panel, which remains blank for web sites and applications that do not implement the Widgets API.
+<a href="http://www.w3.org/TR/widgets-apis/#the-preferences-attribute">Widget Preferences</a> use the same Storage interface as Web Storage, but they are specific to applications implementing the Widgets API. In the Opera browser, each widget or extension has its own storage area to store its preference data. The data in this storage area can be found via the Widget Preferences panel, which remains blank for websites and applications that do not implement the Widgets API.
 
 Data in the Widget Preferences panel can be manipulated in the same way as Web Storage entries.
 
-A note about the Web Storage and Widget Preferences panels: The UI for Local Storage, Session Storage and Widget Preferences panels will be updated to use the same UI as the Cookies panel in a future version of Opera Dragonfly. 
+A note about the Web Storage and Widget Preferences panels: The UI for Local Storage, Session Storage, and Widget Preferences panels will be updated to use the same UI as the Cookies panel in a future version of Opera Dragonfly. 
