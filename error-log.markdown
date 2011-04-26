@@ -1,6 +1,6 @@
 ## Error Log
 
-The Error Log is the place to track down syntax and parser errors that may cause an application or web page to behave unexpectedly.
+The Error Log is the place to track down syntax and parser errors that may cause an application or webpage to behave unexpectedly.
 
 Click on the Errors icon in the application toolbar to access the Error Log. The number of errors for the current debugging context is conveniently displayed in the icon itself.
 
@@ -24,13 +24,13 @@ Error messages can be opened one by one by clicking on them, or globally by clic
 
 ![Expanded Error Log messages](img/error-detail.png)
 
-###Error Types
+###Error types
 
 There are three error types displayed in the Error Log:
 
-  * error: An example would be a syntax error or an uncaught exception
-  * information: Provides info, such as for an unknown property or value 
-  * warning: An example is when console.warning() is used
+  * Error: An example would be a syntax error or an uncaught exception.
+  * Information: This provides information, such as for an unknown property or value.
+  * Warning: An example is when console.warning() is used.
 
 For CSS and JavaScript errors, clicking on the URL of the file in the expanded view will open the style sheet or script as a new tab in the Resource Inspector.
 
@@ -38,7 +38,7 @@ You can direct messages to the Error Log programmatically by using the `console.
 
 ###CSS Filters
 
-Custom CSS filters can be defined in the Error Log settings tab to remove certain types of errors from the All and CSS tabs of the Error Log. Comma separated filters will be matched and ignored. For example, a filter such as `_padding` will force the Error log to ignore the IE6 underscore hack for padding properties.
+Custom CSS filters can be defined in the Error Log settings tab to remove certain types of errors from the All and CSS tabs of the Error Log. Comma-separated filters will be matched and ignored. For example, a filter such as `_padding` will force the Error log to ignore the IE6 underscore hack for padding properties.
 
 <img src="img/css-filter.png" alt="Filter for removing known CSS errors" title="" />
 
