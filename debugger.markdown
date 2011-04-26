@@ -1,6 +1,6 @@
 ## JavaScript Debugger ##
 
-Opera Dragonfly contains a fully-featured JavaScript Debugger. This is accessible from the Scripts panel in the main application toolbar. The JavaScript Debugger enables the state of the web page or application to be inspected by setting break points to control the flow of the program as the code is stepped through. The debugger supports breaking due to user-defined events and tracking of program state, including variable and object values. This makes it easier to identify bugs in the application and understand exactly what is happening at any given stage.
+Opera Dragonfly contains a fully-featured JavaScript Debugger. This is accessible from the Scripts panel in the main application toolbar. The JavaScript Debugger enables the state of the webpage or application to be inspected by setting break points to control the flow of the program as the code is stepped through. The debugger supports breaking due to user-defined events and tracking of program state, including variable and object values. This makes it easier to identify bugs in the application and understand exactly what is happening at any given stage.
 
 <img src="img/debugger.png" alt="The JavaScript Debugger" />
 
@@ -44,7 +44,7 @@ Opera Dragonfly supports a number of different kinds of breakpoints:
 
 ##### Line breakpoint
 
-Line breakpoints break the execution when the specified line is reached. A line breakpoint can be set by clicking the line number in the left hand gutter of the source view. 
+Line breakpoints break the execution when the specified line is reached. A line breakpoint can be set by clicking the line number in the left-hand gutter of the source view. 
 
 <img src="img/line-breakpoints.png" alt="An enabled and disabled breakpoint" />
 
@@ -62,7 +62,7 @@ With <a href="http://www.w3.org/TR/DOM-Level-3-Events/">DOM Level 3 Events</a> i
 
 ##### Conditional breakpoint
 
-A conditional breakpoint has an expression attached to it which is evaluated when the breakpoint is reached. If the evaluation returns true, the execution breaks, otherwise it continues. 
+A conditional breakpoint has an expression attached to it that is evaluated when the breakpoint is reached. If the evaluation returns true, the execution breaks; otherwise, it continues. 
 
 A regular line or event breakpoint can be changed to a conditional breakpoint by selecting <q>Add condition<q> from the context menu of the appropriate breakpoint in the Breakpoints sub-panel, and entering a valid expression in the <q>condition</q> field. The expression must return a boolean value. The breakpoint symbol in the source view gutter will change to indicate it has a condition attached.
 
@@ -80,27 +80,27 @@ Break on first statement of a new script pauses the execution each time a new sc
 
 ##### Break on error
 
-It is possible to get Opera Dragonfly to stop execution when a JavaScript error occurs. Enabling the button in the Scripts toolbar will stop JavaScript execution at the line where the error happened,and highlight it in the gutter in a similar manner to breakpoints.
+It is possible to get Opera Dragonfly to stop execution when a JavaScript error occurs. Enabling the button in the Scripts toolbar will stop JavaScript execution at the line where the error happened and highlight it in the gutter in a similar manner to breakpoints.
 
 #### Deleting and disabling breakpoints ####
 
 An individual breakpoint can be disabled by unchecking the checkbox next to the name of the breakpoint in the Breakpoints sub-panel. The icon in the gutter will change to show it is disabled.
 
-It is often useful to disable all breakpoints when debugging to see how the application runs normally without losing all the breakpoints. This can be achieved by clicking the <q>Disable all breakpoints</q> button in the Breakpoints toolbar, or selecting <q>Disable all</q> from the context menu inside the breakpoints list.  
+It is often useful to disable all breakpoints when debugging to see how the application runs normally without losing all the breakpoints. This can be achieved by clicking the <q>Disable all breakpoints</q> button in the Breakpoints toolbar or by selecting <q>Disable all</q> from the context menu inside the breakpoints list.  
 
-If a breakpoint is not needed anymore it can be deleted by selecting <q>Delete</q> in the context menu of the breakpoint to be deleted in the breakpoint list. For line breakpoints it is also possible to click on the breakpoint symbol in the gutter. 
+If a breakpoint is not needed anymore it can be deleted by selecting <q>Delete</q> in the context menu of the breakpoint to be deleted in the breakpoint list. For line breakpoints, it is also possible to click on the breakpoint symbol in the gutter. 
 
 Deleting all breakpoints can be achieved in a similar way: by pressing the <q>Delete all breakpoints</q> button, or selecting the <q>Delete all</q> context menu item.
 
 ### Program flow ###
 
-The program flow is controlled by setting breakpoints. Once the program hits a breakpoint, the execution will halt and will switch to the paused state. A paused execution indicator will be shown on the Scripts application toolbar button to indicate the program is currently at a break point. When Opera Dragonfly is in this state the call stack and the variable object for the currently selected execution context are shown in the State sub-panel.
+The program flow is controlled by setting breakpoints. Once the program hits a breakpoint, the execution will halt and will switch to the paused state. A paused execution indicator will be shown on the Scripts application toolbar button to indicate the program is currently at a break point. When Opera Dragonfly is in this state, the call stack and the variable object for the currently selected execution context are shown in the State sub-panel.
 
 <img src="img/at-breakpoint.png" alt="Paused at a breakpoint" />
 
 The breakpoint will be hit when the code the it is defined on is evaluated, and any condition evaluates to true. For example, if a breakpoint is set on the first line of a function for handling what happens when a button is pressed, pressing that button will likely hit that breakpoint and pause execution. The document will have to be reloaded if the breakpoint is set on code that is only evaluated once when loading the page, and it has already been evaluated when the breakpoint is set. 
 
-Once a breakpoint is hit it is possible to continue execution in a number of ways, using the buttons in the Scripts toolbar:
+Once a breakpoint is hit, it is possible to continue execution in a number of ways, using the buttons in the Scripts toolbar:
 
 #### Continue 
 The Continue button or <kbd>F8</kbd> (<kbd>F5</kbd>) continues execution until the next breakpoint or the end of program. 
@@ -111,7 +111,7 @@ The Step Into button or <kbd>F11</kbd> (<kbd>F7</kbd>) steps to the next line of
 
 #### Step Over
 
-The Step Over button or <kbd>F10</kbd> (<kbd>F6</kbd>) also steps to the next line of code. However if the next line is a function call, the function is executed and the program breaks at the next line after the function returns.
+The Step Over button or <kbd>F10</kbd> (<kbd>F6</kbd>) also steps to the next line of code. However, if the next line is a function call, the function is executed and the program breaks at the next line after the function returns.
 
 #### Step Out
 
@@ -123,7 +123,7 @@ There are various ways to see and monitor variables and their state in Opera Dra
 
 #### Inspecting properties ####
 
-When at a breakpoint it is possible to inspect the variables, objects and functions in the currently selected execution context. These can be found under the Inspection section of the State sub-panel. The currently active execution context is selected in the Call Stack section. It is possible to step back in the call stack to access previously active execution contexts. 
+When at a breakpoint, it is possible to inspect the variables, objects, and functions in the currently selected execution context. These can be found under the Inspection section of the State sub-panel. The currently active execution context is selected in the Call Stack section. It is possible to step back in the call stack to access previously active execution contexts. 
 
 All variables in scope for the execution context are listed along with their current value. Functions and objects can be further examined by clicking the expander icon next to its name. This will show all the properties and functions contained within.
 
@@ -143,7 +143,7 @@ Examples of watches include individual variables or objects (<samp>foo</samp>), 
 
 ##### Adding a watch ####
 
-Click the <q>Add watch</q> button in the Watches section of the State sub-panel, enter a valid JavaScript expression, and then press <kbd>Enter</kbd>. The expression will be evaluated and the result shown next to it. 
+Click the <q>Add watch</q> button in the Watches section of the State sub-panel, enter a valid JavaScript expression; then, press <kbd>Enter</kbd>. The expression will be evaluated and the result shown next to it. 
 
 It is also possible to add a watch by selecting <q>Watch <var>expression</var></q> from the context menu when selecting code in the Source panel, or from the context menu on variables in the Inspection section of the State sub-panel.
 
