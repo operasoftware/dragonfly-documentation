@@ -48,7 +48,7 @@ The final windowing control button is the close button. This button closes Opera
 
 ## Accessing the tools
 
-Each of the main tools in Opera Dragonfly are organized into <a href="/dragonfly/documentation/appendixd/#panel">panels</a>, accessed from the <a href="/dragonfly/documentation/appendixd/#application-toolbar">application toolbar</a>. Each tool is identified by an icon and a label describing the type of content or activity that the tool is designed to inspect or debug. The Scripts button accesses the <a href="/dragonfly/documentation/appendixd/#javaScript-debugger">JavaScript Debugger</a> for example, while Documents accesses the DOM and <a href="/dragonfly/documentation/appendixd/#style-inspector">Style Inspectors</a>.
+The main tools in Opera Dragonfly are organized into <a href="/dragonfly/documentation/appendixd/#panel">panels</a>, accessed from the <a href="/dragonfly/documentation/appendixd/#application-toolbar">application toolbar</a>. Each tool is identified by an icon and a label describing the type of content or activity that the tool is designed to inspect or debug. The Scripts button accesses the <a href="/dragonfly/documentation/appendixd/#javaScript-debugger">JavaScript Debugger</a> for example, while Documents accesses the DOM and <a href="/dragonfly/documentation/appendixd/#style-inspector">Style Inspectors</a>.
 
 <img src="img/uimap.png" alt="The UI components of Opera Dragonfly" />
 

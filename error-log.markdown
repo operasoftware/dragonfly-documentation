@@ -44,4 +44,4 @@ Custom CSS filters can be defined in the Error Log settings tab to remove certai
 
 ###Clearing the Error Log
 
-The Error Log is cleared by clicking the Trashcan icon in the toolbar.
+The Error Log is cleared by clicking the trashcan icon in the toolbar.

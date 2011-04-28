@@ -25,7 +25,7 @@ Multiple values can be logged inline by passing them in as additional arguments.
 
 ####`console.warn(obj [, obj, ...])`, `console.error(obj [, obj, ...])`, and `console.info(obj [, obj, ...])`
 
-The `console.warn()`, `console.error()`, and `console.info()` methods offer the same functionality as console.log(), but with added semantics and visual emphasis. Similar to `console.debug()`, these methods print a hyperlinked line number that corresponds to where in the source it was called from.
+The `console.warn()`, `console.error()`, and `console.info()` methods offer the same functionality as console.log(), but with added semantics and visual emphasis. Similar to `console.debug()`, these methods print a hyperlinked line number tshat corresponds to the point in the source from where it was called.
 
     console.warn( document.getElementById('foo') == null );
     console.error( 'Session is secure: ' + false );
