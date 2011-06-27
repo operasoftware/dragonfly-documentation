@@ -63,7 +63,7 @@ There are a number of UI features common between all the different tools:
 
 ### Search
 
-The <a href="/dragonfly/documentation/appendixd/#search-bar">search bar</a> can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>F3</kbd> on Mac, or <kbd>fn</kbd>+<kbd>F3</kbd> for keyboards that define OS functions to the function keys), or by clicking on the search button. It is possible to navigate between results using <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd>. The <a href="/dragonfly/documentation/debugger/">JavaScript Debugger</a> includes an advanced mode for searching in all scripts. More information on search can be found in the relevant chapter for each tool.
+The <a href="/dragonfly/documentation/appendixd/#search-panel">search panel</a> can be accessed in the JavaScript Debugger and DOM Inspector using <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>F3</kbd> on Mac, or <kbd>fn</kbd>+<kbd>F3</kbd> for keyboards that define OS functions to the function keys), or by clicking on the side panel labelled <q>search</q>. It is possible to navigate between results using <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd>. The number of search matches along with the current hit number is shown as a badge inside the search field. The DOM Inspector and JavaScript Debugger both have custom search options. These are documented in the relevant chapter.
 
 ### Filtering
 
