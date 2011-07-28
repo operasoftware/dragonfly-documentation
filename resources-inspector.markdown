@@ -22,6 +22,10 @@ When clicking on a specific line, a new tab opens with the source code for an HT
 
 ![Resource Detail Expand](img/resource-detail-expand.png)
 
+Once the source code is visible, a search box appears on the top right of the window. Typing a keyword will highlight this keyword in the source code. Press the return key successively to access other occurences of the keyword in the source. Once the bottom has been reached, it cycles again from the top of the document.
+
+![Resource Search Feature](img/resource-search.png)
+
 The first tab is the <q>All resources</q> view. When pressing Ctrl+click in this window, a menu appears. Resources can then be organized by hosts or by type.
 
 ![Resource Grouping Opt](img/resource-grouping-opt.png)
