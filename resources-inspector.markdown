@@ -18,7 +18,7 @@ For each resource, The following information is given:
 
 Additional options are available by pressing <kbd>ctrl</kbd>+click. It is possible to add columns for protocols (such as HTTP or HTTPS), the MIME type of the content, and the size in bits. Columns can be removed by unchecking them.  
 
-When clicking on a specific line, a new tab opens with the source code for an HTML resource, or the rendered image for an image resource. Further details such as size and format can be found by clicking on the plus + sign. 
+When clicking on a specific line, a new tab opens with the source code for an HTML resource, or the rendered image for an image resource. Further details such as size and format can be found by clicking on the plus arrow sign. 
 
 ![Resource Detail Expand](img/resource-detail-expand.png)
 

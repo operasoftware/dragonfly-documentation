@@ -137,6 +137,8 @@ It is sometimes necessary to impersonate another HTTP client such as a bot, a mo
 * Select a predefined profile.
 * Create a profile and save it.
 
-Both will spoof the HTTP headers sent by the browser to the server. These will last only the Opera Dragonfly session time. In a future version, we might give the possibility to add more profiles. 
+Both will spoof the HTTP headers sent by the browser to the server. These will last only the Opera Dragonfly session time. The list of preset profiles emulate the most common browsers.
 
-If a preset profile is not used, headers will be added or overrided. When adding for example `X-Foo` header, the rest of the headers will be kept. It is practical for overriding the `User-Agent` header or mocking specific proxies or web clients.
+![List of Preset Profiles](img/network-presets.png)
+
+If a preset profile is not used, headers will be added or overrided. When adding for example `X-Foo` header, the rest of the headers will be kept. It is practical for overriding the `User-Agent` header or mocking specific proxies or web clients. It becomes very practical for testing APIs.
