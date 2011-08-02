@@ -1,16 +1,15 @@
 ##Console
 
-The Console HUD is a useful tool for evaluating JavaScript statements, inspecting and logging objects and properties, and even adding functionality to a page for quick debugging.
+The Console is a useful tool for evaluating JavaScript statements, inspecting and logging objects and properties, and even adding functionality to a page for quick debugging.
 
-The Console can be accessed and dismissed using the <kbd>Esc</kbd> key, or pressing the button with the command prompt icon in the application toolbar. This displays a HUD over the bottom half of the Opera Dragonfly window, which can be made taller or shorter by dragging the top with the mouse.
+The Console can be accessed by pressing the button with the command prompt icon in the application toolbar, or selecting the Console tab. Alternately, a Console HUD can be accessed and dismissed using the <kbd>Esc</kbd> key, displaying over the bottom half of the Opera Dragonfly window, which can be made taller or shorter by dragging the top with the mouse.
 
 ![Opera Dragonfly Console HUD](img/console-hud.png)
 
 
 ### Console API
 
-Opera Dragonfly ships with support for the [Console API](http://getfirebug.com/wiki/index.php/Console_API). Anything logged by `console` methods is visible in the Console HUD. Certain console methods also appear in the Error Log (i.e., `console.log()`, `console.info()`, `console.warn()`, `console.error()`, `console.assert()`).
->>>>>>> other
+Opera Dragonfly ships with support for the [Console API](http://getfirebug.com/wiki/index.php/Console_API). Anything logged by `console` methods is visible in the Console.
 
 ####`console.log(obj [, obj, ...])` and `console.debug(obj [, obj, ...])`
 
@@ -25,7 +24,7 @@ Multiple values can be logged inline by passing them in as additional arguments.
 
 ####`console.warn(obj [, obj, ...])`, `console.error(obj [, obj, ...])`, and `console.info(obj [, obj, ...])`
 
-The `console.warn()`, `console.error()`, and `console.info()` methods offer the same functionality as console.log(), but with added semantics and visual emphasis. Similar to `console.debug()`, these methods print a hyperlinked line number tshat corresponds to the point in the source from where it was called.
+The `console.warn()`, `console.error()`, and `console.info()` methods offer the same functionality as console.log(), but with added semantics and visual emphasis. Similar to `console.debug()`, these methods print a hyperlinked line number that corresponds to the point in the source from where it was called.
 
     console.warn( document.getElementById('foo') == null );
     console.error( 'Session is secure: ' + false );
