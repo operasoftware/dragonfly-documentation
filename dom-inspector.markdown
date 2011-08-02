@@ -18,7 +18,7 @@ A number of view options can be found in the settings, such as enabling and disa
 
 The main document is shown in the DOM source sub-panel by default. Often this is the only DOM file, but if a document uses iframes, frames, or documents such as SVG files linked via the <code>object</code> element, they can be selected using the document selector. This can be found on the DOM toolbar to the left of the search button.
 
-The DOM is shown collapsed by default. Clicking on the expander button to the left of the element will expand it to reveal its children. This can be achieved with the keyboard by pressing <kbd>Enter</kbd> when the expander has focus. Pressing <kbd>Shift</kbd>+<kbd>Enter</kbd> will expand the element and all of its children. It is often useful to expand the entire DOM at once. This can be achieved by pressing the <q>Expand the DOM tree</q> button in the DOM toolbar, which is the first button on the left.
+The DOM is shown collapsed by default. Clicking on the expander button to the left of the element will expand it to reveal its children and pseudo elements (if any). This can be achieved with the keyboard by pressing <kbd>Enter</kbd> when the expander has focus. Pressing <kbd>Shift</kbd>+<kbd>Enter</kbd> will expand the element and all of its children. It is often useful to expand the entire DOM at once. This can be achieved by pressing the <q>Expand the DOM tree</q> button in the DOM toolbar, which is the first button on the left.
 
 The DOM can be navigated using the arrow keys on the keyboard. Pressing the up and down arrows navigates between elements. The left and right-arrow keys move between the individual tags, attributes and values of the element in focus. Pressing <kbd>Enter</kbd> will select the element, showing its associated styles in the right-hand style sub-panel and highlighting it in the page. 
 
@@ -40,9 +40,30 @@ It is sometimes useful to highlight multiple elements, such as when testing whet
 
 <img src="img/element-highlight.png" alt="Multiple elements highlighted in the page" />
 
+
 ####Search
 
-To search the DOM, press the Search button or <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>F3</kbd> or <kbd>fn</kbd>+<kbd>F3</kbd> for keyboards that apply a OS function to the function keys). A search toolbar will appear similar to the one in the Opera browser. From here it is possible to enter a search term, and navigate between the results with either the forward and back buttons or the <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd> keys. This only searches the currently visible DOM, so it is worth expanding all elements before searching.
+To search the DOM, switch to the Search panel or press <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>F3</kbd> or <kbd>fn</kbd>+<kbd>F3</kbd> for keyboards that apply a OS function to the function keys). From the Search panel it is possible to enter a search term, and navigate between the results with either the forward and back buttons or the <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd> keys. A badge is shown in the search field to show the current match and total matches. All matches are shown as a list in the Search panel once the search query is submitted. Selecting a match will highlight it in the DOM source. There are a number of search options described below.
+
+#####Text search
+
+The text search works somewhat differently than in Opera Dragonfly 1.0. In Opera Dragonfly 1.1 and above, the full DOM can be searched, including collapsed element nodes. The text search matches text within the contents of DOM nodes rather than freeform text across nodes. This means that searching for <code>&lt;div</code> will not match the <code>div</code> element start or end tag as the opening angled bracket is outside of the node. Similarly <code>li id=</code> will not match an <code>li</code> element with the first attribute of <code>id</code> as the id attribute and li start tag span two different nodes.
+
+##### RegExp search
+
+The RegExp search allows for searching using regular JavaScript regular expressions. RegExp searching is not bound to individual DOM nodes like text search.
+
+##### CSS selector search
+
+The CSS selector search accepts a selector string. DOM elements that match the entered selector string are shown in the results. As well as for searching the DOM, this can be useful for quickly testing if a selector will match the required elements.
+
+##### XPath expression search
+
+The XPath expression search works the same way as the CSS selector search, except it shows which elements match the entered XPath expression.
+
+##### Ignore case option
+
+The ignore case checkbox can be enabled for text and RegExp searches. When enabled the search is case insensitive so for example a search for <q>div</q> will match no matter if <q>DIV</q> or <q>div</q> is used.
 
 ####Editing the DOM
 
@@ -56,19 +77,31 @@ An additional attribute can be added to the element while in edit mode by tabbin
 
 An element can be removed from the document by selecting <q>Delete node</q> from the element’s context menu.
 
+####Viewing pseudo elements
+
+CSS pseudo elements are not actually part of the DOM, but they can be seen in the Opera Dragonfly DOM panel when a CSS selector defines one, so that the style declarations can be inspected. Pseudo elements are displayed as if they were an element with the tag name of the pseudo element in question proceeded by two colons. For example the ::first-letter pseudo element is shown as &lt;::first-letter/> before the first child of the element of which it applies. 
+
 ####Viewing styles
 
 The styles associated with the currently selected DOM element can be found in the Styles sub-panel. There are two main sections; computed style and styles. 
 
 The computed style section lists all the properties that the Opera browser supports in alphabetical order. Each property lists its computed value. This is the value that the Opera browser stores internally after all the rules have been evaluated, and values and units have been converted. For example, color values are converted to hexadecimal notation (except values that have an alpha channel, which are converted to <a href="http://www.w3.org/TR/css3-color/#rgba-color">RGBA</a>), and length values are converted to pixels (<code>px</code>).
 
-The styles section contains a list of CSS rules in order of selector specificity, with the most specific first. Invalid rules that the Opera borwser could not parse are dropped from the rules, and shorthands are expanded into their individual properties. As with computed styles, units are converted to the value the Opera browser stores internally. Properties in a less specific rule that are overridden by the same property in a more specific rule display with a strike-through to show they do not apply. Properties that have a color value (such as <code>color</code> or <code>background-color</code>) show a color swatch after the value. Clicking on this swatch opens the color picker, which can be used to adjust the color on the fly.
+The styles section contains a list of CSS rules in order of selector specificity, with the most specific first. Invalid rules that the Opera browser could not parse are dropped from the rules, and shorthands are expanded into their individual properties. As with computed styles, units are converted to the value the Opera browser stores internally. Properties in a less specific rule that are overridden by the same property in a more specific rule display with a strike-through to show they do not apply. Properties that have a color value (such as <code>color</code> or <code>background-color</code>) show a color swatch after the value. Clicking on this swatch opens the color picker, which can be used to adjust the color on the fly.
 
 <img src="img/styles-panel.png" alt="The styles sub-panel" />
 
-Links to the right of the selector show the file in which the CSS rule was defined. Clicking the link will open the file in the Resource Inspector. This will show the style sheet as it was written originally.
+Links to the right of the selector show the file in which the CSS rule was defined. Clicking the link will open the file in the Resource Inspector and scroll to the correct line in the document. This will show the style sheet as it was written originally rather than the parsed styles shown in the Style Inspector.
 
 It is easy to forget what a property does, or what its values mean. In Opera Dragonfly, the relevant spec is only a click away. Each property includes a link to its spec in its context menu. This will open in a new tab. 
+
+##### Pseudo classes
+
+Pseudo classes can also be seen in the styles section. Normally only rules that are currently active are shown. This makes it difficult to see styles that are only applied temporarily, such as active and hover styles. To make this easier, Opera Dragonfly provides a drop down button on the styles toolbar, which lists the pseudo classes and the selection pseudo element. If an option is enabled any rules with the matching pseudo class will be displayed in the Style Inspector as if it was currently active.
+
+##### SVG presentational attributes
+
+SVG presentational attributes map directly to their equivalent CSS properties, but with a specificity of 0. To take advantage of Opera Dragonfly’s CSS editing and debugging features, and to keep all the styling information in one place, SVG presentational attributes are mapped to their CSS equivalent in the Style Inspector. All presentational attributes on an element are displayed in one rule block with <q>Presentational attributes</q> replacing the selector string. Do to the low specificity they will be shown at the very bottom of the list of rules. 
 
 ####Editing styles
 
