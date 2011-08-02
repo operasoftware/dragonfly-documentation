@@ -22,12 +22,10 @@ Error messages can be opened one by one by clicking on them, or globally by clic
 
 ###Error types
 
-There are three error types displayed in the Error Log:
+There are two error types displayed in the Error Log:
 
   * Error: An example would be a syntax error or an uncaught exception.
   * Information: This provides information, such as for an unknown property or value.
-  // is this still used?
-  * Warning: An example is when console.warn() is used.
 
 For CSS and JavaScript errors, clicking on the URL of the file in the expanded view will open the style sheet or script as a new tab in the Resource Inspector.
 
