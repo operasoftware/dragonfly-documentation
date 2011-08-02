@@ -8,17 +8,13 @@ Click on the Errors icon in the application toolbar to access the Error Log. The
 
 ###Search
 
-To search through all errors on a page, use the Search control on the Error Log toolbar.
+To search through all errors on a page, use the Filter control on the Error Log toolbar.
 
-![Opera Dragonfly Error Log search](img/error-search.png)
+![Opera Dragonfly Error Log search](img/error-filter.png)
 
 ###Tabs
 
-By default, the All tab will be selected, showing every type of error for the current page. Errors can be filtered by choosing a more specific tab such as the JavaScript tab.
-
-To add or remove tabs from the Error Log, select the appropriate checkbox from the Error Log tab of the Opera Dragonfly Settings.
-
-<img src="img/error-tabs.png" alt="Enable and disable Error Log tabs" title="" />
+By default, the All tab will be selected, showing every type of error for the current page. Errors can be filtered by choosing a more specific tab such as the CSS tab.
 
 Error messages can be opened one by one by clicking on them, or globally by clicking the Expand All icon in the Error Log toolbar.
 
@@ -30,17 +26,16 @@ There are three error types displayed in the Error Log:
 
   * Error: An example would be a syntax error or an uncaught exception.
   * Information: This provides information, such as for an unknown property or value.
-  * Warning: An example is when console.warning() is used.
+  // is this still used?
+  * Warning: An example is when console.warn() is used.
 
 For CSS and JavaScript errors, clicking on the URL of the file in the expanded view will open the style sheet or script as a new tab in the Resource Inspector.
-
-You can direct messages to the Error Log programmatically by using the `console.log()`, `console.info()`, `console.warn()`, `console.error()`, and `console.assert()` methods. For more information, see the Console chapter.
 
 ###CSS Filters
 
 Custom CSS filters can be defined in the Error Log settings tab to remove certain types of errors from the All and CSS tabs of the Error Log. Comma-separated filters will be matched and ignored. For example, a filter such as `_padding` will force the Error log to ignore the IE6 underscore hack for padding properties.
 
-<img src="img/css-filter.png" alt="Filter for removing known CSS errors" title="" />
+![Filter for removing known CSS errors](img/error-css-filter.png)
 
 ###Clearing the Error Log
 
