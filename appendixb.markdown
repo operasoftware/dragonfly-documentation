@@ -287,7 +287,7 @@
 	</tbody>
 </table>
 
-### Console HUD shortcuts
+### Console shortcuts
 
 <table>
 	<caption>General</caption>
