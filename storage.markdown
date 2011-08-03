@@ -50,7 +50,7 @@ A cookie can be added by selecting <q>Add cookie</q> from the context menu or by
 
 <img src="img/adding-cookie.png" alt="Adding a new cookie" />
 
-The expiry date can be selected using the provided calendar widget. Opera Dragonfly will automatically translate the date and time into a easily human-readable date. To set a session cookie, set the date to 1970-1-1 0:00 (the Unix epoch). This is a current limitation with the UI, which will be fixed in a future version.
+The expiry date can be selected using the provided calendar widget. Opera Dragonfly will automatically translate the date and time into a easily human-readable date. To set a session cookie leave the expires field blank.
 
 ####Editing cookies
 
@@ -77,22 +77,12 @@ Session Storage is somewhat similar to a session cookie in that it lasts for the
 Local Storage is more like persistent cookies. The data stored with Local Storage is not destroyed unless the user deletes it through the browser UI, or for security reasons. Data stored with Local Storage can be found in the Local Storage panel.
 
 
-####Editing an entry
+####Manipulating Web Storage
 
-Local and Session Storage Values can be edited by double-clicking on the value column. After updating the value click on the <q>Apply</q> button. Pressing the <q>Cancel</q> button will revert the change. Note that the key can not be edited in Opera Dragonfly.
-
-####Deleting entries
-
-An entry can be deleted by clicking on the <q>delete</q> icon at the end of the row. All entries can be deleted by pressing the <q>trash can</q> icon under the table.
-
-####Adding an entry 
-
-An entry can be added by clicking the <q>Add</q> button under the table. This will add an extra row at the end of the table where the key and value can be entered. Saving and canceling are handled in the same way as editing an entry.
+Session and Local Storage can be added, edited, and deleted in the same way as Cookies. The only difference is that the interface is simpler as there is only a key and value for each entry.
 
 ###Widget Preferences
 
 <a href="http://www.w3.org/TR/widgets-apis/#the-preferences-attribute">Widget Preferences</a> use the same Storage interface as Web Storage, but they are specific to applications implementing the Widgets API. In the Opera browser, each widget or extension has its own storage area to store its preference data. The data in this storage area can be found via the Widget Preferences panel, which remains blank for websites and applications that do not implement the Widgets API.
 
-Data in the Widget Preferences panel can be manipulated in the same way as Web Storage entries.
-
-A note about the Web Storage and Widget Preferences panels: The UI for Local Storage, Session Storage, and Widget Preferences panels will be updated to use the same UI as the Cookies panel in a future version of Opera Dragonfly. 
+Data in the Widget Preferences panel can be manipulated in the same way as Web Storage entries. 
