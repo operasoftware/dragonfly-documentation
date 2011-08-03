@@ -100,7 +100,7 @@ The program flow is controlled by setting breakpoints. Once the program hits a b
 
 <img src="img/at-breakpoint.png" alt="Paused at a breakpoint" />
 
-The breakpoint will be hit when the code the it is defined on is evaluated, and any condition evaluates to true. For example, if a breakpoint is set on the first line of a function for handling what happens when a button is pressed, pressing that button will likely hit that breakpoint and pause execution. The document will have to be reloaded if the breakpoint is set on code that is only evaluated once when loading the page, and it has already been evaluated when the breakpoint is set. 
+The breakpoint will be hit when the code it is defined on is evaluated, and any condition evaluates to true. For example, if a breakpoint is set on the first line of a function for handling what happens when a button is pressed, pressing that button will likely hit that breakpoint and pause execution. The document will have to be reloaded if the breakpoint is set on code that is only evaluated once when loading the page, and it has already been evaluated when the breakpoint is set. 
 
 Once a breakpoint is hit, it is possible to continue execution in a number of ways, using the buttons in the Scripts toolbar:
 
