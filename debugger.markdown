@@ -135,6 +135,12 @@ As the number of properties can start to get unwieldy, it is possible to hide va
 
 It is also possible to filter by a search term using the Filter field in the toolbar. This will only match properties that are currently visible.
 
+#### Navigating the call stack
+
+When a function is called it is pushed onto the top of the call stack, and when it returns it is popped off the stack. The call stack contains a frame for each function that has not yet returned, with global scope at the base. The frames on the stack are listed in the Call Stack section of the State sub-panel.
+
+Clicking on an entry in the stack will switch to that frame. From there it is possible to see all the variables in scope for that frame in the Inspection section, as described above. The source view will also switch to the function that the frame represents. The execution position will be at the line that called the function that created the frame above the currently selected one on the stack.
+
 #### Watches ####
 
 Watches allow JavaScript expressions to be monitored. These can be useful if there is a specific piece of information, such as the value of a variable, that needs to be tracked as the application is executed.  Each time the application steps the expression is evaluated. Watches can be found under the <q>Watches</q> section in the State sub-panel. 
