@@ -47,15 +47,15 @@ To search the DOM, switch to the Search panel or press <kbd>Ctrl</kbd>+<kbd>F</k
 
 #####Text search
 
-The text search works somewhat differently than in Opera Dragonfly 1.0. In Opera Dragonfly 1.1 and above, the full DOM can be searched, including collapsed element nodes. The text search matches text within the contents of DOM nodes rather than freeform text across nodes. This means that searching for <code>&lt;div</code> will not match the <code>div</code> element start or end tag as the opening angled bracket is outside of the node. Similarly <code>li id=</code> will not match an <code>li</code> element with the first attribute of <code>id</code> as the id attribute and li start tag span two different nodes.
+The text search works somewhat differently than in Opera Dragonfly 1.0. In Opera Dragonfly 1.1 and above, the full DOM can be searched, including collapsed element nodes. The text search matches text within the <code>nodeName</code>, the attribute <code>name</code> and <code>value</code>, text nodes, and comments rather than freeform text across nodes. This means that searching for <code>&lt;div</code> will not match the <code>div</code> element start or end tag as the opening angled bracket is outside of the <code>nodeName</code>. Similarly <code>li id=</code> will not match an <code>li</code> element with the first attribute of <code>id</code> as the id attribute and li start tag span two different nodes.
 
 ##### RegExp search
 
-The RegExp search allows for searching using regular JavaScript regular expressions. RegExp searching is not bound to individual DOM nodes like text search.
+The RegExp search allows for searching using JavaScript regular expressions. RegExp matches results in the same way as text search, rather than being a freeform search.
 
 ##### CSS selector search
 
-The CSS selector search accepts a selector string. DOM elements that match the entered selector string are shown in the results. As well as for searching the DOM, this can be useful for quickly testing if a selector will match the required elements.
+The CSS selector search accepts a selector string, in much the same way as <code>querySelectorAll</code> from the <a href="http://www.w3.org/TR/selectors-api/#selector-string">Selectors API</a>. DOM elements that match the entered selector string are shown in the results. As well as for searching the DOM, this can be useful for quickly testing if a selector will match the required elements.
 
 ##### XPath expression search
 
