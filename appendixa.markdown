@@ -40,3 +40,7 @@ To switch versions of Opera Dragonfly:
 The new version will take effect when relaunching Opera Dragonfly.
 
 It is also possible to download an in-development branch of Opera Dragonfly from the  <a href="https://bitbucket.org/scope/dragonfly-stp-1">BitBucket</a> repository. The steps are the same to switch to a local version, except the <q>Developer Tools URL</q> should point to the <q>client-en.xml</q> location, using the <code>file://</code> protocol. This file is found within the <q>src</q> folder.
+
+### Usage tracking
+
+In order to monitor the success of Opera Dragonfly, anonymous usage tracking is enabled by default. This generates a random unique ID for each user. This is then sent to the Opera servers when Opera Dragonfly is started. Full details of the usage tracker can be found on the <a href="http://my.opera.com/dragonfly/blog/2011/07/12/usage-statistics-for-opera-dragonfly">Opera Dragonfly blog</a>. This can be disabled by unchecking the <q>Track usage</q> option in the <q>General</q> tab in Settings.
