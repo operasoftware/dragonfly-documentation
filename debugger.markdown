@@ -26,9 +26,12 @@ Once a script is selected, the syntax highlighted source is shown in the main pa
 
 The JavaScript Debugger provides a search panel that offers a number of advanced methods to search inside scripts. From here it is possible to enter a search term, and navigate between the results with either the forward and backwards buttons or the <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd> keys. Search results show the line of code where the result is contained, along with its line number; clicking on the line will select it in the Source panel, switching to the correct script if it is not the currently active one.
 
-A number of search options can be found below the search field. These allow for searching inside all JavaScript files, including inline scripts, searching using a regular expresion (RegExp), and ignoring case. When searching all files, the results can be cluttered by hits in injected scripts such as Browser JS or extension scripts. disabling the <q>injected</q> checkbox will avoid searcing in those scripts.
+<img src="img/javascript-search.png" alt="Search in the JavaScript Debugger" />
 
- Searching using short search queries can hinder performance when searching in all files or very long scripts. For this reason the maximum number of hits is limited to 1,000 in the JavaScript search. If this limit is too low it can be ajusted in the <q>Source</q> section of the <q>Scripts</q> tab in the settings.
+
+A number of search options can be found below the search field. These allow for searching inside all JavaScript files, including inline scripts, searching using a regular expression (RegExp), and ignoring case. When searching all files, the results can be cluttered by hits in injected scripts such as Browser JS or extension scripts. disabling the <q>injected</q> checkbox will avoid searching in those scripts.
+
+ Searching using short search queries can hinder performance when searching in all files or very long scripts. For this reason the maximum number of hits is limited to 1,000 in the JavaScript search. If this limit is too low it can be adjusted in the <q>Source</q> section of the <q>Scripts</q> tab in the settings.
 
 #### Go to line 
 
@@ -82,7 +85,7 @@ Break on first statement of a new script pauses the execution each time a new sc
 
 ##### Break on error
 
-It is possible to get Opera Dragonfly to stop execution when a parse error occurs. Enabling the last button in the Scripts toolbar will stop JavaScript execution at the line where the parse error occured and highlight it in the gutter in a similar manner to breakpoints. The same button will also stop execution when an exception is thrown.
+It is possible to get Opera Dragonfly to stop execution when a parse error occurs. Enabling the last button in the Scripts toolbar will stop JavaScript execution at the line where the parse error occurred and highlight it in the gutter in a similar manner to breakpoints. The same button will also stop execution when an exception is thrown.
 
 #### Deleting and disabling breakpoints ####
 
@@ -138,6 +141,8 @@ It is also possible to filter by a search term using the Filter field in the too
 #### Navigating the call stack
 
 When a function is called it is pushed onto the top of the call stack, and when it returns it is popped off the stack. The call stack contains a frame for each function that has not yet returned, with global scope at the base. The frames on the stack are listed in the Call Stack section of the State sub-panel.
+
+<img src="img/call-stack.png" alt="navigating the call stack" />
 
 Clicking on an entry in the stack will switch to that frame. From there it is possible to see all the variables in scope for that frame in the Inspection section, as described above. The source view will also switch to the function that the frame represents. The execution position will be at the line that called the function that created the frame above the currently selected one on the stack.
 

@@ -45,6 +45,9 @@ It is sometimes useful to highlight multiple elements, such as when testing whet
 
 To search the DOM, switch to the Search panel or press <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>F3</kbd> or <kbd>fn</kbd>+<kbd>F3</kbd> for keyboards that apply a OS function to the function keys). From the Search panel it is possible to enter a search term, and navigate between the results with either the forward and back buttons or the <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd> keys. A badge is shown in the search field to show the current match and total matches. All matches are shown as a list in the Search panel once the search query is submitted. Selecting a match will highlight it in the DOM source. There are a number of search options described below.
 
+<img src="img/css-search.png" alt="Search options include search by CSS selector" />
+
+
 #####Text search
 
 The text search works somewhat differently than in Opera Dragonfly 1.0. In Opera Dragonfly 1.1 and above, the full DOM can be searched, including collapsed element nodes. The text search matches text within the <code>nodeName</code>, the attribute <code>name</code> and <code>value</code>, text nodes, and comments rather than freeform text across nodes. This means that searching for <code>&lt;div</code> will not match the <code>div</code> element start or end tag as the opening angled bracket is outside of the <code>nodeName</code>. Similarly <code>li id=</code> will not match an <code>li</code> element with the first attribute of <code>id</code> as the id attribute and li start tag span two different nodes.
@@ -81,6 +84,8 @@ An element can be removed from the document by selecting <q>Delete node</q> from
 
 CSS pseudo elements are not actually part of the DOM, but they can be seen in the Opera Dragonfly DOM panel when a CSS selector defines one, so that the style declarations can be inspected. Pseudo elements are displayed as if they were an element with the tag name of the pseudo element in question proceeded by two colons. For example the ::first-letter pseudo element is shown as &lt;::first-letter/> before the first child of the element of which it applies. 
 
+<img src="img/pseudo-elements" alt="viewing pseudo elements in the DOM" />
+
 ####Viewing styles
 
 The styles associated with the currently selected DOM element can be found in the Styles sub-panel. There are two main sections; computed style and styles. 
@@ -99,9 +104,14 @@ It is easy to forget what a property does, or what its values mean. In Opera Dra
 
 Pseudo classes can also be seen in the styles section. Normally only rules that are currently active are shown. This makes it difficult to see styles that are only applied temporarily, such as active and hover styles. To make this easier, Opera Dragonfly provides a drop down button on the styles toolbar, which lists the pseudo classes and the selection pseudo element. If an option is enabled any rules with the matching pseudo class will be displayed in the Style Inspector as if it was currently active.
 
+<img src="img/pseudo-classes" alt="viewing pseudo classes" />
+
 ##### SVG presentational attributes
 
 SVG presentational attributes map directly to their equivalent CSS properties, but with a specificity of 0. To take advantage of Opera Dragonfly’s CSS editing and debugging features, and to keep all the styling information in one place, SVG presentational attributes are mapped to their CSS equivalent in the Style Inspector. All presentational attributes on an element are displayed in one rule block with <q>Presentational attributes</q> replacing the selector string. Do to the low specificity they will be shown at the very bottom of the list of rules. 
+
+<img src="img/presentational attributes.png" alt="viewing presentational attributes in Style Inspector" />
+
 
 ####Editing styles
 
