@@ -28,7 +28,7 @@
 
 #### Storage Inspector 1.1
 
-* Upgrade Local Storage, Session Storage and Widgets Preferences to the UI used for cookies in Opera Dragonfly 1.1
+* Upgrade Local Storage, Session Storage and Widgets Preferences to the UI used for cookies in Opera Dragonfly 1.0
 
 #### Error Log 1.1
 
