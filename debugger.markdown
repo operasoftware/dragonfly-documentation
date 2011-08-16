@@ -144,7 +144,7 @@ When a function is called it is pushed onto the top of the call stack, and when 
 
 <img src="img/call-stack.png" alt="navigating the call stack" />
 
-Clicking on an entry in the stack will switch to that frame. From there it is possible to see all the variables in scope for that frame in the Inspection section, as described above. The source view will also switch to the function that the frame represents. The execution position will be at the line that called the function that created the frame above the currently selected one on the stack.
+Clicking on an entry in the stack will switch to that frame. From there it is possible to see all the variables in scope for that frame in the Inspection section, as described above. The source view will also switch to the function that the frame represents. The execution position will be at the line that contains the function call that created the frame above on the call stack.
 
 #### Watches ####
 
