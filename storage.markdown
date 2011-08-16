@@ -79,10 +79,10 @@ Local Storage is more like persistent cookies. The data stored with Local Storag
 
 ####Manipulating Web Storage
 
-Session and Local Storage can be added, edited, and deleted in the same way as Cookies. The only difference is that the interface is simpler as there is only a key and value for each entry.
+Session and Local Storage can be added, edited, and deleted in the same way as Cookies. The only difference is that the interface is simpler due to Web Storage only having a key and value for each entry.
 
 ###Widget Preferences
 
 <a href="http://www.w3.org/TR/widgets-apis/#the-preferences-attribute">Widget Preferences</a> use the same Storage interface as Web Storage, but they are specific to applications implementing the Widgets API. In the Opera browser, each widget or extension has its own storage area to store its preference data. The data in this storage area can be found via the Widget Preferences panel, which remains blank for websites and applications that do not implement the Widgets API.
 
-Data in the Widget Preferences panel can be manipulated in the same way as Web Storage entries. 
+Data in the Widget Preferences panel can be manipulated in exactly the same way as Web Storage entries. 
