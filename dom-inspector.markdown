@@ -62,7 +62,7 @@ The CSS selector search accepts a selector string, in much the same way as <code
 
 ##### XPath expression search
 
-The XPath expression search works the same way as the CSS selector search, except it shows which elements match the entered XPath expression.
+The XPath expression search works the same way as the CSS selector search, except that it shows which elements match the entered XPath expression.
 
 ##### Ignore case option
 
@@ -82,9 +82,9 @@ An element can be removed from the document by selecting <q>Delete node</q> from
 
 ####Viewing pseudo elements
 
-CSS pseudo elements are not actually part of the DOM, but they can be seen in the Opera Dragonfly DOM panel when a CSS selector defines one, so that the style declarations can be inspected. Pseudo elements are displayed as if they were an element with the tag name of the pseudo element in question proceeded by two colons. For example the ::first-letter pseudo element is shown as &lt;::first-letter/> before the first child of the element of which it applies. 
+CSS pseudo elements are not actually part of the DOM, but they can be seen in the Opera Dragonfly DOM panel when a CSS selector defines one. This allows the style declarations to be inspected. Pseudo elements are displayed as if they were an element with the tag name of the pseudo element in question proceeded by two colons. For example the <code>::first-letter</code> pseudo element is shown as &lt;::first-letter/> before the first child of the element of which it applies. 
 
-<img src="img/pseudo-elements" alt="viewing pseudo elements in the DOM" />
+<img src="img/pseudo-elements.png" alt="viewing pseudo elements in the DOM" />
 
 ####Viewing styles
 
@@ -104,13 +104,13 @@ It is easy to forget what a property does, or what its values mean. In Opera Dra
 
 Pseudo classes can also be seen in the styles section. Normally only rules that are currently active are shown. This makes it difficult to see styles that are only applied temporarily, such as active and hover styles. To make this easier, Opera Dragonfly provides a drop down button on the styles toolbar, which lists the pseudo classes and the selection pseudo element. If an option is enabled any rules with the matching pseudo class will be displayed in the Style Inspector as if it was currently active.
 
-<img src="img/pseudo-classes" alt="viewing pseudo classes" />
+<img src="img/pseudo-classes.png" alt="viewing pseudo classes" />
 
 ##### SVG presentational attributes
 
-SVG presentational attributes map directly to their equivalent CSS properties, but with a specificity of 0. To take advantage of Opera Dragonfly’s CSS editing and debugging features, and to keep all the styling information in one place, SVG presentational attributes are mapped to their CSS equivalent in the Style Inspector. All presentational attributes on an element are displayed in one rule block with <q>Presentational attributes</q> replacing the selector string. Do to the low specificity they will be shown at the very bottom of the list of rules. 
+SVG presentational attributes map directly to their equivalent CSS properties, but with a specificity of 0. To take advantage of Opera Dragonfly’s CSS editing and debugging features and to keep all the styling information in one place, SVG presentational attributes are mapped to their CSS equivalent in the Style Inspector. All presentational attributes on an element are displayed in one rule block with <q>Presentation attributes</q> replacing the selector string. Due to the low specificity they will be shown at the very bottom of the list of rules. 
 
-<img src="img/presentational attributes.png" alt="viewing presentational attributes in Style Inspector" />
+<img src="img/presentational-attributes.png" alt="viewing presentational attributes in Style Inspector" />
 
 
 ####Editing styles
