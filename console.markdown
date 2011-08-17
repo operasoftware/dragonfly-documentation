@@ -161,8 +161,8 @@ The following cross-platform, Bash-like keyboard shortcuts are available in the 
     <td><kbd>Ctrl + y</kbd></td>
     <td>Pastes the content of the delete buffer; sets the buffer to whatever was last deleted by Ctrl-K,U, or W.</td>
   </tr>
-  <tr>
-    <td><kbd>Tab</kbd></td>
-    <td>Auto-completes an identifier, or prints out a list of possible matches.</td>
-  </tr>
 </table>
+
+In addition to the previous shortcuts, pressing <kbd>Tab</kbd> can be used to auto-complete an identifier (including the so-called native built-in objects, i.e., <code>Array</code> & <code>[]</code>, String, Number, etc.), or print out a list of possible matches.
+
+![Tab completion](img/console-tab.png)

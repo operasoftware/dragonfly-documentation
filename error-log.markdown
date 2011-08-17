@@ -6,7 +6,7 @@ Click on the Errors icon in the application toolbar to access the Error Log. The
 
 ![Opera Dragonfly Error Log](img/error-whole.png)
 
-###Search
+###Filter
 
 To search through all errors on a page, use the Filter control on the Error Log toolbar.
 
@@ -14,7 +14,7 @@ To search through all errors on a page, use the Filter control on the Error Log 
 
 ###Tabs
 
-By default, the All tab will be selected, showing every type of error for the current page. Errors can be filtered by choosing a more specific tab such as the CSS tab.
+By default, the All tab will be selected, showing every type of error for the current page. Depending on the types of error encountered on a page, more specific tabs will be displayed in addition to All. Errors can be filtered by choosing a more specific tab, for example the CSS tab.
 
 Error messages can be opened one by one by clicking on them, or globally by clicking the Expand All icon in the Error Log toolbar.
 
@@ -26,6 +26,8 @@ There are two error types displayed in the Error Log:
 
   * Error: An example would be a syntax error or an uncaught exception.
   * Information: This provides information, such as for an unknown property or value.
+  
+In the All tab view, each error is represented by its resource type icon whereas in more specific error tabs its icon represents the error type.
 
 For CSS and JavaScript errors, clicking on the URL of the file in the expanded view will open the style sheet or script as a new tab in the Resource Inspector.
 
@@ -37,4 +39,4 @@ Custom CSS filters can be defined in the Error Log settings tab to remove certai
 
 ###Clearing the Error Log
 
-The Error Log is cleared by clicking the trashcan icon in the toolbar.
+The Error Log can be cleared by clicking the trashcan icon in the toolbar or the "Clear all errors" context-menu item. Note that clicking the trashcan icon only clears visible errors, however. For example, if the current Error Log is filtered to show <code>-webkit-</code> CSS errors and the trashcan is clicked, as soon as the filter is cleared the remaining page errors are displayed.

@@ -1,6 +1,6 @@
 ## JavaScript Debugger ##
 
-Opera Dragonfly contains a fully-featured JavaScript Debugger. This is accessible from the Scripts panel in the main application toolbar. The JavaScript Debugger enables the state of the webpage or application to be inspected by setting break points to control the flow of the program as the code is stepped through. The debugger supports breaking due to user-defined events and tracking of program state, including variable and object values. This makes it easier to identify bugs in the application and understand exactly what is happening at any given stage.
+Opera Dragonfly contains a fully-featured JavaScript Debugger. This is accessible from the Scripts panel in the main application toolbar. The JavaScript Debugger enables the state of the webpage or application to be inspected by setting break points to control the flow of the program as the code is stepped through. The debugger supports breaking on user-defined events and tracking of program state, including variable and object values. This makes it easier to identify bugs in the application and understand exactly what is happening at any given stage.
 
 <img src="img/debugger.png" alt="The JavaScript Debugger" />
 
@@ -69,7 +69,7 @@ With <a href="http://www.w3.org/TR/DOM-Level-3-Events/">DOM Level 3 Events</a> i
 
 A conditional breakpoint has an expression attached to it that is evaluated when the breakpoint is reached. If the evaluation returns true, the execution breaks; otherwise, it continues. 
 
-A regular line or event breakpoint can be changed to a conditional breakpoint by selecting <q>Add condition<q> from the context menu of the appropriate breakpoint in the Breakpoints sub-panel, and entering a valid expression in the <q>condition</q> field. The expression must return a boolean value. The breakpoint symbol in the source view gutter will change to indicate it has a condition attached.
+A regular line or event breakpoint can be changed to a conditional breakpoint by selecting <q>Add condition</q> from the context menu of the appropriate breakpoint in the Breakpoints sub-panel, and entering a valid expression in the <q>condition</q> field. The expression must return a boolean value. The breakpoint symbol in the source view gutter will change to indicate it has a condition attached.
 
 <img src="img/conditional-breakpoints.png" alt="Adding a conditional breakpoint" />
 
@@ -77,7 +77,7 @@ For line breakpoints, it is also possible to right click on the breakpoint in th
 
 To remove a condition, delete the text inside the condition field and press Enter.
 
-Examples of conditions include testing if a variable equals a specific value (<samp>foo == 10</samp>), a variable is greater than another variable (<samp>foo > bar</samp>, a function returns <q>true</q> (<samp>foo.bar(baz) === true</samp>), or when an event breakpoint fires, if it is a specific element (<samp>event.target.id == "foo"</samp>).
+Examples of conditions include testing if: a variable equals a specific value (<samp>foo == 10</samp>), a variable is greater than another variable (<samp>foo > bar</samp>), a function returns <q>true</q> (<samp>foo.bar(baz) === true</samp>), or, when an event breakpoint fires, if it is a specific element (<samp>event.target.id == "foo"</samp>).
 
 ##### Break on first statement of a new script 
 
