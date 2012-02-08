@@ -6,6 +6,13 @@ The Console can be accessed by pressing the button with the command prompt icon 
 
 ![Opera Dragonfly Console HUD](img/console-hud.png)
 
+### Multi-line Editing
+
+It can be useful to enter commands that span longer than a single line. When in the console's multi-line editing mode you can enter a block of text as if you were using a text editor, i.e., arrow and tab keys will behave as expected. This is handy, for example, when testing out a JavaScript function where whitespace aids in readability.
+
+To enter multi-line editing, press <kbd>Shift + Enter</kbd>; pressing <kbd>Shift + Enter</kbd> again will toggle single-line mode. Once a block of text has been entered, <kbd>Ctrl + Enter</kbd> will simultaneously exit multi-line mode and interpret the text.
+
+![Opera Dragonfly Console Multi-line Editing](img/multiline.png)
 
 ### Console API
 
@@ -132,6 +139,14 @@ The following cross-platform, Bash-like keyboard shortcuts are available in the 
   <tr>
     <th>Shortcut</th>
     <th>Description</th>
+  </tr>
+  <tr>
+    <td><kbd>Shift + Enter</kbd></td>
+    <td>Enters multi-line mode</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl + Enter</kbd></td>
+    <td>Exits multi-line mode, and evaluates the entered text.</td>
   </tr>
   <tr>
     <td><kbd>Ctrl + l</kbd></td>
