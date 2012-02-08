@@ -142,7 +142,7 @@ The following cross-platform, Bash-like keyboard shortcuts are available in the 
   </tr>
   <tr>
     <td><kbd>Shift + Enter</kbd></td>
-    <td>Enters multi-line mode</td>
+    <td>Toggles multi-line mode</td>
   </tr>
   <tr>
     <td><kbd>Ctrl + Enter</kbd></td>
