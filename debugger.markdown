@@ -138,6 +138,26 @@ As the number of properties can start to get unwieldy, it is possible to hide va
 
 It is also possible to filter by a search term using the Filter field in the toolbar. This will only match properties that are currently visible.
 
+#### Dynamic Value Inspection Tooltips
+
+In addition to the State sub-panel, dynamic inspection tooltips offer the ability to observe values of properties, variables, objects and expressions.
+
+Hovering over an object in the Script panel source view will open a filterable tooltip.
+
+<img src="img/tooltip.png" alt="tooltip">
+
+Pressing shift while hovering over a function invocation will also evaluate the function and show its return value in the tooltip. For example, pressing <kbd>Shift</kbd> while hovering over a call to <code>document.getElementsByClassName('frame')</code> returns the <code>NodeList</code> instance.
+
+<img src="img/tooltip-eval.png" alt="evaluated tooltip">
+
+Selecting any amount of code and pressing <kbd>Shift</kbd> will evaluate it and display the result in the tooltip. This also works across multiple lines.
+
+<img src="img/tooltip-select.png" alt="evaluated selection tooltip">
+
+We have also added a new kind of tooltip for all JavaScript inspections. For properties of type `Object` we show the according Class. If you now hover over the Class name of any `Element`, `Function`, `Date`, `RegExp`, `Error` and `Exception`, you will get a tooltip with a pretty-printed representation. This even works on top of another tooltip.
+
+<img src="img/tooltip-class.png" alt="Pretty printed object">
+
 #### Navigating the call stack
 
 When a function is called it is pushed onto the top of the call stack, and when it returns it is popped off the stack. The call stack contains a frame for each function that has not yet returned, with global scope at the base. The frames on the stack are listed in the Call Stack section of the State sub-panel.
