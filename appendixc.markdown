@@ -22,7 +22,7 @@ Opera Dragonfly uses the Git version control system. Once <a href="http://git-sc
 
 ### Coding guidelines
 
-Opera Dragonfly follows the Python <a href="http://www.python.org/dev/peps/pep-0008/">PEP 8</a> style guide. Any patch submitted to Opera Dragonfly must follow these guidelines to be accepted. See the <a href="https://github.com/operasoftware/dragonfly/wiki/Code-style-guide">Opera Dragonfly coding conventions</a> for further information.
+Any patch submitted to Opera Dragonfly must follow the the <a href="https://github.com/operasoftware/dragonfly/wiki/Code-style-guide">Opera Dragonfly style guide</a> to be accepted.
 
 ### Development tutorial
 
