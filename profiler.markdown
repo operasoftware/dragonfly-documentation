@@ -8,9 +8,9 @@ In broad terms, the operations performed by the browser will fall under the foll
 * **CSS parsing**: process any stylesheets, style blocks and attributes, user styles and the browser's own default stylesheet
 * **Script compilation**: process any JavaScript, including JIT compilation
 * **Thread evaluation**: actually run JavaScript code
-* **Reflow**: signals that the browser's render tree needs to be recalculated
-* **Style recalculation**: based on the parsed CSS selectors, construct the render tree by going through each relevant DOM node to determine if those particular style rules should be applied to it
-* **Layout**: prepare the actual layout of the document based on the render tree
+* **Reflow**: starts the recalculation of the browser's render tree
+* **Style recalculation**: based on the parsed CSS selectors, go through each relevant DOM node to determine if those particular style rules should be applied to it
+* **Layout**: build the render tree
 * **Paint**: display the calculated layout
 
 The Profiler allows you to record and visualise this internal activity of the browser.
