@@ -10,7 +10,7 @@ The Console can be accessed by pressing the button with the command prompt icon 
 
 It can be useful to enter commands that span longer than a single line. When in the console's multi-line editing mode you can enter a block of text as if you were using a text editor, i.e., arrow and tab keys will behave as expected. This is handy, for example, when testing out a JavaScript function where whitespace aids in readability.
 
-To enter multi-line editing, press <kbd>Shift + Enter</kbd>; pressing <kbd>Shift + Enter</kbd> again will toggle single-line mode. Once a block of text has been entered, <kbd>Ctrl + Enter</kbd> will simultaneously exit multi-line mode and interpret the text.
+To enter multi-line editing, press <kbd>Shift</kbd>+<kbd>Enter</kbd>; pressing <kbd>Shift</kbd>+<kbd>Enter</kbd> again will toggle single-line mode. Once a block of text has been entered, <kbd>Ctrl</kbd>+<kbd>Enter</kbd> will simultaneously exit multi-line mode and interpret the text.
 
 ![Opera Dragonfly Console Multi-line Editing](img/multiline.png)
 
@@ -150,7 +150,7 @@ The following cross-platform, Bash-like keyboard shortcuts are available in the 
   </tr>
   <tr>
     <td><kbd>Ctrl + l</kbd></td>
-    <td>Clears the console</td>
+    <td>Clears the console <small>(Windows/Linux only)</small></td>
   </tr>
   <tr>
     <td><kbd>Ctrl + e</kbd></td>
@@ -166,15 +166,15 @@ The following cross-platform, Bash-like keyboard shortcuts are available in the 
   </tr>
   <tr>
     <td><kbd>Ctrl + u</kbd></td>
-    <td>Deletes text to the beginning of the line</td>
+    <td>Deletes text to the beginning of the line <small>(Windows/Linux only)</small></td>
   </tr>
   <tr>
     <td><kbd>Ctrl + w</kbd></td>
-    <td>Deletes a word backwards</td>
+    <td>Deletes a word backwards <small>(Windows/Linux only)</small></td>
   </tr>
   <tr>
     <td><kbd>Ctrl + y</kbd></td>
-    <td>Pastes the content of the delete buffer; sets the buffer to whatever was last deleted by Ctrl-K,U, or W.</td>
+    <td>Pastes the content of the delete buffer; sets the buffer to whatever was last deleted by Ctrl-K,U, or W <small>(Windows/Linux only)</small></td>
   </tr>
 </table>
 
