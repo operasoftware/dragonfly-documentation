@@ -1,16 +1,14 @@
 ##Storage Inspector
 
-The Storage Inspector in Opera Dragonfly is accessible from the Storage panel in the application toolbar. The Storage Inspector displays all the data that is stored by the site or application on the client side. This includes cookies and HTML5 Web Storage. For applications based on W3C Widgets (such as Opera Widgets and Opera’s extensions), data stored in Widget Preferences is also shown.
+The Storage Inspector in Opera Dragonfly is accessible from the Storage panel in the application toolbar. The Storage Inspector displays all the data that is stored by the site or application on the client side – this includes cookies, HTML5 localStorage and sessionStorage, and Widget Preferences (for applications based on W3C Widgets, such as Opera Widgets and Opera Extensions).
 
 ###Cookies
 
 A cookie consists of name-value pairs and associated metadata. An HTTP server can use the `Set-Cookie` header to pass the pairs to the browser in the HTTP header response. When the user agent makes subsequent requests to the server, the user agent uses the metadata and other information to determine whether to return the name/value pairs in the `Cookie` header. 
 
-Note: Cookies were defined by [HTTP State Management Mechanism (RFC 2965)](http://tools.ietf.org/html/rfc2965) but it is in the process of being obsoleted by [HTTP State Management Mechanism](http://tools.ietf.org/html/draft-ietf-httpstate-cookie).
-
 The cookies panel lists all cookies set by the site being debugged: they are arranged in a table, sorted by domain and grouped by the host and path. Each row includes a column for each cookie attribute: name, value, expiry date etc.
 
-<img src="img/cookies-list.png" alt="list of cookies" />
+<img src="img/storage-cookies-list.jpg" alt="Storage tab, showing a list of all cookies set by the current site" />
 
 ####Types of cookies
 
@@ -36,19 +34,19 @@ Session and persistent cookies can also be HTTPOnly. A HTTPOnly cookie can not b
 
 Clicking on the headings of each column will sort the table in ascending/descending order by the column in question.
 
-Cookies are grouped by their hosts and paths by default. It is possible to ungroup the cookies by selecting <q>No grouping</q> from the table header row’s context menu.
-
-<img src="img/no-grouping.png" alt="ungrouping cookies" />
-
 ####Selecting cookies
 
-Clicking on a cookie's row will select it. It is possible to select multiple cookies by holding down the <kbd>Ctrl</kbd> (<kbd>⌘</kbd>) key while clicking on them.  
+Clicking on a cookie's row will select it. It is possible to select multiple cookies by holding down the <kbd>Ctrl</kbd> / <kbd>⌘</kbd> key while clicking on them.
+
+<img src="img/storage-cookie-context.png" alt="The cookie context menu" />
+
+Right-clicking a cookie brings up the context menu. From here, cookies can be added, edited, deleted and updated. Additionally, you can quickly choose to delete all cookies from the same domain.
 
 ####Adding a cookie
 
 A cookie can be added by selecting <q>Add cookie</q> from the context menu or by clicking on the <q>Add cookie</q> button. When the cookies are grouped, each domain has a <q>Add cookie</q> button, which pre-fills the domain field to that domain. When ungrouped, the button can be found at the bottom of the table, and the domain is pre-filled to the same domain as the previous cookie. The domain can be set to any valid domain, but it will not be shown if it doesn't match one of the listed domains. The cookie will be shown when inspecting the domain on which it was set.
 
-<img src="img/adding-cookie.png" alt="Adding a new cookie" />
+<img src="img/storage-adding-cookie.jpg" alt="Adding a new cookie" />
 
 The expiry date can be selected using the provided calendar widget. Opera Dragonfly will automatically translate the date and time into a easily human-readable date. To set a session cookie leave the expires field blank.
 
@@ -66,7 +64,7 @@ The [Web Storage API](http://www.w3.org/TR/webstorage/) defines persistent stora
  
 The Storage Inspector separates the two types of Web Storage into their own sub panels. Each entry is displayed in a key-value list. 
 
-<img src="img/local-storage.png" alt="local storage" />
+<img src="img/storage-localStorage.png" alt="local storage" />
 
 ####Session Storage
 
@@ -83,6 +81,8 @@ Session and Local Storage can be added, edited, and deleted in the same way as C
 
 ###Widget Preferences
 
-<a href="http://www.w3.org/TR/widgets-apis/#the-preferences-attribute">Widget Preferences</a> use the same Storage interface as Web Storage, but they are specific to applications implementing the Widgets API. In the Opera browser, each widget or extension has its own storage area to store its preference data. The data in this storage area can be found via the Widget Preferences panel, which remains blank for websites and applications that do not implement the Widgets API.
+<a href="http://www.w3.org/TR/widgets-apis/#the-preferences-attribute">Widget Preferences</a> use the same Storage interface as Web Storage, but they are specific to applications implementing the Widgets API – Opera Widgets (which are now deprecated) and Opera Extensions.
+
+Each widget or extension has its own storage area to store its preference data. The data in this storage area can be found via the Widget Preferences panel, which remains blank for websites and applications that do not implement the Widgets API.
 
 Data in the Widget Preferences panel can be manipulated in exactly the same way as Web Storage entries. 
