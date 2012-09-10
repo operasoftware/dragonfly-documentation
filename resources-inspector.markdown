@@ -6,7 +6,7 @@ The Resources Inspector gives information for each URI of a webpage. An overview
 
 The Resources Inspector has 5 columns listing information about the primary requested resource and all dependent resources.
 
-![Resource View](img/resource-view.png)
+![Resources View](img/resources-view.jpg)
 
 For each resource, The following information is given:
 
@@ -20,23 +20,23 @@ Additional options are available by pressing <kbd>ctrl</kbd>+click. It is possib
 
 When clicking on a specific line, a new tab opens with the source code for an HTML resource, or the rendered image for an image resource. Further details such as size and format can be found by clicking on the plus arrow sign. 
 
-![Resource Detail Expand](img/resource-detail-expand.png)
+![Expanding an individual resource shows further details about the resources](img/resources-detail-expand.jpg)
 
 Once the source code is visible, a search box appears at the top right of the window. Typing a keyword will highlight this keyword in the source code. Press the return key successively to access other occurrences of the keyword in the source. Once the bottom has been reached, it cycles again from the top of the document.
 
-![Resource Search Feature](img/resource-search.png)
+![Searching for a string of text inside the resource file](img/resources-search.jpg)
 
 The first tab is the <q>All resources</q> view. When pressing Ctrl+click in this window, a menu appears. Resources can then be organized by hosts or by type.
 
-![Resource Grouping Opt](img/resource-grouping-opt.png)
+![Context menu showing the various grouping options available for the resource view](img/resources-grouping-options.jpg)
 
 Selecting "Group by Host" will reorder the resource list alphabetically by host. This provides a quick way to identify a specific set of URIs for each domain. A hint about missing resources is provided should those resources be unavailable.
 
-![Resource By Host](img/resource-by-host.png)
+![Resources reordered and grouped by host](img/resources-by-host.jpg)
 
 To focus on a specific resource by type, select the "Group by Type" option. All styles, all images and all HTML resources will then be grouped together.
 
-![Resource By Type](img/resource-by-type.png)
+![Resources reordered and grouped by type](img/resources-by-type.jpg)
 
 ### What are URIs?
 
