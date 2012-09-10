@@ -30,7 +30,7 @@ To begin debugging remotely In Opera Dragonfly perform the following steps:
 2. Specify the port that will be used to connect over. This defaults to 7001. Make sure the firewall is configured to allow connections on the chosen port.
 3. Click the Apply button.
 
-<img src="img/set-port.png" alt="Set the port and listen for a connection" />
+<img src="img/remote-port.jpg" alt="Set the port and listen for a connection" />
 
 #### Stage 3: Connect to Opera Dragonfly ####
 
@@ -48,7 +48,7 @@ If the connection is successful, Opera Dragonfly will communicate with the remot
 
 With the connection established, the final step is to select the document to debug. The debugging context selector at the upper-right of the Opera Dragonfly window contains a list of the open documents on the remote device. Navigate to the page to be debugged on the remote device and make sure the correct document is selected in the document selector. It may also be useful to detach Opera Dragonfly to  provide more visual real estate.
 
-<img src="img/select-context.png" alt="Select the context from the debugging context selector" />
+<img src="img/remote-context.png" alt="Selecting the debugging context" />
 
 Everything will behave as if a local document is being debugged. The main difference is that the page being debugged is controlled and displayed on the remote device. Changes made to the DOM or styles can still be made in real time. There may. however, be some delay depending on the latency of the connection and the performance of the device. 
 
