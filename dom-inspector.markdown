@@ -4,13 +4,13 @@ The DOM and Style Inspectors in Opera Dragonfly are accessible from the Document
 
 The Style Inspector is shown in the right-hand sub-panel. When a DOM element is selected, the styles corresponding to that node are shown.
 
-<img src="img/dom-overview.png" alt="Overview of the DOM and Style Inspector UIs" />
+<img src="img/dom-overview.jpg" alt="Overview of the Documents panel, with the DOM view and the Styles/Properties/Layout side panel" />
 
 ###View options
 
 The DOM tree can be shown in one of two different modes. The default mode is similar to how markup is written using angle brackets, with the exception that nodes can be expanded and collapsed. The tree view (accessible from the context menu when right clicking on the DOM view) shows the DOM as a more classical tree. This view may be more familiar to DOM scripters, where, for example, text nodes are shown as a child node of type #text. 
 
-<img src="img/tree-view.png" alt="The DOM represented as a node tree" />
+<img src="img/dom-view-options.png" alt="The DOM represented as a node tree" />
 
 A number of view options can be found in the settings, such as enabling and disabling the visibility of comment and whitespace nodes.
 
@@ -34,18 +34,18 @@ It is also possible to disable the element highlight. This can be useful when it
 
 The element highlight is fully customizable. The colors can be inverted using <kbd>Ctrl</kbd>+<kbd>I</kbd> (<kbd>⌘</kbd>+<kbd>I</kbd>) when the Opera Dragonfly window has focus. A custom color can be set in the Element highlight section of the Documents tab in Settings. 
 
-<img src="img/inverted-highlight.png" alt="Multiple elements highlighted in the page" />
+<img src="img/dom-highlighting-inverted.png" alt="An selected and highlighted element, using inverted colors" />
 
 It is sometimes useful to highlight multiple elements, such as when testing whether elements line up correctly. This can be achieved in Opera Dragonfly by selecting <q>Keep elements highlighted</q> from the DOM sub-panel context menu. When this option is enabled Opera Dragonfly will highlight each element that is selected on the page. Disabling this will return to only highlighting the last element that is clicked.
 
-<img src="img/element-highlight.png" alt="Multiple elements highlighted in the page" />
+<img src="img/dom-highlighting-keep.jpg" alt="Multiple elements highlighted in the page" />
 
 
 ####Search
 
 To search the DOM, switch to the Search panel or press <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>F3</kbd> or <kbd>fn</kbd>+<kbd>F3</kbd> for keyboards that apply a OS function to the function keys). From the Search panel it is possible to enter a search term, and navigate between the results with either the forward and back buttons or the <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd> keys. A badge is shown in the search field to show the current match and total matches. All matches are shown as a list in the Search panel once the search query is submitted. Selecting a match will highlight it in the DOM source. There are a number of search options described below.
 
-<img src="img/css-search.png" alt="Search options include search by CSS selector" />
+<img src="img/dom-search.jpg" alt="Search options include search by CSS selector" />
 
 
 #####Text search
@@ -74,7 +74,7 @@ There are two different modes in Opera Dragonfly for editing the DOM. All elemen
 
 To edit the entire element, including its children, double-click on the start or end tag. This will cause Opera Dragonfly to go into block edit mode, which allows for free-form editing. Alternatively, select <q>Edit markup</q> from the context menu, or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) when the start or end tag has focus. As <kbd>Enter</kbd> enters a new line, submitting changes is achieved by pressing <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd>) or clicking outside of the edit field.
 
-<img src="img/edit-markup.png" alt="Editing the DOM" />
+<img src="img/dom-edit-markup.png" alt="Editing the DOM using the context menu" />
 
 An additional attribute can be added to the element while in edit mode by tabbing to the end of the element. An edit field for a new attribute will be created when tabbing past the last attribute. A quicker alternative is to select <q>Add attribute</q> from the element’s context menu.
 
@@ -84,7 +84,7 @@ An element can be removed from the document by selecting <q>Delete node</q> from
 
 CSS pseudo elements are not actually part of the DOM, but they can be seen in the Opera Dragonfly DOM panel when a CSS selector defines one. This allows the style declarations to be inspected. Pseudo elements are displayed as if they were an element with the tag name of the pseudo element in question proceeded by two colons. For example the <code>::first-letter</code> pseudo element is shown as &lt;::first-letter/> before the first child of the element of which it applies. 
 
-<img src="img/pseudo-elements.png" alt="viewing pseudo elements in the DOM" />
+<img src="img/dom-styles-pseudo-elements.png" alt="Pseudo elements show up in the DOM like regular nodes" />
 
 ####Viewing styles
 
@@ -94,7 +94,7 @@ The computed style section lists all the properties that the Opera browser suppo
 
 The styles section contains a list of CSS rules in order of selector specificity, with the most specific first. Invalid rules that the Opera browser could not parse are dropped from the rules, and shorthands are expanded into their individual properties. As with computed styles, units are converted to the value the Opera browser stores internally. Properties in a less specific rule that are overridden by the same property in a more specific rule display with a strike-through to show they do not apply. Properties that have a color value (such as <code>color</code> or <code>background-color</code>) show a color swatch after the value. Clicking on this swatch opens the color picker, which can be used to adjust the color on the fly.
 
-<img src="img/styles-panel.png" alt="The styles sub-panel" />
+<img src="img/dom-styles-side-panel.png" alt="The styles sub-panel" />
 
 Links to the right of the selector show the file in which the CSS rule was defined. Clicking the link will open the file in the Resource Inspector and scroll to the correct line in the document. This will show the style sheet as it was written originally rather than the parsed styles shown in the Style Inspector.
 
@@ -104,13 +104,13 @@ It is easy to forget what a property does, or what its values mean. In Opera Dra
 
 Pseudo classes can also be seen in the styles section. Normally only rules that are currently active are shown. This makes it difficult to see styles that are only applied temporarily, such as active and hover styles. To make this easier, Opera Dragonfly provides a drop down button on the styles toolbar, which lists the pseudo classes and the selection pseudo element. If an option is enabled any rules with the matching pseudo class will be displayed in the Style Inspector as if it was currently active.
 
-<img src="img/pseudo-classes.png" alt="viewing pseudo classes" />
+<img src="img/dom-styles-pseudo-classes.png" alt="Using the dropdown menu in the Styles side panel to select pseudo-classes like :hover and :active" />
 
 ##### SVG presentational attributes
 
 SVG presentational attributes map directly to their equivalent CSS properties, but with a specificity of 0. To take advantage of Opera Dragonfly’s CSS editing and debugging features and to keep all the styling information in one place, SVG presentational attributes are mapped to their CSS equivalent in the Style Inspector. All presentational attributes on an element are displayed in one rule block with <q>Presentation attributes</q> replacing the selector string. Due to the low specificity they will be shown at the very bottom of the list of rules. 
 
-<img src="img/presentational-attributes.png" alt="viewing presentational attributes in Style Inspector" />
+<img src="img/dom-styles-svg.png" alt="Viewing presentation attributes of an SVG image in the Style Inspector" />
 
 
 ####Editing styles
@@ -123,27 +123,27 @@ Deleting a property can be achieved by entering edit mode, selecting the whole l
 
 Instead of deleting a property it is often useful while debugging to temporarily disable it. This can be achieved by hovering over a property and unchecking the checkbox. This will grey out the property. Checking the box again will re-enable it.
 
-<img src="img/disabled-declarations.png" alt="Disabling CSS properties" />
+<img src="img/dom-styles-editing-disable.png" alt="Disabling individual CSS properties" />
 
 A quick way to make an overridden property apply without disabling all the more specific rules is to edit the property and add <code>!important</code>. The use of <code>!important</code> is generally not recommended for accessibility and maintainability reasons, but it can be useful while debugging. This will of course not work if the more specific rules also use <code>!important</code>.
 
 It is often useful to add new rules while debugging, especially when there are no rules that match the element of interest. These can be added in the <q>New style</q> section. Free-form text can be entered in the text field as if entering the text in a regular style sheet. Clicking the <q>Apply</q> button submits the changes and inserts a new <code>style</code> element into the document. Each new rule is evaluated, and, if the properties are valid, they are included in the styles section of the elements that match the rule. Although the page updates instantly after clicking Apply, if any rules match the currently selected element it will have to be selected again to update the style sub-panel view.
 
-<img src="img/add-rule.png" alt="Adding a new CSS rule" />
+<img src="img/dom-styles-newstyle.png" alt="Adding a new CSS block, complete with selector and different properties" />
 
 ####Color picker
 
-The color picker can be used to edit a color value by selecting the desired color visually, rather than typing the color value. Every property in the styles section that accepts a color value includes a color swatch. Clicking on this opens the color picker. 
+The color picker can be used to edit a color value by selecting the desired color visually, rather than simply typing the color value. Every property in the styles section that accepts a color value includes a color swatch. Clicking on this opens the color picker. 
 
-<img src="img/color-picker.png" alt="Using the color picker" />
+<img src="img/dom-styles-color-picker.jpg" alt="Using the color picker" />
 
-Using the color picker will be familiar to anyone who has used similar graphics-related tools. The two color swatches in the upper-right-hand corner show the original color (left) and the adjusted color (right). Clicking the original color swatch will revert the updated color to the original. 
+Using the color picker will be familiar to anyone who has used similar graphics-related tools. The two color swatches in the bottom of the dialog show the original color (left) and the adjusted color (right). Clicking the original color swatch will revert the updated color to the original. 
 
 The color can be adjusted using either the <a href="http://en.wikipedia.org/wiki/RGB_color_model">RGB</a> or <a href="http://en.wikipedia.org/wiki/HSL_and_HSV">HSV</a> color models. Clicking on the radio button next to a color component will clamp the color slider to the selected component. For instance, which clicking on the Hue (H) component, the color slider is clamped to the values 0–360 (red to red, via the entire hue spectrum). Moving the slider will adjust only that component. The color field to the left of the slider is clamped to the other two components. Selecting a color in the field will update these two components. It is possible to directly enter the color value in either RGB, HSV or hexadecimal in the appropriate text fields.
 
-If the color value has an alpha channel (RGBA or HSLA), an opacity slider is also available. This adjusts the color between fully opaque and fully transparent. A black-and-white pattern is displayed behind the original and adjusted color swatches to help visualize how the color will look. 
+In addition to the color values, the dialog also features an ɑ (alpha) field, which allows to set the transparency value – from fully opaque (1.0) to fully transparent (0.0). A black-and-white checkerboard pattern is displayed behind the original and adjusted color swatches to help visualize the amount of transparency.
 
-A color palette is available at the bottom of the color picker. This contains all the colors stored from the Utilities color picker. The list of colors can be managed from the <q>color palette</q> sub-panel in Utilities. This can be useful for storing the colors defined in a company style guide for example.  
+A color palette is available in the bottom-left corner of the color picker. It allows to store the current color, or to retrieve previously stored color values.
 
 ####Filtering styles
 
@@ -155,7 +155,7 @@ The Layout sub-panel contains information related to the box model and element p
 
 The <q>parent offsets</q> section shows a breadcrumb trail of the currently selected element’s parents. Clicking on a node selects that element.
 
-<img src="img/layout-panel.png" alt="The layout sub-panel" />
+<img src="img/dom-layout.png" alt="The Layout sub-panel" />
 
 The offset values section lists all the DOM properties useful for understanding how the object is positioned on the page, such as the offset, client, and scroll position and dimensions. 
 
@@ -165,7 +165,7 @@ While the style sub-panel is useful when laying out and styling a document, the 
 
 The properties sub-panel lists all the properties (called attributes in the DOM specs) of the currently selected DOM node object, along with their values. If a property has a long value, it is truncated and can be expanded with the expander button. Properties that are objects are listed with its type and can be expanded to show the properties the object contains.  As with CSS properties, it is possible to access the spec for each property from the context menu.
 
-<img src="img/properties-panel.png" alt="The properties sub-panel" />
+<img src="img/dom-properties.png" alt="The Properties sub-panel" />
 
 DOM node objects inherit properties and functions from their parent objects. For example, a <code>p</code> element is represented in the DOM by a <code>HTMLParagraphElement</code> object, which inherits from <code>HTMLElementPrototype</code>, which in turn inherits from <code>ElementPrototype</code>, <code>NodePrototype</code> and finally the <code>Object</code> object. Each prototype that the currently selected DOM node object inherits from are listed along with their properties and functions. They can be expanded and inspected just like regular objects.
 

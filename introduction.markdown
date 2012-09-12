@@ -22,7 +22,7 @@ The keyboard shortcut to launch Opera Dragonfly is <kbd>Ctrl</kbd>+<kbd>Shift</k
 
 ### Menu item
 
-On Windows and Linux, click on the Opera menu in the upper-left-hand corner of the Opera browser interface and select Edit → Developer Tools → Opera Dragonfly.
+On Windows and Linux, click on the Opera menu in the upper-left-hand corner of the Opera browser interface and select Page → Developer Tools → Opera Dragonfly.
 
 On Mac, select Tools → Advanced → Opera Dragonfly from the menu bar.
 
@@ -50,7 +50,7 @@ The final windowing control button is the close button. This button closes Opera
 
 The main tools in Opera Dragonfly are organized into panels, accessed from the application toolbar. Each tool is identified by an icon and a label describing the type of content or activity that the tool is designed to inspect or debug. The Scripts button accesses the JavaScript Debugger for example, while Documents accesses the DOM and Style Inspectors.
 
-<img src="img/overview-toolbar.png" alt="The Opera Dragonfly tools: Documents, Scripts, Network, Resources, Storage, Profiler, Errors, Utilities, Console." />
+<img src="img/overview-structure.jpg" alt="The Opera Dragonfly structure: an overall application toolbar at the top, which contains buttons to access individual tool panels and buttons for global features; each tool panel is further divided into a main panel area with its own toolbar, and in some cases side panels with their own side panel tab buttons." />
 
 Each tool replaces the area below the application toolbar with its own UI. Each tool is generally split into several sub-panels, which can be accessed by clicking on the panel’s tab. 
 
