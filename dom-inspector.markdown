@@ -82,7 +82,7 @@ An element can be removed from the document by selecting <q>Delete node</q> from
 
 ####Viewing pseudo elements
 
-CSS pseudo elements are not actually part of the DOM, but they can be seen in the Opera Dragonfly DOM panel when a CSS selector defines one. This allows the style declarations to be inspected. Pseudo elements are displayed as if they were an element with the tag name of the pseudo element in question proceeded by two colons. For example the <code>::first-letter</code> pseudo element is shown as &lt;::first-letter/> before the first child of the element of which it applies. 
+CSS pseudo elements are not actually part of the DOM, but they can be seen in the Opera Dragonfly DOM panel when a CSS selector defines one. This allows the style declarations to be inspected. Pseudo elements are displayed as if they were an element with the tag name of the pseudo element in question proceeded by two colons. For example the <code>::first-letter</code> pseudo element is shown as <code>&lt;::first-letter/></code> before the first child of the element of which it applies. 
 
 <img src="img/dom-styles-pseudo-elements.png" alt="Pseudo elements show up in the DOM like regular nodes" />
 
