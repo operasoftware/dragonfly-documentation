@@ -149,16 +149,6 @@ A color palette is available in the bottom-left corner of the color picker. It a
 
 As the number of properties can quickly get unwieldy, it is possible to filter them with the Filter field. Only properties that match the term entered are displayed. The filter applies to both the regular and computed styles.
 
-###Layout panel
-
-The Layout sub-panel contains information related to the box model and element positioning. The metrics diagram provides a visualization of the various boxes of the box model. Hovering over each box highlights that specific component in the webpage or application. This can be very useful for understanding exactly how the box model is being rendered for those elements.
-
-The <q>parent offsets</q> section shows a breadcrumb trail of the currently selected element’s parents. Clicking on a node selects that element.
-
-<img src="img/dom-layout.png" alt="The Layout sub-panel" />
-
-The offset values section lists all the DOM properties useful for understanding how the object is positioned on the page, such as the offset, client, and scroll position and dimensions. 
-
 ###Properties panel
 
 While the style sub-panel is useful when laying out and styling a document, the properties sub-panel is useful when manipulating the DOM using JavaScript. This panel can be used to inspect the state of each element in the DOM or to check which properties are available.
@@ -172,3 +162,34 @@ DOM node objects inherit properties and functions from their parent objects. For
 ####Showing and hiding properties
 
 It is possible to hide non-enumerable properties, and default values which are null or empty strings using the corresponding buttons on the properties toolbar.
+
+###Layout panel
+
+The Layout sub-panel contains information related to the box model and element positioning. The metrics diagram provides a visualization of the various boxes of the box model. Hovering over each box highlights that specific component in the webpage or application. This can be very useful for understanding exactly how the box model is being rendered for those elements.
+
+The <q>parent offsets</q> section shows a breadcrumb trail of the currently selected element’s parents. Clicking on a node selects that element.
+
+<img src="img/dom-layout.png" alt="The Layout sub-panel" />
+
+The offset values section lists all the DOM properties useful for understanding how the object is positioned on the page, such as the offset, client, and scroll position and dimensions. 
+
+#### Event listener tooltip and inspection panel
+
+One of Opera Dragonfly's recent additions is the ability to inspect JavaScript event listeners directly from the DOM view.
+
+Elements with an attached event listener are presented with an <q>EV</q> icon in the Document view. Hovering the icon opens an overlay with the list of event listeners.
+
+<img src="img/dom-ev-tooltip.png" alt="Event listener overlay" />
+
+Each listener has an entry showing the event type, and whether it listens in the bubbling or capture phase, as title.
+The next line shows how the listener was registered: if it was added with <code>addEventListener</code> or set as '<code>on</code>'-event-type, its type is '<em>event listener</em>', while listeners set with markup attributes are identified as '<em>attribute listener</em>'.
+
+Hovering that type shows the according listener callback in a function source tooltip. Breakpoints can be set directly in this tooltip. Clicking the title of the function source tooltip switches to the Scripts tab and highlights the corresponding function in the source file.
+
+The last line of a listener entry in the overlay shows where the listener was registered. Again, clicking this line switches to the Scripts tab and highlights the corresponding line in the source file.
+
+To complement the inspection functionality in the Document view, there is also a new Listeners side panel, which lists all listeners that are currently active on the selected node, as well as an overview of all listeners in the overall document, ordered by event type. Each of the event types type can be expanded to show all nodes with an according listener.
+
+<img src="img/dom-ev-listeners-panel.png" alt="Listeners side panel, showing events registered on the currently selected node and across the entire document" />
+
+The panel provides a static snapshot of registered event listeners – but as event listeners can be programmatically added, modified or removed frequently, the Listeners panel also features an update button which will refresh the snapshot view.
