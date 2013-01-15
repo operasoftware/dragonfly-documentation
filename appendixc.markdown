@@ -1,41 +1,25 @@
 ## Appendix C: Development
 
-### License
+### Opera Dragonfly on GitHub
 
-Opera Dragonfly and the Scope specification is released under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a> open source license.
-
-### Code repository
-
-The code repository for Opera Dragonfly and associated tools can be found on <a href="https://github.com/operasoftware/dragonfly">Github</a> and <a href="https://bitbucket.org/">Bitbucket</a>. Repositories include:
-
-* <a href="https://github.com/operasoftware/dragonfly">Opera Dragonfly</a>
-* <a href="https://github.com/operasoftware/dragonkeeper">Dragonkeeper</a> (standalone proxy to support Opera Dragonfly development)
-* <a href="https://bitbucket.org/scope/hob/">Hob</a> (utility to create code from Protocol Buffer descriptions)
-* <a href="http://scope.bitbucket.org/scope/index.html">Scope interface</a>
-* <a href="https://bitbucket.org/scope/scope.bitbucket.org/overview">Opera Dragonfly tests and experimental components</a>
-
-### Checking out the code
-
-Opera Dragonfly uses the Git version control system. Once <a href="http://git-scm.com/">Git</a> is setup, it is possible to clone the Opera Dragonfly repository to a local machine. This can be done from the command line using:
-
-<kbd>git clone git://github.com/operasoftware/dragonfly.git</kbd>
-
-### Coding guidelines
+Opera Dragonfly is an open source project. You can find the complete code that powers our advanced debugging tools over on the <a href="https://github.com/operasoftware/dragonfly">Opera Dragonfly repository on GitHub</a>. If you have suggestions for new features, or simply want to report a bug, please feel free to <a href="https://github.com/operasoftware/dragonfly/issues">open a new issue</a> there.
 
 Any patch submitted to Opera Dragonfly must follow the the <a href="https://github.com/operasoftware/dragonfly/wiki/Code-style-guide">Opera Dragonfly style guide</a> to be accepted.
 
-### Development tutorial
+### Code repository
 
-To get started with Opera Dragonfly and Scope development, follow the <a href="https://dragonfly.opera.com/app/scope-interface/tutorial-console-logger.html">basic error message logger tutorial</a>.
+The code for Opera Dragonfly and associated tools can be found on <a href="https://github.com/operasoftware/">Opera Software's account on Github</a>. This includes:
 
-### Browsing bugs
+* <a href="https://github.com/operasoftware/dragonfly">Opera Dragonfly</a>
+* <a href="https://github.com/operasoftware/dragonkeeper">Dragonkeeper</a> (standalone proxy for Opera Dragonfly)
+* <a href="https://github.com/operasoftware/dragonfly-build-tools">Opera Dragonfly build tools</a>
+* <a href="https://github.com/operasoftware/dragonfly-manual-test-suite">Opera Dragonfly manual test suite</a>
+* <a href="https://github.com/operasoftware/dragonfly-documentation">Opera Dragonfly documentation</a>
 
-It is possible to browse Opera Dragonfly bugs on the <a href="https://github.com/operasoftware/dragonfly/issues">Github issue tracker</a>.
+The <a href="https://github.com/operasoftware/dragonfly"><code>Opera Dragonfly</code></a> repository has three main branches: <code>master</code>, <code>cutting-edge</code> and <code>bugfixes</code>. The <code>HEAD</code> of <code>master</code> will always match the current stable release of Opera Dragonfly at <code>https://dragonfly.opera.com/app/</a></code>, while the <code>HEAD</code> of <code>cutting-edge</code> matches <code>https://dragonfly.opera.com/app/cutting-edge/</code>. Note that there is no <code>experimental</code> branch – these builds are generated separately, in a temporary repo, as they're often focused on simply testing a particular new feature.
 
-### Reporting bugs
+Documentation for the Scope protocol that powers Opera Dragonfly's local and remote debugging services can be found in the <a href="http://scope.bitbucket.org/scope/">Scope Interface documentation on BitBucket</a>
 
-Bugs in Opera Dragonfly can be reported on the <a href="https://github.com/operasoftware/dragonfly/issues">Github issue tracker</a>.
+### License
 
-### Porting Opera Dragonfly to another browser or user agent
-
-Opera Dragonfly relies on the Scope module found in Opera Presto. This module would have to be ported to the rendering engine in question to enable Opera Dragonfly to communicate with it. The <a href="http://scope.bitbucket.org/scope/index.html">specification for Scope</a> can be found in the Bitbucket repository.
+Opera Dragonfly and the Scope specification are released under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a> open source license.

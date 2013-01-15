@@ -1,134 +1,66 @@
 ## Appendix E: Version history
 
-### Opera Dragonfly 1.1
+Opera Dragonfly has, since its inception, been continuously extended and improved. This version history is not exhaustive, but aims to highlight some of the important milestones in Opera Dragonfly's development. For a more comprehensive list of changes, see the <a href="http://dragonfly.opera.com/app/stp-1/logs/">Opera Dragonfly release logs</a> and the <a href="https://github.com/operasoftware/dragonfly/commits/master">commit history for Opera Dragonfly's master branch on GitHub</a>.
 
-#### DOM Inspector 1.1
+### Opera Dragonfly 1.2012.12.14
 
-* Search panel with options to search via RegExp, CSS selectors, XPath, and text
-* Pseudo-elements
+* Profiler: zoomable timeline, improved details view for style recalculations.
 
-#### Style Inspector 1.1
+### Opera Dragonfly 1.2012.11.21
 
-* Link back from a style declaration to its declaration in the CSS source file
-* Style declarations for pseudo-classes and pseudo-elements
-* SVG presentational attributes
+* Resources: new resources inspector with expandable tree view and improved details panel.
 
-#### JavaScript Debugger 1.1
+### Opera Dragonfly 1.2012.09.20
 
-* Search panel with options to search via RegExp and options to search in all files, and ignore case and injected scripts
+* Network: improved details view, including "parsed mode" to reformat POST requests.
 
-#### Network Inspector 1.1
+### Opera Dragonfly 1.2012.07.26
 
-* Inspect POST data
+* Scripts: return value inspection.
 
-#### Resource Inspector 1.1
+### Opera Dragonfly 1.2012.06.22
 
-* Link up line numbers with Error Log and CSS Inspector
-* Search
+* Profiler tab
 
-#### Storage Inspector 1.1
+### Opera Dragonfly 1.2012.05.11
 
-* Upgrade Local Storage, Session Storage and Widgets Preferences to the UI used for cookies in Opera Dragonfly 1.0
+* Improved color picker.
+* Console: ability to evaluate an object's <em>getter</em>s.
 
-#### Error Log 1.1
+### Opera Dragonfly 1.2012.03.15
 
-* UI redesign taking up less real estate
-* Show resource type in overview instead of severity level
-* Error badge matches currently active view
-* Merged less common error types into an Other panel
-* Linked up error line to the Resource line number
-* Replaced search with filter
-* Removed console.* entries (with option to add back)
-* Errors are shown from before Opera Dragonfly was open (Opera 12 only)
+* Style Inspector: support for CSS shorthand.
+* Scripts: JavaScript runtime errors shown as tooltips; Dynamic JavaScript value inspection tooltip; improved script selection.
+* Ability to switch to preferred color format (Hex, RGB or HSL) in Settings.
 
-#### Console 1.1
+### Opera Dragonfly Style Profiler (29 November 2011)
 
-* Full panel Console
-* Auto-complete for JS/DOM built-ins
-* Inline expandable Objects
-* Highlight console.warn, info and error
+* standalone preview of style profiler functionality.
 
-#### Utilities 1.1
+### Opera Dragonfly 1.2011.10.12
 
-* Screen Ruler
+* Console: Support for <code>debugger</code> statements.
+* Scripts: smoother stepping through callstack.
 
-### Opera Dragonfly 1.0
+### Opera Dragonfly 1.1 (1 Sept 2011)
 
-#### DOM Inspector 1.0
+* Document: search panel with options to search via RegExp, CSS selectors, XPath, and text; pseudo-elements.
+* Style Inspector: link back from a style declaration to its declaration in the CSS source file; style declarations for pseudo-classes and pseudo-elements; SVG presentational attributes.
+* Scripts: search panel with options to search via RegExp and options to search in all files, and ignore case and injected scripts.
+* Network: inspect POST data.
+* Resources: link up line numbers with Error Log and CSS Inspector; search function.
+* Storage: upgrade Local Storage, Session Storage and Widgets Preferences to the UI used for cookies in Opera Dragonfly 1.0.
+* Errors: UI redesign taking up less real estate; show resource type in overview instead of severity level; error badge matches currently active view; merged less common error types into an Other panel; linked up error line to the Resource line number; replaced search with filter; removed <code>console.*</code> entries (with option to add back); errors are shown from before Opera Dragonfly was open (Opera 12 only).
+* Console: introduction of full panel Console; auto-complete for JS/DOM built-ins; inline expandable Objects; highlight <code>console.warn</code>, <code>console.info</code> and <code>console.error</code>
+* Utilities: added Screen Ruler.
 
-* DOM panel with markup and node tree views, and syntax highlighting
-* Element highlight with guidelines
-* Multiple element highlight
-* DOM export
-* DOM editing
-* Breadcrumb trail
-* Search toolbar
-* DOM properties panel
-* DOM properties filter
-* Layout panel
+### Opera Dragonfly 1.0 (4 May 2011)
 
-#### Style Inspector 1.0
+### Opera Dragonfly Alpha 3 (30 October 2008)
 
-* Style property filter
-* Computed styles
-* Style inspection
-* Style editing
-* Disable style declarations
-* Add new style rules
-* Auto-complete properties and values
-* RGB and HSV color picker 
+* Localisation support.
+* DOM editing.
 
-#### JavaScript Debugger 1.0
+### Opera Dragonfly Alpha 2 (1 July 2008)
 
-* Script source panel with line numbers and syntax highlighting
-* Debugging capabilities, including continue, step into, step out and step over
-* Call stack
-* Breakpoint management panel
-* Line breakpoints
-* Event breakpoints
-* Conditional breakpoints
-* Watches
-* Frame inspection
-* Frame inspection filter
-* Single file search toolbar
-* Multi-file search window
-
-#### Network Inspector 1.0
-
-* Network log with network request waterfall
-* Request and response headers and bodies
-* Request crafter
-* Disable caching option
-* Global header overrides, including user agent presets
-
-#### Resource Inspector 1.0
-
-* Resource overview
-* Resource details for scripts, CSS, markup, images, and fonts
-* Syntax highlighting
-* Metadata draw
-* Group by host and type
-* Sort resources
-
-#### Storage Inspector 1.0
-
-* Cookie inspector
-* Web Storage inspectors
-* Widget preferences inspector
-* Add, edit, and delete entries
-* Group by runtime
-* Sort entries
-
-#### Error Log 1.0
-
-* List of errors, warnings and information messages
-* Panels for error types
-* <code>console.*</code> messages
-* Editable predefined filter for common errors
-* Error search
-
-#### Utilities 1.0
-
-* Color picker including page preview, and zoom and sample size controls
-* Color palette
-
+### Opera Dragonfly Alpha (6 May 2008)
