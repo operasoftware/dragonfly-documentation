@@ -2,7 +2,7 @@
 
 Opera Dragonfly contains a fully-featured JavaScript Debugger. This is accessible from the Scripts panel in the main application toolbar. The JavaScript Debugger enables the state of the webpage or application to be inspected by setting break points to control the flow of the program as the code is stepped through. The debugger supports breaking on user-defined events and tracking of program state, including variable and object values. This makes it easier to identify bugs in the application and understand exactly what is happening at any given stage.
 
-<img src="img/debugger.png" alt="The JavaScript Debugger" />
+<img src="img/debugger-overview.png" alt="The Opera Dragonfly JavaScript Debugger" />
 
 Note: Opera Dragonfly also features a <a href="/dragonfly/documentation/console/">Console</a>, which is fully integrated with the debugger.
 
@@ -12,11 +12,11 @@ The source view provides a means to view and interact with JavaScript files and 
 
 ####Selecting a script
 
-Any linked, inline and evaled scripts can be selected from the document selector in the Scripts toolbar. These are organized under their parent runtime. If there are multiple documents, such as iframes or linked SVG files, the scripts will be listed under the document in which they are defined. Injected scripts such as <a href="http://www.opera.com/docs/browserjs/">Browser.js</a> and User.js are also listed under their respective headings.
+Any linked, inline and evaled scripts can be selected from the document selector in the Scripts toolbar. These are organized under their parent runtime. If there are multiple documents, such as iframes or linked SVG files, the scripts will be listed under the document in which they are defined. Injected scripts such as <a href="http://www.opera.com/docs/browserjs/">Browser.js</a> and User.js are also listed under their respective headings. The list of scripts can be filtered to only show scripts whose filename or path matches a particular string.
 
-<img src="img/script-selector.png" alt="Selecting a script" />
+<img src="img/debugger-script-selection.png" alt="Selecting a script" />
 
-If Opera Dragonfly is opened after the page was loaded it will have to be reloaded, either using the browser reload button or the reload button in the center of the Source panel for the scripts to be shown. This is because debugging information is not collected when Opera Dragonfly is inactive due to performance reasons.
+If Opera Dragonfly is opened after the page was loaded it will have to be reloaded, either using the browser reload button or the reload button in the center of the Source panel for the scripts to be shown, as for performance reasons debugging information is not collected when Opera Dragonfly is inactive.
 
 #### The Source panel
 
@@ -26,7 +26,7 @@ Once a script is selected, the syntax highlighted source is shown in the main pa
 
 The JavaScript Debugger provides a search panel that offers a number of advanced methods to search inside scripts. From here it is possible to enter a search term, and navigate between the results with either the forward and backwards buttons or the <kbd>Enter</kbd> and <kbd>Shift</kbd>+<kbd>Enter</kbd> keys. Search results show the line of code where the result is contained, along with its line number; clicking on the line will select it in the Source panel, switching to the correct script if it is not the currently active one.
 
-<img src="img/javascript-search.png" alt="Search in the JavaScript Debugger" />
+<img src="img/debugger-search.png" alt="Search in the JavaScript Debugger" />
 
 
 A number of search options can be found below the search field. These allow for searching inside all JavaScript files, including inline scripts, searching using a regular expression (RegExp), and ignoring case. When searching all files, the results can be cluttered by hits in injected scripts such as Browser JS or extension scripts. disabling the <q>injected</q> checkbox will avoid searching in those scripts.
@@ -37,7 +37,7 @@ A number of search options can be found below the search field. These allow for 
 
 Pressing <kbd>Ctrl</kbd>+<kbd>G</kbd> (<kbd>⌘</kbd>+<kbd>L</kbd>) when the Source panel is active will open the Go to line window. Entering a number will scroll to the specified line. It will temporarily highlight to show which is the correct line.
 
-<img src="img/goto-line.png" alt="Go to line" />
+<img src="img/debugger-goto-line.png" alt="Go to line" />
 
 ### Breakpoints ###
 
@@ -51,7 +51,7 @@ Opera Dragonfly supports a number of different kinds of breakpoints:
 
 Line breakpoints break the execution when the specified line is reached. A line breakpoint can be set by clicking the line number in the left-hand gutter of the source view. 
 
-<img src="img/line-breakpoints.png" alt="An enabled and disabled breakpoint" />
+<img src="img/debugger-line-breakpoints.png" alt="Line breakpoints – one enabled, one disabled – as seen in the script's source and the breakpoints sub-panel" />
 
 The breakpoint will show in the Breakpoints sub-panel, identified by the debugging context, the line number, and a snippet of code from that line.
 
@@ -59,7 +59,7 @@ The breakpoint will show in the Breakpoints sub-panel, identified by the debuggi
 
 An event breakpoint pauses execution when the specified type of event is fired. An event breakpoint can be set by checking the box next to the event name in the Breakpoints sub-panel. The events are organized under expandable headings corresponding to the event type. When an event is checked, the relevant event breakpoint will appear in the Breakpoints sub-panel, identified by the event name.
 
-<img src="img/event-breakpoints.png" alt="Event breakpoints" />
+<img src="img/debugger-event-breakpoints.png" alt="Event breakpoints" />
 
 ###### Custom events
 
@@ -71,13 +71,13 @@ A conditional breakpoint has an expression attached to it that is evaluated when
 
 A regular line or event breakpoint can be changed to a conditional breakpoint by selecting <q>Add condition</q> from the context menu of the appropriate breakpoint in the Breakpoints sub-panel, and entering a valid expression in the <q>condition</q> field. The expression must return a boolean value. The breakpoint symbol in the source view gutter will change to indicate it has a condition attached.
 
-<img src="img/conditional-breakpoints.png" alt="Adding a conditional breakpoint" />
+<img src="img/debugger-conditional-breakpoints.png" alt="Adding a conditional breakpoint" />
 
 For line breakpoints, it is also possible to right click on the breakpoint in the source view gutter and select <q>Add condition</q>.
 
 To remove a condition, delete the text inside the condition field and press Enter.
 
-Examples of conditions include testing if: a variable equals a specific value (<samp>foo == 10</samp>), a variable is greater than another variable (<samp>foo > bar</samp>), a function returns <q>true</q> (<samp>foo.bar(baz) === true</samp>), or, when an event breakpoint fires, if it is a specific element (<samp>event.target.id == "foo"</samp>).
+Examples of conditions include testing if: a variable equals a specific value (<code>foo == 10</code>), a variable is greater than another variable (<code>foo > bar</code>), a function returns <q>true</q> (<code>foo.bar(baz) === true</code>), or, when an event breakpoint fires, if it is a specific element (<code>event.target.id == "foo"</code>).
 
 ##### Break on first statement of a new script 
 
@@ -101,26 +101,22 @@ Deleting all breakpoints can be achieved in a similar way: by pressing the <q>De
 
 The program flow is controlled by setting breakpoints. Once the program hits a breakpoint, the execution will halt and will switch to the paused state. A paused execution indicator will be shown on the Scripts application toolbar button to indicate the program is currently at a break point. When Opera Dragonfly is in this state, the call stack and the variable object for the currently selected execution context are shown in the State sub-panel.
 
-<img src="img/at-breakpoint.png" alt="Paused at a breakpoint" />
+<img src="img/debugger-program-flow.png" alt="Paused at a breakpoint" />
 
 The breakpoint will be hit when the code it is defined on is evaluated, and any condition evaluates to true. For example, if a breakpoint is set on the first line of a function for handling what happens when a button is pressed, pressing that button will likely hit that breakpoint and pause execution. The document will have to be reloaded if the breakpoint is set on code that is only evaluated once when loading the page, and it has already been evaluated when the breakpoint is set. 
 
 Once a breakpoint is hit, it is possible to continue execution in a number of ways, using the buttons in the Scripts toolbar:
 
-#### Continue 
-The Continue button or <kbd>F8</kbd> (<kbd>F5</kbd>) continues execution until the next breakpoint or the end of program. 
-
-#### Step Into
-
-The Step Into button or <kbd>F11</kbd> (<kbd>F7</kbd>) steps to the next line of code. If the next line is a function call, the function is followed and execution breaks on the first line of code inside that function.
-
-#### Step Over
-
-The Step Over button or <kbd>F10</kbd> (<kbd>F6</kbd>) also steps to the next line of code. However, if the next line is a function call, the function is executed and the program breaks at the next line after the function returns.
-
-#### Step Out
-
-The Step Out button or <kbd>Shift</kbd>+<kbd>F11</kbd> (<kbd>Shift</kbd>+<kbd>F7</kbd>) continues execution until the end of the current function and breaks at the next line after the function returns.
+<dl>
+	<dt>Continue</dt>
+	<dd>The Continue button or <kbd>F8</kbd> (<kbd>F5</kbd>) continues execution until the next breakpoint or the end of program.</dd>
+	<dt>Step Into</dt>
+	<dd>The Step Into button or <kbd>F11</kbd> (<kbd>F7</kbd>) steps to the next line of code. If the next line is a function call, the function is followed and execution breaks on the first line of code inside that function.</dd>
+	<dt>Step Over</dt>
+	<dd>The Step Over button or <kbd>F10</kbd> (<kbd>F6</kbd>) also steps to the next line of code. However, if the next line is a function call, the function is executed and the program breaks at the next line after the function returns.</dd>
+	<dt>Step Out</dt>
+	<dd>The Step Out button or <kbd>Shift</kbd>+<kbd>F11</kbd> (<kbd>Shift</kbd>+<kbd>F7</kbd>) continues execution until the end of the current function and breaks at the next line after the function returns.</dd>
+</dl>
 
 ### Viewing variables and state ###
 
@@ -132,7 +128,7 @@ When at a breakpoint, it is possible to inspect the variables, objects, and func
 
 All variables in scope for the execution context are listed along with their current value. Functions and objects can be further examined by clicking the expander icon next to its name. This will show all the properties and functions contained within.
 
-<img src="img/inspection-section.png" alt="The inspection section" />
+<img src="img/debugger-inspection.png" alt="The Inspection sub-panel" />
 
 As the number of properties can start to get unwieldy, it is possible to hide variables which have a default value of null or an empty string by deactivating the relevant button on the Inspection toolbar. It is also possible to hide non-enumerable properties.
 
@@ -144,43 +140,35 @@ In addition to the State sub-panel, dynamic inspection tooltips offer the abilit
 
 Hovering over an object in the Script panel source view will open a filterable tooltip.
 
-<img src="img/tooltip.png" alt="tooltip">
+<img src="img/debugger-dynamic-value-inspection-tooltip.png" alt="Dynamic Value Inspection tooltip">
 
 Pressing shift while hovering over a function invocation will also evaluate the function and show its return value in the tooltip. For example, pressing <kbd>Shift</kbd> while hovering over a call to <code>document.getElementsByClassName('frame')</code> returns the <code>NodeList</code> instance.
 
-<img src="img/tooltip-eval.png" alt="evaluated tooltip">
+<img src="img/debugger-dynamic-value-inspection-tooltip-eval.png" alt="Evaluated tooltip">
 
 Selecting any amount of code and pressing <kbd>Shift</kbd> will evaluate it and display the result in the tooltip. This also works across multiple lines.
 
-<img src="img/tooltip-select.png" alt="evaluated selection tooltip">
+<img src="img/debugger-dynamic-value-inspection-tooltip-select.png" alt="Evaluated selection tooltip">
 
 We have also added a new kind of tooltip for all JavaScript inspections. For properties of type `Object` we show the according Class. If you now hover over the Class name of any `Element`, `Function`, `Date`, `RegExp`, `Error` and `Exception`, you will get a tooltip with a pretty-printed representation. This even works on top of another tooltip.
 
-<img src="img/tooltip-class.png" alt="Pretty printed object">
-
-#### Navigating the call stack
-
-When a function is called it is pushed onto the top of the call stack, and when it returns it is popped off the stack. The call stack contains a frame for each function that has not yet returned, with global scope at the base. The frames on the stack are listed in the Call Stack section of the State sub-panel.
-
-<img src="img/call-stack.png" alt="navigating the call stack" />
-
-Clicking on an entry in the stack will switch to that frame. From there it is possible to see all the variables in scope for that frame in the Inspection section, as described above. The source view will also switch to the function that the frame represents. The execution position will be at the line that contains the function call that created the frame above on the call stack.
+<img src="img/debugger-dynamic-value-inspection-tooltip-class.png" alt="Pretty printed object">
 
 #### Watches ####
 
 Watches allow JavaScript expressions to be monitored. These can be useful if there is a specific piece of information, such as the value of a variable, that needs to be tracked as the application is executed.  Each time the application steps the expression is evaluated. Watches can be found under the <q>Watches</q> section in the State sub-panel. 
 
-<img src="img/watches.png" alt="The watches section" />
+<img src="img/debugger-watches.png" alt="The watches section" />
 
-Examples of watches include individual variables or objects (<samp>foo</samp>), the return value of a function (<samp>foo.bar()</samp>), or manipulating variables (<samp>bar + baz * superman</samp>). If the variables or functions are in scope the result will be returned.
+Examples of watches include individual variables or objects (<code>foo</code>), the return value of a function (<code>foo.bar()</code>), or manipulating variables (<code>bar + baz * superman</code>). If the variables or functions are in scope the result will be returned.
 
 ##### Adding a watch ####
 
 Click the <q>Add watch</q> button in the Watches section of the State sub-panel, enter a valid JavaScript expression; then, press <kbd>Enter</kbd>. The expression will be evaluated and the result shown next to it. 
 
-It is also possible to add a watch by selecting <q>Watch <var>expression</var></q> from the context menu when selecting code in the Source panel, or from the context menu on variables in the Inspection section of the State sub-panel.
+It is also possible to add a watch from the context menu on variables in the Inspection section of the State sub-panel.
 
-<img src="img/adding-watch.png" alt="Adding a watch" />
+<img src="img/debugger-watches-context.png" alt="Adding a watch" />
 
 ##### Editing a watch #####
 
@@ -189,3 +177,23 @@ An existing watch can be edited by double clicking on the expression or selectin
 ##### Deleting a watch #####
 
 A watch can be deleted by selecting <q>Delete</q> from the context menu of the watch.
+
+#### Return values
+
+When debugging a program, it is often useful to know the value that was returned from the last function call. If the value is assigned to a variable, this can be done easily from the <q>Inspection</q> of <q>Watches</q> section. There are situations, though, where return values are not explicitly assigned, particularly if they formed part of a more complex expression.
+
+<img src="img/debugger-return-values.png" alt="Return values sub-panel" />
+
+As an example, let's take the following trivial function call:
+
+<code>mul(add(1, 2), add(3, 4));</code>
+
+If we set a breakpoint in our script at this point, and then "Step over" this call, we can see that the <q>Return values</q> section lists all function calls and their respective return values, in the order in which they were executed (with the oldest call at the bottom, and the most recent call at the top). Clicking on the arrow next to the function name will jump to that particular function's definition, while the arrow next to the return value jumps directly to the <code>return</code> statement inside the function.
+
+#### Call stack
+
+When a function is called it is pushed onto the top of the call stack, and when it returns it is popped off the stack. The call stack contains a frame for each function that has not yet returned, with global scope at the base. The frames on the stack are listed in the Call Stack section of the State sub-panel.
+
+<img src="img/debugger-call-stack.png" alt="The call stack sub-panel" />
+
+Clicking on an entry in the stack will switch to that frame. From there it is possible to see all the variables in scope for that frame in the Inspection section, as described above. The source view will also switch to the function that the frame represents. The execution position will be at the line that contains the function call that created the frame above on the call stack.
