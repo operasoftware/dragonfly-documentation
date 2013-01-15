@@ -1,12 +1,18 @@
 ## Network Inspector ##
 
-The Network Inspector is Opera Dragonfly’s HTTP dashboard. It provides an overview of all HTTP requests such as images, scripts, and style, initiated by the primary webpage (primary HTTP request). The Network Inspector includes a waterfall visualization of the order, time and duration of all network activity. 
+The Network Inspector is Opera Dragonfly’s HTTP dashboard. It provides an overview of all HTTP requests – for resources such as images, scripts, and stylesheets – initiated by the primary webpage (primary HTTP request).
 
 ### Network log
 
-The first tab of the Network Inspector is the **Network log**. 
+The first tab of the Network Inspector is the **Network log**. HTTP requests can be displayed as either a waterfall graph – a timeline listing all requests in the order in which they were sent – or as a tabular data grid – which can be reordered by clicking on the various column headers for Method, Status, MIME, Size, Waiting, Duration and Graph.
 
-In the left column, each URI is preceded with an icon. This provides a visual cue about the resource's file type.
+<img src="img/network-waterfall-graph-view.png" alt="Network log with HTTP requests shown in a waterfall graph" />
+
+<img src="img/network-data-grid-view.png" alt="Network log with HTTP requests shown in a tabular data grid" />
+
+The network log can be cleared – removing any existing entries showing up in the log – and updating of the log can be paused. The latter is particularly useful if you're interested in analysing the initial page-load of a document that also fires XHR requests after all primary content has been loaded.
+
+In both grid and data view each requested URI is preceded by an icon, which provides a visual cue about the type of resource that was requested:
 
 <table style="width:15em;">
 <caption>Table of file types and related icons</caption>
@@ -63,15 +69,43 @@ In the left column, each URI is preceded with an icon. This provides a visual cu
     <td>video (<code>ogv</code>, <code>webm</code>, …)</td>
 </tr></table>
 
+By default, requests for all types of resources are shown in the log. The type filter lets you narrow down the view to certain types of Resources – Markup, Stylesheets, Scripts, Images, Other file types, or any requests made via an XMLHttpRequest. The type filters can be combined (for instance, to just show Markup <strong>and</strong> Stylesheets) by toggling the relevant buttons with <kbd>CTRL</kbd> / <kbd>CMD</kbd> + click.
+
+To get the most precise information for network activity, it's possible to further improve the log's timing accuracy by disabling all other debugging services and placing Opera Dragonfly into HTTP profiler mode.
+
+<img src="img/network-http-profiler-mode.png" alt="When in HTTP profiler mode, other tools in Opera Dragonfly are disabled and need to be enabled." />
+
+When switching back to any of Opera Dragonfly's other tools, you will first need to re-enable these services, which may require reloading the current document.
+
+<img src="img/network-search.png" alt="The Network log's search functionality, with highlighted results in the URI list" />
+
+The Network log's search functionality works across all URIs listed in the log, as well as any open details view overlay. You can move between any matches found using <kbd>F3</kbd> / <kbd>Shift</kbd>+<kbd>F3</kbd>.
+
+<img src="img/network-uri-tooltip.png" alt="Hovering over a URI shows more details in a tooltip" />
+
+URIs appear truncated in the left-hand column, but hovering over each of these displays a tooltip with the fully qualified URI, including the protocol, domain, and full path to the resource. Any GET parameters present in the URI are decoded, reformatted and listed in this tooltip as well.
+
+<img src="img/network-graph-tooltip.png" alt="The tooltip for the graphs shows a detailed breakdown of the different retrieval phases and the time they took to complete" />
+
+The graph associated with each request (both in the full waterfall graph view and the normalized small graph in the grid view) uses specific colors to represents the different phases of resource retrieval. These fall into categories such as scheduling (grey), sending (red), waiting (blue), receiving (green) and processing (grey). Occasionally, requests have to be retried or they are aborted – these actions, and the related phases, are show in yellow. Hovering over a graph opens a tooltip with a more detailed breakdown of the various retrieval phases.
+
+<img src="img/network-details-overlay.png" alt="A detailed view at a request, showing the raw headers for the request and response, as well as the body of the response – an image file – previewed directly in the details overlay" />
+
+Clicking on a URI opens a detailed look at the request in a resizable overlay. This view shows the raw headers and body of both the request and response. Long lines are wrapped by default. For POST requests, you can further switch the details view to "Parsed mode", which reformats form-encoded requests as name-value pairs.
+
 ### Make Request
 
-In a similar way to command-line tools such as <code>curl</code>, the Make Request tab allows you to manually send custom HTTP request to a specific URI and to inspect the HTTP response. 
+In a similar way to command-line tools such as <code>curl</code>, the **Make Request** tab allows you to manually send custom HTTP request to a specific URI and to inspect the HTTP response.
 
-Opera Dragonfly makes it easy to precisely tailor an HTTP request by specifying the individual HTTP headers. Start by entering the URI for your request in the URL field. This immediately modifies the Request body to make a standard GET request to this URI, using Opera's default HTTP headers. You can manually modify the Request body further by simply editing the generated text. After you send the request, you will see the response from the server, including the response headers. If the response's body contained contained binary data (for instance when making a request for a <code>png</code> image), it will appear truncated.
+<img src="img/network-make-request.png" alt="Making a request and seeing both the request and response headers" />
+
+Opera Dragonfly makes it easy to precisely tailor an HTTP request by specifying the individual HTTP headers. Start by entering the URI for your request in the URL field. This immediately modifies the Request body to make a standard GET request to this URI, using Opera's default HTTP headers. You can manually modify the Request body further by simply editing the generated request. Once it has been sent, you will see the response from the server, including the raw response headers. If the response's body contained contained text, this will be displayed in full; binary data (for instance when making a request for a <code>png</code> image) on the other hand will appear truncated.
 
 ### Network Options
 
 The third panel provides options for fine-tuning the browser behavior with regards to HTTP requests.
+
+<img src="img/network-options.png" alt="Network options, showing the caching behavior checkbox and global header overrides set to spoof another browser" />
 
 #### Caching behavior
 
@@ -79,7 +113,7 @@ When testing HTTP requests, it is often important to disable all sources of cach
 
 #### Global header overrides
 
-In cases where a site does content negotiation – or, more commonly, serves different content to different user agents – it is sometimes necessary to impersonate another HTTP client such as a bot or a mobile browser in order to verify and debug the content. With global header overrides, Opera's standard request headers can be overriden (to change a particular aspect of the request) or expanded (to include additional headers that aren't normally sent).
+In cases where a site does content negotiation – or, more commonly, serves different content to different user agents – it is sometimes necessary to spoof headers to appear as another HTTP client, such as a bot or a mobile browser, in order to verify and debug the server's response. With global header overrides, Opera's standard request headers can be overriden (to change a particular aspect of the request) or expanded (to include additional headers that aren't normally sent).
 
 The available presets include the default headers (including the <code>User-Agent</code>) of a few common mobile, tablet and desktop browsers. If the particular browser you want to spoof is not available in the list of presets, or if you want to just add or override one specific header, you can further modify the headers in the provided text field. Once you're satisfied with the set of headers that will be sent, make sure to <em>Save</em> your selection.
 
