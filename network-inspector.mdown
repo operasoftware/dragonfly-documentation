@@ -4,11 +4,15 @@ The Network Inspector is Opera Dragonfly’s HTTP dashboard. It provides an over
 
 ### Network log
 
-The first tab of the Network Inspector is the **Network log**. HTTP requests can be displayed as either a waterfall graph – a timeline listing all requests in the order in which they were sent – or as a tabular data grid – which can be reordered by clicking on the various column headers for Method, Status, MIME, Size, Waiting, Duration and Graph.
+The first tab of the Network Inspector is the **Network log**. HTTP requests can be displayed as either a waterfall graph – a timeline listing all requests in the order in which they were sent – or as a tabular data grid.
 
 <img src="img/network-waterfall-graph-view.png" alt="Network log with HTTP requests shown in a waterfall graph" />
 
 <img src="img/network-data-grid-view.png" alt="Network log with HTTP requests shown in a tabular data grid" />
+
+The data view table can be reordered by clicking on the various column headers. The type of columns that are displayed can be customised through the grid's context menu, and reset back to the default set of Method, Status, MIME, Size, Waiting, Duration and Graph.
+
+<img src="img/network-filtered-data-view.png" alt="The Network log's grid view, showing the context menu which allows for the columns to be customised" />
 
 The network log can be cleared – removing any existing entries showing up in the log – and updating of the log can be paused. The latter is particularly useful if you're interested in analysing the initial page-load of a document that also fires XHR requests after all primary content has been loaded.
 

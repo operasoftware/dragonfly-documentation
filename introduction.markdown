@@ -1,5 +1,7 @@
 # Opera Dragonfly documentation
 
+<p><small>Documentation last updated: 15 January 2013</small></p>
+
 ## Getting started
 
 Opera Dragonfly is a fully featured development and debugging tool integrated into the Opera browser. It requires no additional installation or setup and works across most of Opera’s browsers – on desktop, mobile phones, tablets and even web-enabled TVs and set-top boxes.
@@ -10,7 +12,7 @@ As the power of the Open Web platform increases, high quality tools such as Oper
 
 ## Launching Opera Dragonfly
 
-Opera Dragonfly comes preinstalled with the Opera desktop browser. It can be launched in three main ways:
+Opera Dragonfly is an HTML5-based web application which is tightly integrated with the Opera desktop browser. It can be launched in three main ways:
 
 ### Inspect Element
 
@@ -40,7 +42,7 @@ The <dfn>debugging context selector</dfn> lists all available contexts to which 
 
 ### Detaching the window
 
-By default, Opera Dragonfly is docked to the bottom of the browser window. For people with a second or larger monitor, there is a detached mode, which allows Opera Dragonfly to be placed elsewhere on the screen, or moved to the other monitor entirely, freeing up work space. Clicking the Detach button switches between the two modes. The state is remembered when the window is closed.
+By default, Opera Dragonfly is docked to the bottom of the browser window. For people with a second or larger monitor, there is a detached mode, which allows Opera Dragonfly to be placed elsewhere on the screen in its own window, or moved to the other monitor entirely, freeing up work space. Clicking the Detach button switches between the two modes. The state is remembered when the window is closed.
 
 ### Closing Opera Dragonfly
 
