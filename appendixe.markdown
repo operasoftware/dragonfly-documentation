@@ -14,6 +14,10 @@ Opera Dragonfly has, since its inception, been continuously extended and improve
 
 * Network: improved details view, including "parsed mode" to reformat POST requests.
 
+### Opera Dragonfly 1.2012.08.03
+
+* Document: event listeners tooltip and side panel.
+
 ### Opera Dragonfly 1.2012.07.26
 
 * Scripts: return value inspection.

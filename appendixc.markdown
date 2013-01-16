@@ -4,7 +4,7 @@
 
 Opera Dragonfly is an open source project. You can find the complete code that powers our advanced debugging tools over on the <a href="https://github.com/operasoftware/dragonfly">Opera Dragonfly repository on GitHub</a>. If you have suggestions for new features, or simply want to report a bug, please feel free to <a href="https://github.com/operasoftware/dragonfly/issues">open a new issue</a> there.
 
-Any patch submitted to Opera Dragonfly must follow the the <a href="https://github.com/operasoftware/dragonfly/wiki/Code-style-guide">Opera Dragonfly style guide</a> to be accepted.
+Any patch submitted to Opera Dragonfly must follow the <a href="https://github.com/operasoftware/dragonfly/wiki/Code-style-guide">Opera Dragonfly style guide</a> to be accepted.
 
 ### Code repository
 
